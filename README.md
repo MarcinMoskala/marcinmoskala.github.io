@@ -1,1 +1,0 @@
-# marcinmoskala.github.io
