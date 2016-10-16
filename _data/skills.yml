@@ -1,17 +1,11 @@
-- name: Python
+- name: Java
   percentage: 85
 
-- name: HTML/CSS
-  percentage: 65
+- name: Kotlin
+  percentage: 85
 
-- name: Linux/Shell
+- name: Android
   percentage: 75
 
-- name: jQuery
-  percentage: 70
-
-- name: AngularJS
-  percentage: 80
-
-- name: Ionic
-  percentage: 65
+- name: RxJava
+  percentage: 50
