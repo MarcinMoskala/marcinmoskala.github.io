@@ -1,17 +1,11 @@
-- name: Blog
-  href: '/blog/'
+- name: Android
+  href: '/android/'
 
-- name: Python
-  href: '/python/'
-
-- name: Linux
-  href: '/linux/'
-
-- name: HTML
-  href: '/html/'
-
-- name: Mac
-  href: '/mac/'
+- name: Kotlin
+  href: '/kotlin/'
 
 - name: Life
   href: '/life/'
+
+- name: Productivity
+  href: '/productivity/'

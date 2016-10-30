@@ -1,23 +1,23 @@
 - name: 'Docplanner Doctor App'
-  i18n: 'saplatform'
-  url: '/Jack614/saplatform'
-  img: 'static/img/landing/saplatform.png'
+  i18n: 'DocplannerDoctor'
+  url: '//play.google.com/store/apps/details?id=pl.znanylekarz.lekarz'
+  img: 'static/img/landing/ic_launcher.png'
   desc: ""
 
 - name: 'Warta Mobile'
-  i18n: 'jalpc'
-  url: '/Jack614/jalpc_jekyll_theme'
-  img: 'static/img/landing/jekyll.png'
+  i18n: 'WartaMobile'
+  url: '//play.google.com/store/apps/details?id=pl.warta.mobile'
+  img: '//lh3.googleusercontent.com/kW_jhk4PmmUdDeUsAeg40-Ne8CyotVaPiOgrxbjLezO4KRU5arMgv2Xsryj8cI0WBFs=w300-rw'
   desc: ""
 
-- name: 'Samsung RTL'
-  i18n: 'angularjs'
-  url: '/Jack614/Jalpc-A'
-  img: 'static/img/landing/angularjs.png'
+- name: 'Kotlin Wonders'
+  i18n: 'KotlinWonders'
+  url: '//github.com/MarcinMoskala/kotlinWonders'
+  img: '//static1.squarespace.com/static/55f65034e4b0f8a9c68669fd/56c4b7b807eaa00b964d26fb/56c4b7d207eaa00b964d2802/1455732952146/7+wonders.jpg'
   desc: ""
 
 - name: 'Skazany na trening'
-  i18n: 'rsser'
-  url: '/Jack614/Rsser'
-  img: 'static/img/landing/rsser.png'
+  i18n: 'SkazanyNaTrening'
+  url: '//play.google.com/store/apps/details?id=pl.marcinmoskala.activities'
+  img: '//lh5.ggpht.com/m1aRV2_NFx30qiMMspYeiK0Hs-YSdg-Oc1co8BC0_6dRm70Xt5QDmLWrgLsWKdj7jKdX=w300-rw'
   desc: ""

@@ -1,7 +1,7 @@
-- name: Java
-  percentage: 85
-
 - name: Kotlin
+  percentage: 90
+
+- name: Java
   percentage: 85
 
 - name: Android
@@ -9,3 +9,12 @@
 
 - name: RxJava
   percentage: 50
+
+- name: Scala
+  percentage: 40
+
+- name: Python
+  percentage: 30
+
+- name: Spark
+  percentage: 20
