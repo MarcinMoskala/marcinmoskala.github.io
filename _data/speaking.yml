@@ -1,0 +1,29 @@
+- name:
+    detail: Article "ReactiveX - reactive programming in nearly any language"
+    i18n: reactivex
+  desc:
+    detail: 
+    i18n: reactivex_des
+  date:
+    detail: 
+    i18n: reactivex_date
+  job:
+    detail: 
+    i18n: reactivex_job
+  icon: fa-newspaper-o
+  link: /static/files/MMReactiveX.pdf
+
+- name:
+    detail: 'Article "Kotlin: Future of Java?"'
+    i18n: kotlinarticle
+  desc:
+    detail: 
+    i18n: kotlinarticle_des
+  date:
+    detail: 
+    i18n: kotlinarticle_date
+  job:
+    detail:
+    i18n: kotlinarticle_job
+  icon: fa-newspaper-o
+  link: /static/files/MMKotlin.pdf

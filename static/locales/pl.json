@@ -1,0 +1,68 @@
+{
+  "website":{
+    "title": "Strona Marcina Moskały"
+  },
+  "nav":{
+    "home": "Główna",
+    "about_me": "O mnie",
+    "skills": "Umiejętności",
+    "projects": "Projekty",
+    "career": "Kariera",
+    "blog": "Blog",
+    "link": "Link"
+  },
+  "about_me":{
+    "about_me": "O mnie",
+    "des": "Zawodowo jestem głównym programistą Kotlina na platformę Android dla ZnanegoLekarza. Do tego zajmuję się Machine Learningiem. Piszę artykuły, piszę na bloga (kotlindev.pl) oraz kończę studia z Informatyki. Także sporadycznie mam przyjemność prowadzić wykłady. Najczęściej na temat Kotlina, Androida oraz RxJavy. Razem ze swoją dziewczyną założyliśmy Nootro, gdzie produkujemy suplement dla mózgu - nRise."
+  },
+  "skills":{
+    "my_skills": "Umiejętności"
+  },
+  "projects":{
+    "my_projects": "Projekty",
+    "DocplannerDoctor": "Mobilna aplikacja lekarska dla portalu ZnanyLekarz która pozwala lekarzom na łatwiejsze zarządzanie swoim grafikiem oraz prostszą komunikację z pacjentami. ",
+    "WartaMobile": "Aplikacja napisana z ramienia firmy Apreel na zlecenie firmy ubezpieczeniowej Warta. Aplikacja została napisana dla klientów Warty, którzy doznali szkody. Pozwala ona na prostszą komunikację, dostarczenia dokumentacji i wreszcie zamknięcie szkody. ",
+    "KotlinWonders": "Sztuczna inteligencja do gry planszowej \"7 cudów świata\" oparta na algorytmie MCTS i napisana w Kotlinie w stylu funkcyjnym. ",
+    "KotlinPreferences": "Biblioteka dla Androida, która ułatwia korzystanie z SharedPreferences dzięki sprytnemu rozwiązaniu wykorzystyjącemu nietypowe cechy Kotlina.",
+    "Nootro": "Startup tworzący i sprzedający suplement dla rozwoju mózgu.",
+    "ActivityStarter": "Biblioteka dla Androida, która przy pomocy generacji kodu tworzy prosty sposób na uruchamianie Activity, zawierające dane przekazywane jako argumenty."
+  },
+  "career":{
+    "my_career": "Moja kariera",
+    "docplanner": "Znany Lekarz",
+    "docplanner_des": "Głowny Kotlin Android Developer dla Znanego Lekarza - polskiego startupu tworzącego platformę dla lekarzy i pacjentów.",
+    "docplanner_date": "Od 3.2016 do teraz",
+    "docplanner_job": "Master of Android Development",
+    "apreel": "Apreel",
+    "apreel_des": "Tworzenie aplikacji Warta Mobile dla Apreel na zlecenie Warty.",
+    "apreel_date": "2015.3-2016.3",
+    "apreel_job": "Android Developer",
+    "samsung": "Samsung",
+    "samsung_des": "Rozbudowa platformy RTL do zdalnego testowania aplikcaji na urządzeniach firmy Samsung.",
+    "samsung_date": "2014.10-2015.3",
+    "samsung_job": "Java oraz JavaScript Developer",
+    "college": "Studia",
+    "college_des": "Skończyłem Telekomunikację na Eiti, zacząłem także Informatykę na tym samym wydziale.",
+    "college_date": "",
+    "college_job": "Student"
+  },
+  "speaking":{
+    "my_speaking": "Moje wystąpienia i artykuły",
+    "reactivex": "Artykuł 'ReactiveX – programowanie reaktywne w niemalże każdym języku i systemie'",
+    "reactivex_des": "Magazyn Programista - największy programistyczny magazyn w polsce",
+    "reactivex_date": "Wydane 2.2017",
+    "reactivex_job": "",
+    "kotlinarticle": "Artykuł 'Język Kotlin – przyszłość Javy?'",
+    "kotlinarticle_des": "Magazyn Programista - największy programistyczny magazyn w polsce",
+    "kotlinarticle_date": "Wydane 8.2016",
+    "kotlinarticle_job": ""
+  },
+  "blog":{
+    "my_blog": "Blog"
+  },
+  "link":{
+    "link": "Link",
+    "view": "widoki"
+  }
+
+}

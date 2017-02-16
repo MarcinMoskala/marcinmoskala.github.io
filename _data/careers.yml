@@ -1,0 +1,55 @@
+- name:
+    detail: Docplanner
+    i18n: docplanner
+  desc:
+    detail: 
+    i18n: docplanner_des
+  date:
+    detail: 
+    i18n: docplanner_date
+  job:
+    detail: 
+    i18n: docplanner_job
+  icon: fa-stethoscope
+
+- name:
+    detail: 
+    i18n: apreel
+  desc:
+    detail: 
+    i18n: apreel_des
+  date:
+    detail: 
+    i18n: apreel_date
+  job:
+    detail:
+    i18n: apreel_job
+  icon: fa-car
+
+- name:
+    detail: Samsung
+    i18n: samsung
+  desc:
+    detail: 
+    i18n: samsung_des
+  date:
+    detail: 
+    i18n: samsung_date
+  job:
+    detail: 
+    i18n: samsung_job
+  icon: fa-mobile
+
+- name:
+    detail: 
+    i18n: college
+  desc:
+    detail: 
+    i18n: college_des
+  date:
+    detail: 
+    i18n: college_date
+  job:
+    detail: 
+    i18n: college_job
+  icon: fa-book

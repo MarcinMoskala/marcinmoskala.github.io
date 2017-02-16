@@ -1,0 +1,35 @@
+- name: 'Docplanner Doctor App'
+  i18n: 'DocplannerDoctor'
+  url: '//play.google.com/store/apps/details?id=pl.znanylekarz.lekarz'
+  img: 'static/img/landing/ic_launcher.png'
+  desc: ""
+
+- name: 'Warta Mobile'
+  i18n: 'WartaMobile'
+  url: '//play.google.com/store/apps/details?id=pl.warta.mobile'
+  img: 'static/img/landing/warta.png'
+  desc: ""
+
+- name: 'Activity Starter'
+  i18n: 'ActivityStarter'
+  url: 'https://github.com/MarcinMoskala/ActivityStarter'
+  img: 'static/img/landing/github.png'
+  desc: ""
+
+- name: 'KotlinPreferences'
+  i18n: 'KotlinPreferences'
+  url: 'https://github.com/MarcinMoskala/KotlinPreferences'
+  img: 'static/img/landing/github.png'
+  desc: ""
+
+- name: 'Nootro'
+  i18n: 'Nootro'
+  url: 'http://nootro.pl/'
+  img: 'static/img/landing/nootro.png'
+  desc: ""
+
+- name: 'Kotlin Wonders'
+  i18n: 'KotlinWonders'
+  url: '//github.com/MarcinMoskala/kotlinWonders'
+  img: 'static/img/landing/github.png'
+  desc: ""

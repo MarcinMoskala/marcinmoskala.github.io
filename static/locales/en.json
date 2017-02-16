@@ -1,0 +1,68 @@
+{
+  "website":{
+    "title": "Martin's blog"
+  },
+  "nav":{
+    "home": "Home",
+    "about_me": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "career": "Career",
+    "blog": "Blog",
+    "link": "Link"
+  },
+  "about_me":{
+    "about_me": "About Me",
+    "des": "Profesionally I am main Android Developer for Docplanner, where I write on Kotlin. I am also doing Machine Learning projects. I write articles and finish studying Computer Science. Occasionally I have a pleasure to make some lecture. Mostly about Kotlin, Android and RxJava. Together with my girlfriend we created Nootro - startup that is producing and selling supplements for brain"
+  },
+  "skills":{
+    "my_skills": "My Skills"
+  },
+  "projects":{
+    "my_projects": "Projects",
+    "DocplannerDoctor": "Mobile application for Docplanner. It allows doctors to easly manage their schedule and contact with patients. ",
+    "WartaMobile": "Mobile application made for Warta - polish popular insurance company. Application sarve for Warta clients to help them easly and quickly go through process of closing insurance claim.",
+    "KotlinWonders": "Artificiall intelligence for \"7 wonders\" board game. Written completly functionally in Kotlin. ",
+    "KotlinPreferences": "Kotlin Android Library, that makes preference usage simple and fun.",
+    "Nootro": "Startup creating and selling brain improvement supplement.",
+    "ActivityStarter": "Android Library that provide simpler way to start the Activities with multiple arguments."
+  },
+  "career":{
+    "my_career": "My Career",
+    "docplanner": "Docplanner",
+    "docplanner_des": "Main Android Developer creating doctor and patient mobile applications. ",
+    "docplanner_date": "From 3.2016 till now",
+    "docplanner_job": "Master of Android Development",
+    "apreel": "Apreel",
+    "apreel_des": "Creation of Warta Mobile application for Warta. ",
+    "apreel_date": "2015.3-2016.3",
+    "apreel_job": "Android Developer",
+    "samsung": "Samsung",
+    "samsung_des": "Development of RTL - remote testing tool for Android Samsung devices.",
+    "samsung_date": "2014.10-2015.3",
+    "samsung_job": "Java and JavaScript Developer",
+    "college": "Graduation",
+    "college_des": "I finish Telecommunication on EITI and I started Computer Science.",
+    "college_date": "",
+    "college_job": "Student"
+  },
+  "speaking":{
+    "my_speaking": "My sriting and speaking",
+    "reactivex": "Article 'ReactiveX - reactive programming in nearly any language'",
+    "reactivex_des": "Programmer Magazine - biggers programmer magazine in Poland",
+    "reactivex_date": "2.2017",
+    "reactivex_job": "",
+    "kotlinarticle": "Article 'Kotlin - Future of Java?'",
+    "kotlinarticle_des": "Programmer Magazine - biggers programmer magazine in Poland",
+    "kotlinarticle_date": "8.2016",
+    "kotlinarticle_job": ""
+  },
+  "blog":{
+    "my_blog": "My Blog"
+  },
+  "link":{
+    "link": "Link",
+    "view": "views"
+  }
+
+}

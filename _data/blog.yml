@@ -1,0 +1,11 @@
+- name: Android
+  href: '/android/'
+
+- name: Kotlin
+  href: '/kotlin/'
+
+- name: Life
+  href: '/life/'
+
+- name: Productivity
+  href: '/productivity/'
