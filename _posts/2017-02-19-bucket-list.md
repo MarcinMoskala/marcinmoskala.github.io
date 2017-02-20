@@ -14,8 +14,12 @@ icon: fa-list
 This is list form 19.02.2017 with stuff I wish to do. Here it is to be able to look at that in the future and compare which one were done (I hope that all of them will be ;)).
 
  * Make presentation for over 1000 people.
+ * Make programming library that will have 1000 stars on GitHub.
+ * Lift 100kg on Bench Press.
+ * Earn 10 000 zł on startup + at least twice then invested.
  * Be in public TV talk show.
  * Write the technical book (in prograss).
+ * Write the lifestyle book.
  * Live in far away country for at least half an year (planned since september).
  * Live from remote work (partially now, but also planned from september).
  * Learn to Kite.
