@@ -26,7 +26,7 @@ This is list form 19.02.2017 with stuff I wish to do. Here it is to be able to l
  * Meet the president of big country (at least like Poland).
  * Play in the movie.
  * Buy a motorbike.
- * Make a tatoo.
+ * Have a tatoo.
  * See Aztec pyramides.
  * Work as an barman or barista.
  * Be on each of 7 continents (3 right now).
