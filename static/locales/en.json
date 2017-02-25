@@ -13,7 +13,7 @@
   },
   "about_me":{
     "about_me": "About Me",
-    "des": "Profesionally I am main Android Developer for Docplanner, where I write on Kotlin. I am also doing Machine Learning projects. I write articles and finish studying Computer Science. Occasionally I have a pleasure to make some lecture. Mostly about Kotlin, Android and RxJava. Together with my girlfriend we created Nootro - startup that is producing and selling supplements for brain"
+    "des": "Profesionally I am main Android Developer for Docplanner, where I write on Kotlin. I am also doing Machine Learning projects. I write articles and develop Open-Source libraries. I also have double engineer title, from Computer Science and Telecommunication. Occasionally I have a pleasure to make some lecture. Mostly about Kotlin, Android and RxJava. Together with my girlfriend we created Nootro - startup that is producing and selling supplements for brain"
   },
   "skills":{
     "my_skills": "My Skills"
@@ -42,7 +42,7 @@
     "samsung_date": "2014.10-2015.3",
     "samsung_job": "Java and JavaScript Developer",
     "college": "Graduation",
-    "college_des": "I finish Telecommunication on EITI and I started Computer Science.",
+    "college_des": "I get engeneer title from Telecommunication (finished with A), and another engineer title in Computer Science (also with A). Both courses were finished on Warsaw University of Technology - biggest and most prestigious technical university in Poland.",
     "college_date": "",
     "college_job": "Student"
   },
