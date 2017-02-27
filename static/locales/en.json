@@ -13,19 +13,19 @@
   },
   "about_me":{
     "about_me": "About Me",
-    "des": "Profesionally I am main Android Developer for Docplanner, where I write on Kotlin. I am also doing Machine Learning projects. I write articles and develop Open-Source libraries. I also have double engineer title, from Computer Science and Telecommunication. Occasionally I have a pleasure to make some lecture. Mostly about Kotlin, Android and RxJava. Together with my girlfriend we created Nootro - startup that is producing and selling supplements for brain"
+    "des": "Professionally I am main Android Developer for Docplanner, where I write on Kotlin. I am also doing Machine Learning projects. I write articles and develop Open-Source libraries. I also have double engineer title, from Computer Science and Telecommunication. Occasionally I have a pleasure to make some lecture. Mostly about Kotlin, Android and RxJava. Together with my girlfriend we created Nootro - startup that is producing and selling supplements for brain"
   },
   "skills":{
     "my_skills": "My Skills"
   },
   "projects":{
     "my_projects": "Projects",
-    "DocplannerDoctor": "Mobile application for Docplanner. It allows doctors to easly manage their schedule and contact with patients. ",
-    "WartaMobile": "Mobile application made for Warta - polish popular insurance company. Application sarve for Warta clients to help them easly and quickly go through process of closing insurance claim.",
-    "KotlinWonders": "Artificiall intelligence for \"7 wonders\" board game. Written completly functionally in Kotlin. ",
+    "DocplannerDoctor": "Mobile application for Docplanner. It allows doctors to easily manage their schedule and contact with patients. ",
+    "WartaMobile": "Mobile application made for Warta - the polish popular insurance company. Application helps for Warta clients to easily and quickly go through process of closing insurance claim.",
+    "KotlinWonders": "Artificial intelligence for \"7 wonders\" board game. Written completely functionally in Kotlin. ",
     "KotlinPreferences": "Kotlin Android Library, that makes preference usage simple and fun.",
     "Nootro": "Startup creating and selling brain improvement supplement.",
-    "ActivityStarter": "Android Library that provide simpler way to start the Activities with multiple arguments."
+    "ActivityStarter": "Android Library that provides simpler way to start the Activities with multiple arguments."
   },
   "career":{
     "my_career": "My Career",
@@ -64,5 +64,4 @@
     "link": "Link",
     "view": "views"
   }
-
 }
