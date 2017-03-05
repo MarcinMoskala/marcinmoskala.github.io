@@ -18,7 +18,7 @@ permalink: /
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right" id="i18_navbar">
-                {% for section in site.sections limit: 5 %}
+                {% for section in site.sections %}
                     <li>
                       <a class="page-scroll" href="#{{ section.id }}">
                         <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
@@ -85,3 +85,13 @@ permalink: /
     {% include sections/{{section.tpl}} %}
   </section>
 {% endfor %}
+
+<section class="features contact" style="margin-top: 0px;">
+    <div class="container" id="i18_link">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                <strong>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}</strong></p>
+            </div>
+        </div>
+    </div>
+</section>
