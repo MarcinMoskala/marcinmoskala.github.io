@@ -15,6 +15,3 @@
 
 - name: Python
   percentage: 30
-
-- name: Spark
-  percentage: 20

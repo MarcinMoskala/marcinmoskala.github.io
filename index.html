@@ -18,13 +18,18 @@ permalink: /
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right" id="i18_navbar">
-                {% for section in site.sections %}
+                {% for section in site.sections limit: 5 %}
                     <li>
                       <a class="page-scroll" href="#{{ section.id }}">
                         <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
                       </a>
                     </li>
                 {% endfor %}
+                    <li>
+                      <a class="page-scroll" href="/blog/">
+                        <span data-i18n="nav.blog">Blog</span>
+                      </a>
+                    </li>
 
                 {% for language in site.languages %}
                   <li>
@@ -50,7 +55,7 @@ permalink: /
                 </div>
                 <div class="carousel-image wow zoomIn">
                     <!-- <img src="static/img/landing/laptop.png" alt="laptop"/> -->
-                </div>
+                </div> 
             </div>
             <!-- Set background for slide in css -->
             <div class="header-back one"></div>

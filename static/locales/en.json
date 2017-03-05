@@ -57,11 +57,8 @@
     "kotlinarticle_date": "8.2016",
     "kotlinarticle_job": ""
   },
-  "blog":{
-    "my_blog": "My Blog"
-  },
-  "link":{
-    "link": "Link",
-    "view": "views"
+  "consultation":{
+    "consultation_offer": "You need consultation?",
+    "consultation_button": "Hire me"
   }
 }
