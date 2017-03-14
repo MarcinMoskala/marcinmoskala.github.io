@@ -1,4 +1,19 @@
 - name:
+    detail: MVC, MVP, MVVM. What are they?
+    i18n: mv
+  desc:
+    detail: 
+    i18n: mv_des
+  date:
+    detail: 
+    i18n: mv_date
+  job:
+    detail: 
+    i18n: mv_job
+  icon: fa-commenting-o
+  link: http://www.warszawskiedniinformatyki.pl
+
+- name:
     detail: Article "ReactiveX - reactive programming in nearly any language"
     i18n: reactivex
   desc:
@@ -12,6 +27,9 @@
     i18n: reactivex_job
   icon: fa-newspaper-o
   link: /static/files/MMReactiveX.pdf
+  reachDescription: ~1000 magazine subscribers
+  reach: 2500
+  personalReach: 100
 
 - name:
     detail: 'Article "Kotlin: Future of Java?"'
@@ -27,3 +45,6 @@
     i18n: kotlinarticle_job
   icon: fa-newspaper-o
   link: /static/files/MMKotlin.pdf
+  reachDescription: ~1000 magazine subscribers
+  reach: 2500
+  personalReach: 100

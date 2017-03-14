@@ -54,7 +54,11 @@
     "kotlinarticle": "Artykuł 'Język Kotlin – przyszłość Javy?'",
     "kotlinarticle_des": "Magazyn Programista - największy programistyczny magazyn w Polsce",
     "kotlinarticle_date": "Wydane 8.2016",
-    "kotlinarticle_job": ""
+    "kotlinarticle_job": "",
+    "mv": "Szkoły: MVC, MVP, MVVM. Czym się jednak różnią? Jakie mają silne i mocne strony?",
+    "mv_des": "Warszawskie Dni Informatyki - największa konferencja programistyczna w Polsce",
+    "mv_date": "29.3.2017 12.10-13.10",
+    "mv_job": ""
   },
   "consultation":{
     "consultation_offer": "Potrzebujesz konsultacji?",
