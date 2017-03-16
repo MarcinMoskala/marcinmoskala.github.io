@@ -8,7 +8,7 @@
     "skills": "Umiejętności",
     "projects": "Projekty",
     "career": "Kariera",
-    "consulting": "Doradztwo"
+    "consulting": "Kontakt"
   },
   "about_me":{
     "about_me": "O mnie",
@@ -61,8 +61,8 @@
     "mv_job": ""
   },
   "consultation":{
-    "consultation_offer": "Potrzebujesz konsultacji?",
-    "consultation_button": "Wynajmnij mnie"
+    "consultation_offer": "Chcesz się skontaktować?",
+    "consultation_button": "Napisz do mnie"
   },
   "link":{
     "link": "Link",

@@ -8,7 +8,7 @@
     "skills": "Skills",
     "projects": "Projects",
     "career": "Career",
-    "consulting": "Consulting"  
+    "consulting": "Contact"  
   },
   "about_me":{
     "about_me": "About Me",
@@ -61,7 +61,7 @@
     "mv_job": ""
   },
   "consultation":{
-    "consultation_offer": "You need consultation?",
-    "consultation_button": "Hire me"
+    "consultation_offer": "Need a contact?",
+    "consultation_button": "Email me"
   }
 }

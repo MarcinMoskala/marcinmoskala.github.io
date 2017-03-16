@@ -53,7 +53,7 @@ sections:
 
   - id: 'consulting'
     i18n: 'nav.consulting'
-    name: 'Consulting'
+    name: 'Contact'
     tpl: 'consulting.html'
     css: 'testimonials navy-section'
 
