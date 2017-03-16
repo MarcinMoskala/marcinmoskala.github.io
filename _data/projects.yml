@@ -16,6 +16,12 @@
   img: 'static/img/landing/github.png'
   desc: ""
 
+- name: 'Nootro'
+  i18n: 'Nootro'
+  url: 'http://nootro.pl/'
+  img: 'static/img/landing/nootro.png'
+  desc: ""
+
 - name: 'KotlinPreferences'
   i18n: 'KotlinPreferences'
   url: 'https://github.com/MarcinMoskala/KotlinPreferences'
@@ -28,10 +34,10 @@
   img: 'static/img/landing/github.png'
   desc: ""
 
-- name: 'Nootro'
-  i18n: 'Nootro'
-  url: 'http://nootro.pl/'
-  img: 'static/img/landing/nootro.png'
+- name: 'Stack Tester'
+  i18n: 'StackTester'
+  url: 'https://github.com/MarcinMoskala/StackTester'
+  img: 'static/img/landing/st.png'
   desc: ""
 
 - name: 'Kotlin Wonders'
