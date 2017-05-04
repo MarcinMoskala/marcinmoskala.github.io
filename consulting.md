@@ -1,7 +1,6 @@
 ---
 title:  "Consulting"
-date:   2017-02-19
-desc: "This is mu byckett list for next few years."
+layout: page
 ---
 
 #### Consulting
