@@ -13,7 +13,7 @@ icon: fa-mobile
 
 I was surprised how easy to use Firebase is. I wanted to test its abilities like login, a database with authentication, hosting and notifications.  So I invented a project that would use more them all. The idea was simple: User starts app and login using Google Authentication. If he lost his phone then he just needs to go to findmyphone.fun website, login into the same account and then click "FindMyPhone" so start alarm even if the phone is muted. It took me 2 days to write it. 
 
-{% youtube qWi_ElqcooI %}
+{% include youtubePlayer.html id=qWi_ElqcooI %}
 
 App was released and can be found on [google play](https://play.google.com/store/apps/details?id=com.marcinmoskala.findmyphone).
 
