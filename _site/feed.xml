@@ -5,8 +5,8 @@
     <description>The web page of Marcin Moskala</description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 05 May 2017 09:51:45 +0200</pubDate>
-    <lastBuildDate>Fri, 05 May 2017 09:51:45 +0200</lastBuildDate>
+    <pubDate>Fri, 05 May 2017 10:08:02 +0200</pubDate>
+    <lastBuildDate>Fri, 05 May 2017 10:08:02 +0200</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -208,9 +208,6 @@ It would be quite a problem to define all of this without any support. But using
 &lt;div style=&quot;width: 50%; margin: 0 auto;&quot;&gt;
     &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/qWi_ElqcooI&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt;
 &lt;/div&gt;
-&lt;blockquote&gt;
-
-&lt;/blockquote&gt;
 
 &lt;p&gt;App was released and can be found on &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.marcinmoskala.findmyphone&quot;&gt;google play&lt;/a&gt;.&lt;/p&gt;
 
@@ -219,6 +216,8 @@ It would be quite a problem to define all of this without any support. But using
 
 &lt;p&gt;It is written in Kotlin. The hardest part was Google Authentication part. It all can be found &lt;a href=&quot;https://github.com/MarcinMoskala/FindMyPhone/blob/master/app/src/main/java/com/marcinmoskala/findmyphone/presentation/main/GoogleLoginController.kt&quot;&gt;here&lt;/a&gt;. This authentication is pretty complex comparing to Facebook or VK login. I was doing it in the past without Firebase and I remember it as a big pain. But this time it took about 15 minutes to make it work thanks to Firebase support. Firebase project created in 3 clicks, JSON and Gradle plugin with all data added automatically.  Still pretty magical, which I don’t really like, but it is 
 working.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/static/img/blog/firebase_support.PNG&quot; alt=&quot;Firebase support&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Notifications also were simple with Firebase. I just needed to define service and that’s it. There is magic there I don’t like: If you define notification fields in sent notification and app is in the background, then it is shown as notification no matter what service is saying. Not only wired to me, but also pretty insecure. If somebody would steal the Token, then he could be able to send whatever notification he likes. Again: magic but it is working in no time.&lt;/p&gt;
 
