@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+	
+	    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <meta content="How I made FindMyPhone in 2 days using Firebase." name="description">
+  
+  
+    <meta name="keywords" content="Android, Kotlin, Firebase">
+  
+  <meta name="author" content="Marcin Moskala">
+
+  <title>
+    
+        Marcin Moskala|FindMyPhone in 2 days?
+    
+  </title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="/static/img/marcin.ico">
+
+  <!-- Third-party CSS -->
+  <link href="/bower_components/normalize-css/normalize.min.css" rel="stylesheet">
+  <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/bower_components/animate.css/animate.min.css" rel="stylesheet">
+  <link href="/bower_components/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/static/font-mfizz/font-mfizz.css" rel="stylesheet">
+  <!-- <link href="/bower_components/toastr/toastr.min.css" rel="stylesheet"> -->
+  <link href="/bower_components/jquery.gritter/css/jquery.gritter.css" rel="stylesheet">
+  <link rel="stylesheet" href="/search/css/cb-search.css">
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/style.min.css" rel="stylesheet">
+  <link href="/static/css/pygments.css" rel="stylesheet">
+
+  <!-- Scripts -->
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/search/js/bootstrap3-typeahead.min.js"></script>
+
+  <!-- cb-search -->
+  <script src="/search/js/cb-search.js"></script>
+  <script>
+    $(function(){
+        $("pre").css('display','block');
+    });
+  </script>
+  <!-- Mainly scripts -->
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/bower_components/metisMenu/dist/metisMenu.min.js"></script>
+  <script src="/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+
+  <!-- Peity -->
+  <script src="/bower_components/peity/jquery.peity.min.js"></script>
+
+  <script src="/bower_components/PACE/pace.min.js"></script>
+  <script src="/bower_components/wow/dist/wow.min.js"></script>
+  <!-- Custom and plugin javascript -->
+  <script src="/static/js/inspinia.js"></script>
+  <script src="/static/js/yaml.js"></script>
+
+  <!-- Rickshaw -->
+  <script src="/bower_components/rickshaw/vendor/d3.v3.js"></script>
+  <script src="/bower_components/rickshaw/rickshaw.min.js"></script>
+
+
+  <!-- jPages -->
+  <script src="/static/js/jPages.js"></script>
+  <script src="/static/js/js.js"></script>
+  <script id="dsq-count-scr" src="//jalpc.disqus.com/count.js" async></script>
+  <script type="text/javascript">
+        $(function(){
+          /* initiate the plugin */
+          $("div.pag-holder").jPages({
+              containerID  : "pag-itemContainer",
+              perPage      : 5,  /* num of items per page */
+              startPage    : 1,
+              startRange   : 1,
+              midRange     : 3,
+              endRange     : 1
+          });
+      });
+  </script>
+</head>
+
+	
+
+
+<body id="page-top" class="landing-page">
+
+    <div class="wrapper wrapper-content  animated fadeInRight article">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="ibox">
+                <div class="ibox-content">
+                    <div class="pull-right">
+                    	
+                        	<button class="btn btn-white btn-xs" type="button">Android</button>
+                        
+                        	<button class="btn btn-white btn-xs" type="button">Kotlin</button>
+                        
+                    </div>
+                    <div class="text-center article-title">
+                    <span class="text-muted"><i class="fa fa-clock-o"></i> 4 May 2017</span>
+                        <h1>
+                            FindMyPhone in 2 days?
+                        </h1>
+                    </div>
+                    	<h4 id="findmyphone-in-2-days">FindMyPhone in 2 days?</h4>
+
+<p>I was surprised how easy to use Firebase is. I wanted to test its abilities like login, a database with authentication, hosting and notifications.  So I invented a project that would use more them all. The idea was simple: User starts app and login using Google Authentication. If he lost his phone then he just needs to go to findmyphone.fun website, login into the same account and then click “FindMyPhone” so start alarm even if the phone is muted. It took me 2 days to write it.</p>
+
+<div class="video"><figure><iframe width="640" height="480" src="//www.youtube.com/embed/qWi_ElqcooI" frameborder="0" allowfullscreen=""></iframe></figure></div>
+
+<p>App was released and can be found on <a href="https://play.google.com/store/apps/details?id=com.marcinmoskala.findmyphone">google play</a>.</p>
+
+<p>Code od Android application can be found here: 
+<a href="https://github.com/MarcinMoskala/FindMyPhone">https://github.com/MarcinMoskala/FindMyPhone</a></p>
+
+<p>It is written in Kotlin. The hardest part was Google Authentication part. It all can be found <a href="https://github.com/MarcinMoskala/FindMyPhone/blob/master/app/src/main/java/com/marcinmoskala/findmyphone/presentation/main/GoogleLoginController.kt">here</a>. This authentication is pretty complex comparing to Facebook or VK login. I was doing it in the past without Firebase and I remember it as a big pain. But this time it took about 15 minutes to make it work thanks to Firebase support. Firebase project created in 3 clicks, JSON and Gradle plugin with all data added automatically.  Still pretty magical, which I don’t really like, but it is 
+working.</p>
+
+<p>Notifications also were simple with Firebase. I just needed to define service and that’s it. There is magic there I don’t like: If you define notification fields in sent notification and app is in the background, then it is shown as notification no matter what service is saying. Not only wired to me, but also pretty insecure. If somebody would steal the Token, then he could be able to send whatever notification he likes. Again: magic but it is working in no time.</p>
+
+<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">RefreshTokenService</span> <span class="p">:</span> <span class="n">FirebaseInstanceIdService</span><span class="p">()</span> <span class="p">{</span>
+
+    <span class="k">override</span> <span class="k">fun</span> <span class="nf">onTokenRefresh</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">val</span> <span class="py">refreshedToken</span> <span class="p">=</span> <span class="n">FirebaseInstanceId</span><span class="p">.</span><span class="n">getInstance</span><span class="p">().</span><span class="n">token</span> <span class="o">?:</span> <span class="k">return</span>
+        <span class="n">saveToken</span><span class="p">(</span><span class="n">refreshedToken</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>The database from Android perspective is also really simple. Firebase database looks like a big map from String to String or another map. Sound scary for the bigger project, but perfect for small projects made for fun. The tricky part is how to secure it. The easiest way is to identify used by his UID and allow read and write only to branch with that UID:</p>
+
+<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="p">{</span>
+  <span class="s">"rules"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s">"$uid"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s">".write"</span><span class="p">:</span> <span class="s">"$uid === auth.uid"</span><span class="p">,</span>
+      <span class="s">".read"</span><span class="p">:</span> <span class="s">"$uid === auth.uid"</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>Here is the code used to save token.:</p>
+
+<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="n">FirebaseDatabase</span>
+        <span class="p">.</span><span class="n">getInstance</span><span class="p">()</span>
+        <span class="p">.</span><span class="n">getReference</span><span class="p">(</span><span class="n">uid</span><span class="p">)</span>
+        <span class="p">.</span><span class="n">setValue</span><span class="p">(</span><span class="n">token</span><span class="p">)</span> 
+</code></pre>
+</div>
+
+<p>It is just setting branch to one equal to user UID (getReference(uid)) and then setting it’s value to token (setValue(token)).</p>
+
+<p>This are most tricky parts on the Android side. Time to make some hosting. Again: few clicks and it is alive. To make files locally all I needed is:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>firebase init
+</code></pre>
+</div>
+
+<p>then I can make changes and deploy it on</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>firebase deploy
+</code></pre>
+</div>
+
+<p>or run locally by</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>firebase serve
+</code></pre>
+</div>
+
+<p>Making Google Authentication is not so simple, but there are libraries that are making it easy. I used firebaseui. It took few hours to make it work, but when I did then the project was nearly ready. Notification sending is pretty easy because it is only one request to Google. Although I don’t like lack of support for that in all these firebase libraries. And weak documentation. Finally, I made it work in 2 days. Like in hackathons, but alone.</p>
+
+<p>As a conclusion, I feel that Firebase is designed to be perfect tools for Hackathons. It is simple and fast. Perfect for small projects. Really magical. I would be really careful before using it in an app designed for millions of users.</p>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                                <h5 style="display: inline;">Tags:</h5>
+                                
+                                    <button class="btn btn-white btn-xs" type="button">Firebase</button>
+                                
+                                    <button class="btn btn-white btn-xs" type="button">Kotlin</button>
+                                
+                                    <button class="btn btn-white btn-xs" type="button">Android</button>
+                                
+                        </div>
+                    </div>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+	
+	    <script src="/static/js/scroll.js"></script>
+
+<!-- Baidu analytics -->
+
+
+<!-- Google analytics -->
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-92159206-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+
+
+  <script type="text/javascript">
+    var disqusShortName = "marcinmoskala";
+
+    var disqusPublicKey = "tj2MPaNlHMONwTH5bGDNSXyaBpW7q282MeUzh5CwcjJerNhK8Kxk3aWo7IckzTX7";
+
+    var urlArray = [];
+    $('.disqus-comment-count').each(function () {
+      var url = $(this).attr('data-disqus-url');
+      urlArray.push('link:' + url);
+    });
+    $.ajax({
+      type: 'GET',
+      url: "https://disqus.com/api/3.0/threads/set.jsonp",
+      data: { api_key: disqusPublicKey, forum : disqusShortName, thread : urlArray },
+      cache: false,
+      dataType: "jsonp",
+      success: function (result) {
+        for (var i in result.response) {
+          var count = result.response[i].posts;
+          if ( count ) {
+            $('.disqus-comment-count[data-disqus-url="' + result.response[i].link + '"]').html(count);
+          }
+        }
+      }
+    });
+</script>
+
+
+
+
+<script async src="/static/js/count_page.js"></script>
+
+	
+
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+	
+	    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <meta content="Idea and purpose behind KotlinAndroidViewBindings." name="description">
+  
+  
+    <meta name="keywords" content="Android, Kotlin">
+  
+  <meta name="author" content="Marcin Moskala">
+
+  <title>
+    
+        Marcin Moskala|Still MVP or already MVVM?
+    
+  </title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="/static/img/marcin.ico">
+
+  <!-- Third-party CSS -->
+  <link href="/bower_components/normalize-css/normalize.min.css" rel="stylesheet">
+  <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/bower_components/animate.css/animate.min.css" rel="stylesheet">
+  <link href="/bower_components/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/static/font-mfizz/font-mfizz.css" rel="stylesheet">
+  <!-- <link href="/bower_components/toastr/toastr.min.css" rel="stylesheet"> -->
+  <link href="/bower_components/jquery.gritter/css/jquery.gritter.css" rel="stylesheet">
+  <link rel="stylesheet" href="/search/css/cb-search.css">
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/style.min.css" rel="stylesheet">
+  <link href="/static/css/pygments.css" rel="stylesheet">
+
+  <!-- Scripts -->
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/search/js/bootstrap3-typeahead.min.js"></script>
+
+  <!-- cb-search -->
+  <script src="/search/js/cb-search.js"></script>
+  <script>
+    $(function(){
+        $("pre").css('display','block');
+    });
+  </script>
+  <!-- Mainly scripts -->
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/bower_components/metisMenu/dist/metisMenu.min.js"></script>
+  <script src="/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+
+  <!-- Peity -->
+  <script src="/bower_components/peity/jquery.peity.min.js"></script>
+
+  <script src="/bower_components/PACE/pace.min.js"></script>
+  <script src="/bower_components/wow/dist/wow.min.js"></script>
+  <!-- Custom and plugin javascript -->
+  <script src="/static/js/inspinia.js"></script>
+  <script src="/static/js/yaml.js"></script>
+
+  <!-- Rickshaw -->
+  <script src="/bower_components/rickshaw/vendor/d3.v3.js"></script>
+  <script src="/bower_components/rickshaw/rickshaw.min.js"></script>
+
+
+  <!-- jPages -->
+  <script src="/static/js/jPages.js"></script>
+  <script src="/static/js/js.js"></script>
+  <script id="dsq-count-scr" src="//jalpc.disqus.com/count.js" async></script>
+  <script type="text/javascript">
+        $(function(){
+          /* initiate the plugin */
+          $("div.pag-holder").jPages({
+              containerID  : "pag-itemContainer",
+              perPage      : 5,  /* num of items per page */
+              startPage    : 1,
+              startRange   : 1,
+              midRange     : 3,
+              endRange     : 1
+          });
+      });
+  </script>
+</head>
+
+	
+
+
+<body id="page-top" class="landing-page">
+
+    <div class="wrapper wrapper-content  animated fadeInRight article">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="ibox">
+                <div class="ibox-content">
+                    <div class="pull-right">
+                    	
+                        	<button class="btn btn-white btn-xs" type="button">Android</button>
+                        
+                        	<button class="btn btn-white btn-xs" type="button">Kotlin</button>
+                        
+                    </div>
+                    <div class="text-center article-title">
+                    <span class="text-muted"><i class="fa fa-clock-o"></i> 5 May 2017</span>
+                        <h1>
+                            Still MVP or already MVVM?
+                        </h1>
+                    </div>
+                    	<h4 id="still-mvp-or-already-mvvm">Still MVP or already MVVM?</h4>
+
+<p>Everyone who applied clean MVP in the Android project knows that it is not so simple. 
+With all the advantages, one of the biggest problem is the role of Activity. 
+It is not unit-testable and it should not hold logic. But also most os view is located on XML.
+As the result, clean guidelines are saying that activity should act like a layer between which is 
+just taking simple types (Int, String) or bunch of types packed in some mapper that contains basic types or other mapper 
+(like in <a href="https://github.com/android10/Android-CleanArchitecture/blob/master/presentation/src/main/java/com/fernandocejas/android10/sample/presentation/mapper/UserModelDataMapper.java">Android-CleanArchitecture</a>)
+The result is that Activity is often full of 3-line methods that are just setting something on layout or checking some properties:</p>
+
+<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="k">override</span> <span class="k">fun</span> <span class="nf">getEmail</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">emailView</span><span class="p">.</span><span class="n">text</span><span class="p">.</span><span class="n">toString</span><span class="p">()</span>
+<span class="p">}</span>
+
+<span class="k">override</span> <span class="k">fun</span> <span class="nf">setEmail</span><span class="p">(</span><span class="n">email</span><span class="p">:</span> <span class="n">String</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">emailView</span><span class="p">.</span><span class="n">text</span> <span class="p">=</span> <span class="n">email</span>
+<span class="p">}</span>
+
+<span class="k">override</span> <span class="k">fun</span> <span class="nf">getEail</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">passwordView</span><span class="p">.</span><span class="n">text</span><span class="p">.</span><span class="n">toString</span><span class="p">()</span>
+<span class="p">}</span>
+
+<span class="k">override</span> <span class="k">fun</span> <span class="nf">setPassword</span><span class="p">(</span><span class="n">password</span><span class="p">:</span> <span class="n">String</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">passwordView</span><span class="p">.</span><span class="n">text</span> <span class="p">=</span> <span class="n">name</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>This is pretty problematic because:</p>
+<ul>
+  <li>Someone needs to write it all</li>
+  <li>Maintenance of such an amount of code is problematic</li>
+  <li>Boilerplate generates information noise</li>
+  <li>It makes classes looks big and complex while they are doing nearly nothing</li>
+</ul>
+
+<p>Solution to this MVP problem was first proposed implemented in C# by Microsoft, who made direct bindings from View 
+to Presenter (called now ViewModel). This solution is minimalistic and elegant, but sadly still poorly supported in Android.
+Lot’s of passionates were really excited when Android added support for ViewBindings. It was some time ago and it is still weak. 
+Not only community are criticising that, but also I tried it myself and I was also pretty disappointed.</p>
+
+<p>But there is no need for magic. While Kotlin introduced Property Delegation, view bindings can be simply implemented
+without any annotation processing or any magic proxy. And this idea stands behind KotlinAndroidViewBindings library.</p>
+
+<p>TextView is element of view, but from the presenter perspective it is just field that contains some text. 
+This text can be ether written or …</p>
+
+<p>Less talking, more code. I did as an example simple login application. It is showing different errors and 
+requesting focus if field is incorrect according to validation. It is also showing loading when using repository.
+This gives us lot’s of possibilities. View definition is following:</p>
+
+<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="kd">interface</span> <span class="nc">LoginView</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="py">progressVisible</span><span class="p">:</span> <span class="n">Boolean</span>
+    <span class="kd">var</span> <span class="py">email</span><span class="p">:</span> <span class="n">String</span>
+    <span class="kd">val</span> <span class="py">emailRequestFocus</span><span class="p">:</span> <span class="p">()-&gt;</span><span class="n">Unit</span>
+    <span class="kd">var</span> <span class="py">emailErrorId</span><span class="p">:</span> <span class="n">Int</span><span class="p">?</span>
+    <span class="kd">var</span> <span class="py">password</span><span class="p">:</span> <span class="n">String</span>
+    <span class="kd">val</span> <span class="py">passwordRequestFocus</span><span class="p">:</span> <span class="p">()-&gt;</span><span class="n">Unit</span>
+    <span class="kd">var</span> <span class="py">passwordErrorId</span><span class="p">:</span> <span class="n">Int</span><span class="p">?</span>
+    <span class="kd">var</span> <span class="py">loginButtonClickedCallback</span><span class="p">:</span> <span class="p">()-&gt;</span><span class="n">Unit</span>
+    <span class="k">fun</span> <span class="nf">informAboutLoginSuccess</span><span class="p">(</span><span class="n">token</span><span class="p">:</span> <span class="n">String</span><span class="p">)</span>
+    <span class="k">fun</span> <span class="nf">informAboutError</span><span class="p">(</span><span class="n">error</span><span class="p">:</span> <span class="n">Throwable</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>Pretty big, but note that these are minimal capabilities. We just defined pretty complex view 
+(we can split it into multiple presenters or views with presenters, but I decided to skip it to keep example more typical).
+It would be quite a problem to define all of this without any support. But using KotlinAndroidViewBinding Activity is just:</p>
+<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">LoginActivity</span> <span class="p">:</span> <span class="n">AppCompatActivity</span><span class="p">(),</span> <span class="n">LoginView</span> <span class="p">{</span>
+
+    <span class="k">override</span> <span class="kd">var</span> <span class="py">progressVisible</span> <span class="k">by</span> <span class="n">bindToLoading</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="n">id</span><span class="p">.</span><span class="n">progressView</span><span class="p">,</span> <span class="n">R</span><span class="p">.</span><span class="n">id</span><span class="p">.</span><span class="n">loginFormView</span><span class="p">)</span>
+
+    <span class="k">override</span> <span class="kd">var</span> <span class="py">email</span> <span class="k">by</span> <span class="n">bindToTextView</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="n">id</span><span class="p">.</span><span class="n">emailView</span><span class="p">)</span>
+    <span class="k">override</span> <span class="kd">val</span> <span class="py">emailRequestFocus</span> <span class="k">by</span> <span class="n">bindToRequestFocus</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="n">id</span><span class="p">.</span><span class="n">emailView</span><span class="p">)</span>
+    <span class="k">override</span> <span class="kd">var</span> <span class="py">emailErrorId</span> <span class="k">by</span> <span class="n">bindToErrorId</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="n">id</span><span class="p">.</span><span class="n">emailView</span><span class="p">)</span>
+
+    <span class="k">override</span> <span class="kd">var</span> <span class="py">password</span> <span class="k">by</span> <span class="n">bindToTextView</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="n">id</span><span class="p">.</span><span class="n">passwordView</span><span class="p">)</span>
+    <span class="k">override</span> <span class="kd">val</span> <span class="py">passwordRequestFocus</span> <span class="k">by</span> <span class="n">bindToRequestFocus</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="n">id</span><span class="p">.</span><span class="n">passwordView</span><span class="p">)</span>
+    <span class="k">override</span> <span class="kd">var</span> <span class="py">passwordErrorId</span> <span class="k">by</span> <span class="n">bindToErrorId</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="n">id</span><span class="p">.</span><span class="n">passwordView</span><span class="p">)</span>
+
+    <span class="k">override</span> <span class="kd">var</span> <span class="py">loginButtonClickedCallback</span> <span class="k">by</span> <span class="n">bindToClick</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="n">id</span><span class="p">.</span><span class="n">loginButton</span><span class="p">)</span>
+
+    <span class="kd">val</span> <span class="py">presenter</span> <span class="k">by</span> <span class="n">lazy</span> <span class="p">{</span> <span class="n">LoginPresenter</span><span class="p">(</span><span class="k">this</span><span class="p">)</span> <span class="p">}</span>
+
+    <span class="k">override</span> <span class="k">fun</span> <span class="nf">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">:</span> <span class="n">Bundle</span><span class="p">?)</span> <span class="p">{</span>
+        <span class="k">super</span><span class="p">.</span><span class="n">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">)</span>
+        <span class="n">setContentView</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="n">layout</span><span class="p">.</span><span class="n">activity_login</span><span class="p">)</span>
+        <span class="n">presenter</span><span class="p">.</span><span class="n">onCreate</span><span class="p">()</span>
+    <span class="p">}</span>
+
+    <span class="k">override</span> <span class="k">fun</span> <span class="nf">onDestroy</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">super</span><span class="p">.</span><span class="n">onDestroy</span><span class="p">()</span>
+        <span class="n">presenter</span><span class="p">.</span><span class="n">onDestroy</span><span class="p">()</span>
+    <span class="p">}</span>
+
+    <span class="k">override</span> <span class="k">fun</span> <span class="nf">informAboutLoginSuccess</span><span class="p">(</span><span class="n">token</span><span class="p">:</span> <span class="n">String</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">toast</span><span class="p">(</span><span class="s">"Login succeed. Token: $token"</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="k">override</span> <span class="k">fun</span> <span class="nf">informAboutError</span><span class="p">(</span><span class="n">error</span><span class="p">:</span> <span class="n">Throwable</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">toast</span><span class="p">(</span><span class="s">"Error: "</span> <span class="p">+</span> <span class="n">error</span><span class="p">.</span><span class="n">message</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>Presenter can use</p>
+
+<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">LoginPresenter</span><span class="p">(</span><span class="kd">val</span> <span class="py">view</span><span class="p">:</span> <span class="n">LoginView</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="kd">val</span> <span class="py">loginUseCase</span> <span class="k">by</span> <span class="n">lazy</span> <span class="p">{</span> <span class="n">LoginUseCase</span><span class="p">()</span> <span class="p">}</span>
+    <span class="kd">val</span> <span class="py">validateLoginFieldsUseCase</span> <span class="k">by</span> <span class="n">lazy</span> <span class="p">{</span> <span class="n">ValidateLoginFieldsUseCase</span><span class="p">()</span> <span class="p">}</span>
+    <span class="kd">var</span> <span class="py">subscriptions</span><span class="p">:</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">Subscription</span><span class="p">&gt;</span> <span class="p">=</span> <span class="n">emptyList</span><span class="p">()</span>
+
+    <span class="k">fun</span> <span class="nf">onCreate</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">view</span><span class="p">.</span><span class="n">loginButtonClickedCallback</span> <span class="p">=</span> <span class="p">{</span> <span class="n">attemptLogin</span><span class="p">()</span> <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">fun</span> <span class="nf">onDestroy</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">subscriptions</span><span class="p">.</span><span class="n">forEach</span> <span class="p">{</span> <span class="n">it</span><span class="p">.</span><span class="n">unsubscribe</span><span class="p">()</span> <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">fun</span> <span class="nf">attemptLogin</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">val</span> <span class="err">(</span><span class="py">email</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span> <span class="p">=</span> <span class="n">view</span><span class="p">.</span><span class="n">email</span> <span class="n">to</span> <span class="n">view</span><span class="p">.</span><span class="n">password</span>
+        <span class="n">subscriptions</span> <span class="p">+=</span> <span class="n">validateLoginFieldsUseCase</span><span class="p">.</span><span class="n">validateLogin</span><span class="p">(</span><span class="n">email</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span>
+                <span class="p">.</span><span class="n">smartSubscribe</span><span class="p">(</span>
+                        <span class="n">onSuccess</span> <span class="p">=</span> <span class="p">{</span> <span class="p">(</span><span class="n">emailErrorId</span><span class="p">,</span> <span class="n">passwordErrorId</span><span class="p">)</span> <span class="p">-&gt;</span>
+                            <span class="n">view</span><span class="p">.</span><span class="n">passwordErrorId</span> <span class="p">=</span> <span class="n">passwordErrorId</span>
+                            <span class="n">view</span><span class="p">.</span><span class="n">emailErrorId</span> <span class="p">=</span> <span class="n">emailErrorId</span>
+                            <span class="k">when</span> <span class="p">{</span>
+                                <span class="n">emailErrorId</span> <span class="p">!=</span> <span class="k">null</span> <span class="p">-&gt;</span> <span class="n">view</span><span class="p">.</span><span class="n">emailRequestFocus</span><span class="p">()</span>
+                                <span class="n">passwordErrorId</span> <span class="p">!=</span> <span class="k">null</span> <span class="p">-&gt;</span> <span class="n">view</span><span class="p">.</span><span class="n">passwordRequestFocus</span><span class="p">()</span>
+                                <span class="k">else</span> <span class="p">-&gt;</span> <span class="n">sendLoginRequest</span><span class="p">(</span><span class="n">email</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span>
+                            <span class="p">}</span>
+                        <span class="p">},</span>
+                        <span class="n">onError</span> <span class="p">=</span> <span class="n">view</span><span class="o">::</span><span class="n">informAboutError</span>
+                <span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">fun</span> <span class="nf">sendLoginRequest</span><span class="p">(</span><span class="n">email</span><span class="p">:</span> <span class="n">String</span><span class="p">,</span> <span class="n">password</span><span class="p">:</span> <span class="n">String</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">loginUseCase</span><span class="p">.</span><span class="n">sendLoginRequest</span><span class="p">(</span><span class="n">email</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span>
+                <span class="p">.</span><span class="n">applySchedulers</span><span class="p">()</span>
+                <span class="p">.</span><span class="n">smartSubscribe</span><span class="p">(</span>
+                        <span class="n">onStart</span> <span class="p">=</span> <span class="p">{</span> <span class="n">view</span><span class="p">.</span><span class="n">progressVisible</span> <span class="p">=</span> <span class="k">true</span> <span class="p">},</span>
+                        <span class="n">onSuccess</span> <span class="p">=</span> <span class="p">{</span> <span class="p">(</span><span class="n">token</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="n">view</span><span class="p">.</span><span class="n">informAboutLoginSuccess</span><span class="p">(</span><span class="n">token</span><span class="p">)</span> <span class="p">},</span>
+                        <span class="n">onError</span> <span class="p">=</span> <span class="n">view</span><span class="o">::</span><span class="n">informAboutError</span><span class="p">,</span>
+                        <span class="n">onFinish</span> <span class="p">=</span> <span class="p">{</span> <span class="n">view</span><span class="p">.</span><span class="n">progressVisible</span> <span class="p">=</span> <span class="k">false</span> <span class="p">}</span>
+                <span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>And it is all easy to unit-test with mocked View: (full tests <a href="https://github.com/MarcinMoskala/SimpleKotlinMvpBoilerplate/blob/master/app/src/test/java/com/marcinmoskala/simplekotlinmvpboilerplate/LoginPresenterTest.kt">here</a>)</p>
+<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="n">@Test</span>
+<span class="k">fun</span> <span class="nf">checkBothLoginFieldsEmpty</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">mockedView</span> <span class="p">=</span> <span class="n">MockedLoginView</span><span class="p">()</span>
+    <span class="kd">val</span> <span class="py">presenter</span> <span class="p">=</span> <span class="n">LoginPresenter</span><span class="p">(</span><span class="n">mockedView</span><span class="p">)</span>
+    <span class="n">presenter</span><span class="p">.</span><span class="n">onStart</span><span class="p">()</span>
+    <span class="n">mockedView</span><span class="p">.</span><span class="n">loginButtonClickedCallback</span><span class="p">.</span><span class="n">invoke</span><span class="p">()</span>
+    <span class="n">checkVaildity</span><span class="p">(</span><span class="n">mockedView</span><span class="p">,</span>
+            <span class="n">expectedEmailError</span> <span class="p">=</span> <span class="n">R</span><span class="p">.</span><span class="n">string</span><span class="p">.</span><span class="n">error_field_required</span><span class="p">,</span>
+            <span class="n">expectedPasswordError</span> <span class="p">=</span> <span class="n">R</span><span class="p">.</span><span class="n">string</span><span class="p">.</span><span class="n">error_field_required</span>
+    <span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>But what about initial question? Still MVP or already MVVM? Well, I am not sure. Too much philosophy. I prefer programming. And it is definitely useful.</p>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                                <h5 style="display: inline;">Tags:</h5>
+                                
+                                    <button class="btn btn-white btn-xs" type="button">Kotlin</button>
+                                
+                                    <button class="btn btn-white btn-xs" type="button">Android</button>
+                                
+                                    <button class="btn btn-white btn-xs" type="button">KotlinAndroidViewBindings</button>
+                                
+                        </div>
+                    </div>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+	
+	    <script src="/static/js/scroll.js"></script>
+
+<!-- Baidu analytics -->
+
+
+<!-- Google analytics -->
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-92159206-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+
+
+  <script type="text/javascript">
+    var disqusShortName = "marcinmoskala";
+
+    var disqusPublicKey = "tj2MPaNlHMONwTH5bGDNSXyaBpW7q282MeUzh5CwcjJerNhK8Kxk3aWo7IckzTX7";
+
+    var urlArray = [];
+    $('.disqus-comment-count').each(function () {
+      var url = $(this).attr('data-disqus-url');
+      urlArray.push('link:' + url);
+    });
+    $.ajax({
+      type: 'GET',
+      url: "https://disqus.com/api/3.0/threads/set.jsonp",
+      data: { api_key: disqusPublicKey, forum : disqusShortName, thread : urlArray },
+      cache: false,
+      dataType: "jsonp",
+      success: function (result) {
+        for (var i in result.response) {
+          var count = result.response[i].posts;
+          if ( count ) {
+            $('.disqus-comment-count[data-disqus-url="' + result.response[i].link + '"]').html(count);
+          }
+        }
+      }
+    });
+</script>
+
+
+
+
+<script async src="/static/js/count_page.js"></script>
+
+	
+
+</body>
+</html>
