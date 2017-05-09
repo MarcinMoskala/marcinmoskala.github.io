@@ -71,7 +71,7 @@ Lot's of passionates were really excited when Android added support for ViewBind
 I tried it myself and I agree with other opinions from the community that it is still pretty disappointing. 
 
 I feel, that there is no need for magic. While Kotlin introduced Property Delegation, view bindings can be simply implemented
-without any annotation processing or any magic proxy. And this idea stands behind KotlinAndroidViewBindings library. 
+without any annotation processing or any magic proxy. And this idea stands behind [KotlinAndroidViewBindings](https://github.com/MarcinMoskala/KotlinAndroidViewBindings) library. 
 
 Think about it this way: TextView is element of view, but from the presenter perspective, it is just field that contains some text. It is because it is the only important property for Presenter. Unless it also wants to change or read something else. Then it looks at View as text and some other property.
 
@@ -102,12 +102,16 @@ interface MainView {
 }
 ```
 
-It would be problematic to implement all this setters and getters, but with KotlinAndroidViewBindings we can use Property Delegation to make bindings between properties and view element properties as simply as possible:
+It would be problematic to implement all this setters and getters, but with [KotlinAndroidViewBindings](https://github.com/MarcinMoskala/KotlinAndroidViewBindings) we can use Property Delegation to make bindings between properties and view element properties as simply as possible:
 
+```kotlin
 var text by bindToText(R.id.emailView)
 var onTextClicked by bindToRequestFocus(R.id.emailView)
+```
 
-Time to some bigger example. For the need of presentation, I implemented login functionality. It is showing different errors and 
+Time to some bigger example. It's simple example from [KotlinAndroidViewBindings](https://github.com/MarcinMoskala/KotlinAndroidViewBindings), and same similar example in wider context can be found on my [SimpleKotlinMvpBoilerplate](https://github.com/MarcinMoskala/SimpleKotlinMvpBoilerplate). 
+
+For the need of presentation, I implemented login functionality. It is showing different errors and 
 requesting focus if field is incorrect according to validation. It is also showing loading when using repository. All logic is placed on Presenter, which is well unit-tested. View definition is following:
 
 ```kotlin
