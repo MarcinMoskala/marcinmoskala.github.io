@@ -1,3 +1,16 @@
+---
+layout: post
+title:  "Still MVP or already MVVM?"
+date:   2017-05-05
+desc: "Idea and purpose behind KotlinAndroidViewBindings."
+keywords: "Android, Kotlin"
+categories: [Android, Kotlin]
+tags: [Kotlin, Android, KotlinAndroidViewBindings]
+icon: fa-mobile
+---
+
+#### Still MVP or already MVVM?
+
 Everyone who applied clean MVP in the Android project knows, that it is not so simple. MVP is great because it allows us to unit-test presentation logic and separates it from view logic. Remember, that is nearly impossible to test Activity by unit-tests, while Presenter should be designed to allow that. This is why Presenter cannot contain any view elements (like Button, EditText etc.). The Presenter should apply changes on the View by invoking methods that are specified by an interface, which is in standard approach implemented by Activity or mocked by unit tests. Example
 
 ```kotlin
