@@ -44,7 +44,7 @@ Also, clean guidelines are saying, that Activity should not depend on Data Model
 The result is that Activity is often full of 3-line methods, that are just setting something on layout or checking some properties:
 
 ```kotlin
-override fun getEmail() {
+override fun getEmail(): String {
     return emailView.text.toString()
 }
 
@@ -52,7 +52,7 @@ override fun setEmail(email: String) {
     emailView.text = email
 }
 
-override fun getPassword() {
+override fun getPassword(): String {
     return passwordView.text.toString()
 }
 
