@@ -52,7 +52,7 @@ override fun setEmail(email: String) {
     emailView.text = email
 }
 
-override fun getEail() {
+override fun getPassword() {
     return passwordView.text.toString()
 }
 
