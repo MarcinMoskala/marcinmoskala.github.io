@@ -25,6 +25,8 @@ class MainActivity : BaseActivity(), MainView {
     override fun showToast(text: String) {
         toast(text)
     }
+    
+    //...
 }
 ```
 
@@ -222,7 +224,7 @@ And it is all easy to unit-test with mocked View: (full tests [here](https://git
 fun checkBothLoginFieldsEmpty() {
     val mockedView = MockedLoginView()
     val presenter = LoginPresenter(mockedView)
-    presenter.onStart()
+    presenter.onCreate()
     mockedView.loginButtonClickedCallback.invoke()
     checkVaildity(mockedView,
             expectedEmailError = R.string.error_field_required,
