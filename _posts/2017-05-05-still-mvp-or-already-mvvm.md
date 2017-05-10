@@ -226,7 +226,7 @@ fun checkBothLoginFieldsEmpty() {
     val presenter = LoginPresenter(mockedView)
     presenter.onCreate()
     mockedView.loginButtonClickedCallback.invoke()
-    checkVaildity(mockedView,
+    checkValidity(mockedView,
             expectedEmailError = R.string.error_field_required,
             expectedPasswordError = R.string.error_field_required
     )
