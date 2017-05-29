@@ -110,15 +110,39 @@
                     </div>
                     	<h4 id="still-mvp-or-already-mvvm">Still MVP or already MVVM?</h4>
 
-<p>Everyone who applied clean MVP in the Android project knows that it is not so simple. 
-With all the advantages, one of the biggest problem is the role of Activity. 
-It is not unit-testable and it should not hold logic. But also most os view is located on XML.
-As the result, clean guidelines are saying that activity should act like a layer between which is 
-just taking simple types (Int, String) or bunch of types packed in some mapper that contains basic types or other mapper 
-(like in <a href="https://github.com/android10/Android-CleanArchitecture/blob/master/presentation/src/main/java/com/fernandocejas/android10/sample/presentation/mapper/UserModelDataMapper.java">Android-CleanArchitecture</a>)
-The result is that Activity is often full of 3-line methods that are just setting something on layout or checking some properties:</p>
+<p>Everyone who applied clean MVP in the Android project knows, that it is not so simple. MVP is great because it allows us to unit-test presentation logic and separates it from view logic. Remember, that is nearly impossible to test Activity by unit-tests, while Presenter should be designed to allow that. This is why Presenter cannot contain any view elements (like Button, EditText etc.). The Presenter should apply changes on the View by invoking methods that are specified by an interface, which is in standard approach implemented by Activity or mocked by unit tests. Example</p>
 
-<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="k">override</span> <span class="k">fun</span> <span class="nf">getEmail</span><span class="p">()</span> <span class="p">{</span>
+<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="kd">interface</span> <span class="nc">MainView</span><span class="p">:</span> <span class="n">PresenterBaseView</span> <span class="p">{</span>
+    <span class="k">fun</span> <span class="nf">showToast</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="n">String</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">MainActivity</span> <span class="p">:</span> <span class="n">BaseActivity</span><span class="p">(),</span> <span class="n">MainView</span> <span class="p">{</span>
+
+    <span class="k">override</span> <span class="k">fun</span> <span class="nf">showToast</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="n">String</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">toast</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+    <span class="p">}</span>
+    
+    <span class="c1">//...
+</span><span class="p">}</span>
+</code></pre>
+</div>
+
+<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">MainPresenter</span><span class="p">(</span><span class="kd">val</span> <span class="py">view</span><span class="p">:</span> <span class="n">MainView</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="k">fun</span> <span class="nf">onStart</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">view</span><span class="p">.</span><span class="n">showToast</span><span class="p">(</span><span class="s">"I am working"</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>Also, clean guidelines are saying, that Activity should not depend on Data Model, so View methods should have just language basic types (Int, String) or mapper designed to pass bundle of data
+(like in <a href="https://github.com/android10/Android-CleanArchitecture/blob/master/presentation/src/main/java/com/fernandocejas/android10/sample/presentation/mapper/UserModelDataMapper.java">Android-CleanArchitecture</a>)
+The result is that Activity is often full of 3-line methods, that are just setting something on layout or checking some properties:</p>
+
+<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="k">override</span> <span class="k">fun</span> <span class="nf">getEmail</span><span class="p">():</span> <span class="n">String</span> <span class="p">{</span>
     <span class="k">return</span> <span class="n">emailView</span><span class="p">.</span><span class="n">text</span><span class="p">.</span><span class="n">toString</span><span class="p">()</span>
 <span class="p">}</span>
 
@@ -126,7 +150,7 @@ The result is that Activity is often full of 3-line methods that are just settin
     <span class="n">emailView</span><span class="p">.</span><span class="n">text</span> <span class="p">=</span> <span class="n">email</span>
 <span class="p">}</span>
 
-<span class="k">override</span> <span class="k">fun</span> <span class="nf">getEail</span><span class="p">()</span> <span class="p">{</span>
+<span class="k">override</span> <span class="k">fun</span> <span class="nf">getPassword</span><span class="p">():</span> <span class="n">String</span> <span class="p">{</span>
     <span class="k">return</span> <span class="n">passwordView</span><span class="p">.</span><span class="n">text</span><span class="p">.</span><span class="n">toString</span><span class="p">()</span>
 <span class="p">}</span>
 
@@ -136,28 +160,62 @@ The result is that Activity is often full of 3-line methods that are just settin
 </code></pre>
 </div>
 
-<p>This is pretty problematic because:</p>
+<p>This is problematic, because:</p>
 <ul>
   <li>Someone needs to write it all</li>
-  <li>Maintenance of such an amount of code is problematic</li>
+  <li>Maintenance of such an amount of code is problematic. Any change needs a lot of other changes</li>
   <li>Boilerplate generates information noise</li>
   <li>It makes classes looks big and complex while they are doing nearly nothing</li>
 </ul>
 
-<p>Solution to this MVP problem was first proposed implemented in C# by Microsoft, who made direct bindings from View 
-to Presenter (called now ViewModel). This solution is minimalistic and elegant, but sadly still poorly supported in Android.
+<p>Solution to this MVP problem was first implemented in C# by Microsoft, who made direct bindings from View 
+to Presenter (called then ViewModel). This solution is minimalistic and elegant, but sadly still poorly supported in Android.
 Lot’s of passionates were really excited when Android added support for ViewBindings. It was some time ago and it is still weak. 
-Not only community are criticising that, but also I tried it myself and I was also pretty disappointed.</p>
+I tried it myself and I agree with other opinions from the community that it is still pretty disappointing.</p>
 
-<p>But there is no need for magic. While Kotlin introduced Property Delegation, view bindings can be simply implemented
-without any annotation processing or any magic proxy. And this idea stands behind KotlinAndroidViewBindings library.</p>
+<p>I feel, that there is no need for magic. While Kotlin introduced Property Delegation, view bindings can be simply implemented
+without any annotation processing or any magic proxy. And this idea stands behind <a href="https://github.com/MarcinMoskala/KotlinAndroidViewBindings">KotlinAndroidViewBindings</a> library.</p>
 
-<p>TextView is element of view, but from the presenter perspective it is just field that contains some text. 
-This text can be ether written or …</p>
+<p>Think about it this way: TextView is element of view, but from the presenter perspective, it is just field that contains some text. It is because it is the only important property for Presenter. Unless it also wants to change or read something else. Then it looks at View as text and some other property.</p>
 
-<p>Less talking, more code. I did as an example simple login application. It is showing different errors and 
-requesting focus if field is incorrect according to validation. It is also showing loading when using repository.
-This gives us lot’s of possibilities. View definition is following:</p>
+<p>For example, TextView in XML looks following:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;TextView
+    android:id="@+id/registerButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="10dp"
+    android:text="@string/action_go_to_register"
+    android:textColor="@android:color/white" /&gt;
+</code></pre>
+</div>
+
+<p>But from Presenter perspective is looks following:</p>
+<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="kd">interface</span> <span class="nc">MainView</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="py">text</span><span class="p">:</span> <span class="n">String</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>Do we need to set some onClickListener? Then it looks as follow:</p>
+<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="kd">interface</span> <span class="nc">MainView</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="py">text</span><span class="p">:</span> <span class="n">String</span>
+    <span class="kd">var</span> <span class="py">onTextClicked</span><span class="p">:</span> <span class="p">()-&gt;</span><span class="n">Unit</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>It would be problematic to implement all this setters and getters, but with <a href="https://github.com/MarcinMoskala/KotlinAndroidViewBindings">KotlinAndroidViewBindings</a> we can use Property Delegation to make bindings between properties and view element properties as simply as possible:</p>
+
+<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="py">text</span> <span class="k">by</span> <span class="n">bindToText</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="n">id</span><span class="p">.</span><span class="n">emailView</span><span class="p">)</span>
+<span class="kd">var</span> <span class="py">onTextClicked</span> <span class="k">by</span> <span class="n">bindToRequestFocus</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="n">id</span><span class="p">.</span><span class="n">emailView</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>Time to some bigger example. It’s simple example from <a href="https://github.com/MarcinMoskala/KotlinAndroidViewBindings">KotlinAndroidViewBindings</a>, and same similar example in wider context can be found on my <a href="https://github.com/MarcinMoskala/SimpleKotlinMvpBoilerplate">SimpleKotlinMvpBoilerplate</a>.</p>
+
+<p>For the need of presentation, I implemented login functionality. It is showing different errors and 
+requesting focus if field is incorrect according to validation. It is also showing loading when using repository. All logic is placed on Presenter, which is well unit-tested. View definition is following:</p>
 
 <div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="kd">interface</span> <span class="nc">LoginView</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="py">progressVisible</span><span class="p">:</span> <span class="n">Boolean</span>
@@ -174,9 +232,8 @@ This gives us lot’s of possibilities. View definition is following:</p>
 </code></pre>
 </div>
 
-<p>Pretty big, but note that these are minimal capabilities. We just defined pretty complex view 
-(we can split it into multiple presenters or views with presenters, but I decided to skip it to keep example more typical).
-It would be quite a problem to define all of this without any support. But using KotlinAndroidViewBinding Activity is just:</p>
+<p>Pretty big, but note that these are minimal capabilities. We just defined quite a complex functionality (we can split it into multiple presenters or views with presenters, but I decided to skip it to keep example more typical).</p>
+
 <div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">LoginActivity</span> <span class="p">:</span> <span class="n">AppCompatActivity</span><span class="p">(),</span> <span class="n">LoginView</span> <span class="p">{</span>
 
     <span class="k">override</span> <span class="kd">var</span> <span class="py">progressVisible</span> <span class="k">by</span> <span class="n">bindToLoading</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="n">id</span><span class="p">.</span><span class="n">progressView</span><span class="p">,</span> <span class="n">R</span><span class="p">.</span><span class="n">id</span><span class="p">.</span><span class="n">loginFormView</span><span class="p">)</span>
@@ -215,7 +272,7 @@ It would be quite a problem to define all of this without any support. But using
 </code></pre>
 </div>
 
-<p>Presenter can use</p>
+<p>And Presenter:</p>
 
 <div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">LoginPresenter</span><span class="p">(</span><span class="kd">val</span> <span class="py">view</span><span class="p">:</span> <span class="n">LoginView</span><span class="p">)</span> <span class="p">{</span>
 
@@ -267,9 +324,9 @@ It would be quite a problem to define all of this without any support. But using
 <span class="k">fun</span> <span class="nf">checkBothLoginFieldsEmpty</span><span class="p">()</span> <span class="p">{</span>
     <span class="kd">val</span> <span class="py">mockedView</span> <span class="p">=</span> <span class="n">MockedLoginView</span><span class="p">()</span>
     <span class="kd">val</span> <span class="py">presenter</span> <span class="p">=</span> <span class="n">LoginPresenter</span><span class="p">(</span><span class="n">mockedView</span><span class="p">)</span>
-    <span class="n">presenter</span><span class="p">.</span><span class="n">onStart</span><span class="p">()</span>
+    <span class="n">presenter</span><span class="p">.</span><span class="n">onCreate</span><span class="p">()</span>
     <span class="n">mockedView</span><span class="p">.</span><span class="n">loginButtonClickedCallback</span><span class="p">.</span><span class="n">invoke</span><span class="p">()</span>
-    <span class="n">checkVaildity</span><span class="p">(</span><span class="n">mockedView</span><span class="p">,</span>
+    <span class="n">checkValidity</span><span class="p">(</span><span class="n">mockedView</span><span class="p">,</span>
             <span class="n">expectedEmailError</span> <span class="p">=</span> <span class="n">R</span><span class="p">.</span><span class="n">string</span><span class="p">.</span><span class="n">error_field_required</span><span class="p">,</span>
             <span class="n">expectedPasswordError</span> <span class="p">=</span> <span class="n">R</span><span class="p">.</span><span class="n">string</span><span class="p">.</span><span class="n">error_field_required</span>
     <span class="p">)</span>
