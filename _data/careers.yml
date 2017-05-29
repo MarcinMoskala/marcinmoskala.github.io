@@ -1,16 +1,30 @@
 - name:
-    detail: Docplanner
-    i18n: docplanner
+    detail: Gamekit
+    i18n: gamekit
   desc:
     detail: 
-    i18n: docplanner_des
+    i18n: gamekit_des
   date:
     detail: 
-    i18n: docplanner_date
+    i18n: gamekit_date
   job:
     detail: 
-    i18n: docplanner_job
-  icon: fa-stethoscope
+    i18n: gamekit_job
+  icon: fa-gamepad
+
+  - name:
+      detail: Docplanner
+      i18n: docplanner
+    desc:
+      detail:
+      i18n: docplanner_des
+    date:
+      detail:
+      i18n: docplanner_date
+    job:
+      detail:
+      i18n: docplanner_job
+    icon: fa-stethoscope
 
 - name:
     detail: 

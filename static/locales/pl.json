@@ -34,8 +34,12 @@
   },
   "career":{
     "my_career": "Moja kariera",
+    "gamekit": "Gamekit",
+    "gamekit_des": "Główny programista Android tworzący gry i aplikcaje dla Gamekit. ",
+    "gamekit_date": "From 5.2017 till now",
+    "gamekit_job": "Master of Android Development",
     "docplanner": "Znany Lekarz",
-    "docplanner_des": "Głowny Kotlin Android Developer dla Znanego Lekarza - polskiego startup’u tworzącego platformę dla lekarzy i pacjentów.",
+    "docplanner_des": "Głowny programista Android dla ZnanyLekarz (DocPlanner).",
     "docplanner_date": "Od 3.2016 do teraz",
     "docplanner_job": "Master of Android Development",
     "apreel": "Apreel",
