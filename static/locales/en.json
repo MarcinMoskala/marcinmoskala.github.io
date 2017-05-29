@@ -30,7 +30,9 @@
     "PreferenceHolder": "Kotlin Android Library, that makes SharedPreferences usage as simple and fun as possible.",
 
     "StackTester": "Applicaction for testing different stack flags. ",
-    "Nootro": "Startup creating and selling brain improvement supplement."
+    "Nootro": "Startup creating and selling brain improvement supplement.",
+
+    "FindMyPhone": "Simple application used to find muted phone."
   },
   "career":{
     "my_career": "My Career",

@@ -45,3 +45,9 @@
   url: 'https://github.com/MarcinMoskala/StackTester'
   img: 'static/img/landing/st.png'
   desc: ""
+
+- name: 'FindMyPhone'
+  i18n: 'FindMyPhone'
+  url: 'https://github.com/MarcinMoskala/FindMyPhone'
+  img: 'static/img/landing/FindMyPhone.png'
+  desc: ""

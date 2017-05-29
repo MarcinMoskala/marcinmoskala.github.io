@@ -30,7 +30,9 @@
     "PreferenceHolder": "Biblioteka Open-Source dla Kotlina w Androidzie, która upraszcza korzystanie z SharedPreferences tak bardzo jak to tylko możliwe.",
     
     "Nootro": "Startup tworzący i sprzedający suplement dla rozwoju mózgu.",
-    "StackTester": "Aplikacja do testowania jak działają flagi stosu w Androidzie. " 
+    "StackTester": "Aplikacja do testowania jak działają flagi stosu w Androidzie. " ,
+
+    "FindMyPhone": "Prosta aplikacja wspomagająca odnalezienie wyciszonego telefonu."
   },
   "career":{
     "my_career": "Moja kariera",
