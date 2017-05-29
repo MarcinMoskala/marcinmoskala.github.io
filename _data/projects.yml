@@ -1,3 +1,9 @@
+- name: 'Gamekit Quiz'
+  i18n: 'GamekitQuiz'
+  url: 'https://play.google.com/store/apps/details?id=com.gamekit.gkquiz'
+  img: 'static/img/landing/GameKit.png'
+  desc: ""
+
 - name: 'Docplanner Doctor App'
   i18n: 'DocplannerDoctor'
   url: '//play.google.com/store/apps/details?id=pl.znanylekarz.lekarz'
@@ -19,12 +25,6 @@
 - name: 'Kotlin Wonders'
   i18n: 'KotlinWonders'
   url: '//github.com/MarcinMoskala/kotlinWonders'
-  img: 'static/img/landing/github.png'
-  desc: ""
-
-- name: 'KotlinPreferences'
-  i18n: 'KotlinPreferences'
-  url: 'https://github.com/MarcinMoskala/KotlinPreferences'
   img: 'static/img/landing/github.png'
   desc: ""
 
