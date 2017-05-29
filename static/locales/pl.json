@@ -61,6 +61,14 @@
   },
   "speaking":{
     "my_speaking": "Moje wystąpienia i artykuły",
+    "nextlevel": "Kotlin: Następny poziom programowania w Androidzie",
+    "nextlevel_des": "Google Developer Group TechBite Warszawa",
+    "nextlevel_date": "31.5.2017",
+    "nextlevel_job": "",
+    "mv": "Szkoły: MVC, MVP, MVVM. Czym się jednak różnią? Jakie mają silne i mocne strony?",
+    "mv_des": "Warszawskie Dni Informatyki - największa konferencja programistyczna w Polsce",
+    "mv_date": "29.3.2017 12.10-13.10",
+    "mv_job": "",
     "reactivex": "Artykuł 'ReactiveX – programowanie reaktywne w niemalże każdym języku i systemie'",
     "reactivex_des": "Magazyn Programista - największy programistyczny magazyn w Polsce",
     "reactivex_date": "Wydane 2.2017",
@@ -69,10 +77,14 @@
     "kotlinarticle_des": "Magazyn Programista - największy programistyczny magazyn w Polsce",
     "kotlinarticle_date": "Wydane 8.2016",
     "kotlinarticle_job": "",
-    "mv": "Szkoły: MVC, MVP, MVVM. Czym się jednak różnią? Jakie mają silne i mocne strony?",
-    "mv_des": "Warszawskie Dni Informatyki - największa konferencja programistyczna w Polsce",
-    "mv_date": "29.3.2017 12.10-13.10",
-    "mv_job": ""
+    "docplannerkotlin": "Kotlin after year on production",
+    "docplannerkotlin_des": "Prezentacja firmowa",
+    "docplannerkotlin_date": "7.2016",
+    "docplannerkotlin_job": "",
+    "docplannerreactivex": "ReactiveX",
+    "docplannerreactivex_des": "Prezentacja firmowa",
+    "docplannerreactivex_date": "10.2016",
+    "docplannerreactivex_job": ""
   },
   "consultation":{
     "consultation_offer": "Chcesz się skontaktować?",
