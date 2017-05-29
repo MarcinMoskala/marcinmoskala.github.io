@@ -1,20 +1,34 @@
 - name:
-    detail: MVC, MVP, MVVM. What are they?
-    i18n: mv
+    detail: "Kotlin: Next Level of Android Development"
+    i18n: nextlevel
   desc:
     detail: 
-    i18n: mv_des
+    i18n: nextlevel_des
   date:
     detail: 
-    i18n: mv_date
+    i18n: nextlevel_date
   job:
     detail: 
-    i18n: mv_job
+    i18n: nextlevel_job
   icon: fa-commenting-o
-  link: http://www.warszawskiedniinformatyki.pl
+  link: http://www.techbite.pl/
 
 - name:
-    detail: Article "ReactiveX - reactive programming in nearly any language"
+    detail: "MVC, MVP, MVVM. What are they?"
+    i18n: mv
+  desc:
+    detail:
+    i18n: mv_des
+  date:
+    detail:
+    i18n: mv_date
+  job:
+    detail:
+    i18n: mv_job
+  icon: fa-commenting-o
+
+- name:
+    detail: 'Article "ReactiveX - reactive programming in nearly any language"'
     i18n: reactivex
   desc:
     detail: 
@@ -25,11 +39,8 @@
   job:
     detail: 
     i18n: reactivex_job
-  icon: fa-newspaper-o
+  icon: fa-google
   link: /static/files/MMReactiveX.pdf
-  reachDescription: ~1000 magazine subscribers
-  reach: 2500
-  personalReach: 100
 
 - name:
     detail: 'Article "Kotlin: Future of Java?"'
@@ -45,6 +56,35 @@
     i18n: kotlinarticle_job
   icon: fa-newspaper-o
   link: /static/files/MMKotlin.pdf
-  reachDescription: ~1000 magazine subscribers
-  reach: 2500
-  personalReach: 100
+
+- name:
+    detail: 'Inner company presentation: Kotlin after year on production'
+    i18n: docplannerkotlin
+  desc:
+    detail:
+    i18n: docplannerkotlin_des
+  date:
+    detail:
+    i18n: docplannerkotlin_date
+  job:
+    detail:
+    i18n: docplannerkotlin_job
+  icon: fa-file-powerpoint-o
+  link: http://slides.com/marcinmoskala/deck
+
+- name:
+    detail: 'Inner company presentation: ReactiveX'
+    i18n: docplannerreactivex
+  desc:
+    detail:
+    i18n: docplannerreactivex_des
+  date:
+    detail:
+    i18n: docplannerreactivex_date
+  job:
+    detail:
+    i18n: docplannerreactivex_job
+  icon: fa-file-powerpoint-o
+  link:
+
+

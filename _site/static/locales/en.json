@@ -1,42 +1,36 @@
 {
-  "website":{
+  "website": {
     "title": "Martin's blog"
   },
-  "nav":{
+  "nav": {
     "home": "Home",
     "about_me": "About",
     "skills": "Skills",
     "projects": "Projects",
     "career": "Career",
-    "consulting": "Contact"  
+    "consulting": "Contact"
   },
-  "about_me":{
+  "about_me": {
     "about_me": "About Me",
     "des": "Professionally I am main Android Developer for Docplanner, where I write on Kotlin. I am also doing Machine Learning projects. I write articles and develop Open-Source libraries. I also have double engineer title, from Computer Science and Telecommunication. Occasionally I have a pleasure to make some lecture. Mostly about Kotlin, Android and RxJava. Together with my girlfriend we created Nootro - startup that is producing and selling supplements for brain"
   },
-  "skills":{
+  "skills": {
     "my_skills": "My Skills"
   },
-  "projects":{
+  "projects": {
     "my_projects": "Projects",
-
     "GamekitQuiz": "Quiz about games application, that allows to get points that can be used to buy real games. ",
-
     "DocplannerDoctor": "Mobile application for Docplanner. It allows doctors to easily manage their schedule and contact with patients. ",
     "WartaMobile": "Mobile application made for Warta - the polish popular insurance company. Application helps for Warta clients to easily and quickly go through process of closing insurance claim.",
-
-    "ActivityStarter": "Android Library that provides simpler way to start the Activities with arguments. Written in Kotlin.",
+    "ActivityStarter": "Android Library that provides simpler way to start the Activities with arguments. Written in Kotlin and supporting Kotlin projects.",
     "KotlinWonders": "Artificial intelligence for \"7 wonders\" board game. Written completely functionally in Kotlin. ",
-
     "KotlinPreferences": "Kotlin Android Library, that makes preference usage easy.",
     "PreferenceHolder": "Kotlin Android Library, that makes SharedPreferences usage as simple and fun as possible.",
-
     "StackTester": "Applicaction for testing different stack flags. ",
     "Nootro": "Startup creating and selling brain improvement supplement.",
-
     "FindMyPhone": "Simple application used to find muted phone."
   },
-  "career":{
+  "career": {
     "my_career": "My Career",
     "gamekit": "Gamekit",
     "gamekit_des": "Main Android Developer creating GameKit games. ",
@@ -59,8 +53,16 @@
     "college_date": "",
     "college_job": "Student"
   },
-  "speaking":{
+  "speaking": {
     "my_speaking": "My writing and speaking",
+    "nextlevel": "Kotlin: Next Level of Android Development",
+    "nextlevel_des": "Google Developer Group TechBite Warsaw",
+    "nextlevel_date": "31.5.2017",
+    "nextlevel_job": "",
+    "mv": "MVC, MVP, MVVM. What are they? What are the differences?",
+    "mv_des": "Warszawskie Dni Informatyki - biggest programming event in Poland",
+    "mv_date": "29.3.2017",
+    "mv_job": "",
     "reactivex": "Article 'ReactiveX - reactive programming in nearly any language'",
     "reactivex_des": "Programmer Magazine - biggest programmer magazine in Poland",
     "reactivex_date": "2.2017",
@@ -69,12 +71,16 @@
     "kotlinarticle_des": "Programmer Magazine - biggest programmer magazine in Poland",
     "kotlinarticle_date": "8.2016",
     "kotlinarticle_job": "",
-    "mv": "MVC, MVP, MVVM. What are they? What are the differences?",
-    "mv_des": "Warszawskie Dni Informatyki - biggest programming event in Poland",
-    "mv_date": "29.3.2017 12.10-13.10",
-    "mv_job": ""
+    "docplannerkotlin": "Kotlin after year on production",
+    "docplannerkotlin_des": "Inner company presentation",
+    "docplannerkotlin_date": "7.2016",
+    "docplannerkotlin_job": "",
+    "docplannerreactivex": "ReactiveX",
+    "docplannerreactivex_des": "Inner company presentation",
+    "docplannerreactivex_date": "10.2016",
+    "docplannerreactivex_job": ""
   },
-  "consultation":{
+  "consultation": {
     "consultation_offer": "Need a contact?",
     "consultation_button": "Email me"
   }
