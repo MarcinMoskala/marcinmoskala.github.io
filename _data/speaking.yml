@@ -10,7 +10,7 @@
   job:
     detail: 
     i18n: nextlevel_job
-  icon: fa-commenting-o
+  icon: fa-google
   link: http://www.techbite.pl/
 
 - name:
@@ -39,8 +39,23 @@
   job:
     detail: 
     i18n: reactivex_job
-  icon: fa-google
+  icon: fa-commenting-o
   link: /static/files/MMReactiveX.pdf
+
+- name:
+    detail: 'Inner company presentation: ReactiveX'
+    i18n: docplannerreactivex
+  desc:
+    detail:
+    i18n: docplannerreactivex_des
+  date:
+    detail:
+    i18n: docplannerreactivex_date
+  job:
+    detail:
+    i18n: docplannerreactivex_job
+  icon: fa-file-powerpoint-o
+  link:
 
 - name:
     detail: 'Article "Kotlin: Future of Java?"'
@@ -71,20 +86,3 @@
     i18n: docplannerkotlin_job
   icon: fa-file-powerpoint-o
   link: http://slides.com/marcinmoskala/deck
-
-- name:
-    detail: 'Inner company presentation: ReactiveX'
-    i18n: docplannerreactivex
-  desc:
-    detail:
-    i18n: docplannerreactivex_des
-  date:
-    detail:
-    i18n: docplannerreactivex_date
-  job:
-    detail:
-    i18n: docplannerreactivex_job
-  icon: fa-file-powerpoint-o
-  link:
-
-
