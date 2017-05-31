@@ -27,7 +27,7 @@ println(4.64 - 2.64)
 
 answer is:
 
-```kotlin
+```java
 1.9999998
 1.9999999999999996
 ```
@@ -67,7 +67,7 @@ But it doesn't make it's behavior better. Let's look at some more unintuitive re
 
 Or this, which is the most complex to understand: (thanks to (Maciej Górski)[https://github.com/mg6maciej] for showing it to me)
 
-```kotlin
+```java
 1.inc() // 2
 1.dec() // 0
 -1.inc() // -2
@@ -77,21 +77,21 @@ Or this, which is the most complex to understand: (thanks to (Maciej Górski)[ht
 Two last results are strange, aren't they? The reason is that minus is not a part of the number, but unary extension function
 to Int. This is why this two last lines are the same as:
 
-```kotlin
+```java
 1.inc().unaryMinus()
 1.dec().unaryMinus()
 ```
 
 This is also as designed, and it wont change. Also, some will argue that it is how is how is should act. Lest suppose that we made space behind Int:
 
-```kotlin
+```java
 - 1.inc() // -2
 - 1.dec() // 0
 ```
 
 Now it looks rational. How it should be used? Number should be in bracket together with minus.
 
-```kotlin
+```java
 (-1).inc() // 0
 (-1).dec() // -2
 ```
