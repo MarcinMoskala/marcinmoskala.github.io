@@ -27,7 +27,7 @@ println(4.64 - 2.64)
 
 answer is:
 
-```
+```kotlin
 1.9999998
 1.9999999999999996
 ```
@@ -52,7 +52,7 @@ println(listOf(2,2,2) - listOf(2))
 What is the result? Empty list! Pretty unintuitive, and I [report it over a year ago](https://youtrack.jetbrains.com/issue/KT-11453).
 But the answer was "As Designed". It is true, while function description is following:
 
-```
+```kotlin
 /*
 // Returns a list containing all elements of the original collection except the elements contained in the given [elements] collection.
 */
@@ -60,14 +60,14 @@ But the answer was "As Designed". It is true, while function description is foll
 
 But it doesn't make it's behavior better. Let's look at some more unintuitive results:
 
-```
+```kotlin
 "1".toInt() // 1
 '1'.toInt() // 49 - its ASCII code
 ```
 
 Or this, which is the most complex to understand: (thanks to (Maciej Górski)[https://github.com/mg6maciej] for showing it to me)
 
-```
+```kotlin
 1.inc() // 2
 1.dec() // 0
 -1.inc() // -2
@@ -77,21 +77,21 @@ Or this, which is the most complex to understand: (thanks to (Maciej Górski)[ht
 Two last results are strange, aren't they? The reason is that minus is not a part of the number, but unary extension function
 to Int. This is why this two last lines are the same as:
 
-```
+```kotlin
 1.inc().unaryMinus()
 1.dec().unaryMinus()
 ```
 
 This is also as designed, and it wont change. Also, some will argue that it is how is how is should act. Lest suppose that we made space behind Int:
 
-```
+```kotlin
 - 1.inc() // -2
 - 1.dec() // 0
 ```
 
 Now it looks rational. How it should be used? Number should be in bracket together with minus.
 
-```
+```kotlin
 (-1).inc() // 0
 (-1).dec() // -2
 ```
@@ -100,10 +100,10 @@ From rational point of view it is ok, but I think that everyone feels that `-2` 
 
 # Tuples vs SAM
 
-Kotlin resigned from tuples and left just Pair and Triple. The reason was that there should be data classes used instead.
+(Kotlin resigned from tuples)[https://blog.jetbrains.com/kotlin/migrating-tuples/] and left just Pair and Triple. The reason was that there should be data classes used instead.
 What is the difference? Data class contains name, and all properties are named too. Except that, it can be used like tuple:
 
-```
+```kotlin
 data class Student(
         val name: String,
         val surname: String,
@@ -117,14 +117,14 @@ val (name, surname, passing, grade) = getSomeStudent()
 It the same time, Kotlin added support to Java SAM (Simple Abstract Method) by generation of lambda constructor and methods
 that containing lambda methods instead of Java SAM:
 
-```
+```kotlin
 view.setOnClickListener { toast("Foo") }
 ```
 
 But it is not working for SAM defined in Kotlin, because it is suggested to use functional types instead. What is the difference
 between SAM and functional type? SAM have also name and its parameters are named. Sure, from Kotlin 1.1 it can be replaced with typealias:
 
-```
+```kotlin
 typealias OnClick = (view: View)->Unit
 ```
 
@@ -147,19 +147,19 @@ val list = if(student != null) {
 
 With this:
 
-```
+```kotlin
 val list = student?.let { getListForStudent(student) } ?: getStandardList()
 ```
 
 Ok, is is shorter and looks good. Also, when there are some other conditions added then we can still use it:
 
-```
+```kotlin
 val list = student?.takeIf { it.passing }?.let { getListForStudent(student) } ?: getStandardList()
 ```
 
 But it is really better then simple, old if condition?
 
-```
+```kotlin
 val list = if(student != null &&  student.passing) {
     getListForStudent(student)
 } else {
