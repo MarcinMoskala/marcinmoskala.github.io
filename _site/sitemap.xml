@@ -2,6 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
+        <loc>http://localhost:4000/kotlin/2017/05/31/what-i-hate-in-kotlin.html</loc>
+    </url>
+
+    <url>
         <loc>http://localhost:4000/android/kotlin/2017/05/05/still-mvp-or-already-mvvm.html</loc>
     </url>
 
