@@ -5,15 +5,13 @@
     <description>The web page of Marcin Moskala</description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 31 May 2017 12:26:24 +0200</pubDate>
-    <lastBuildDate>Wed, 31 May 2017 12:26:24 +0200</lastBuildDate>
+    <pubDate>Wed, 31 May 2017 12:32:16 +0200</pubDate>
+    <lastBuildDate>Wed, 31 May 2017 12:32:16 +0200</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
         <title>What do I hate in Kotlin</title>
-        <description>&lt;h4 id=&quot;what-do-i-hate-in-kotlin&quot;&gt;What do I hate in Kotlin&lt;/h4&gt;
-
-&lt;p&gt;I love Kotlin. It is the best language I ever learned, and I really enjoy writing applications in it since over 2 years.
+        <description>&lt;p&gt;I love Kotlin. It is the best language I ever learned, and I really enjoy writing applications in it since over 2 years.
 After all, like in even the best old marriage, I have a bunch of stuff that I hate and I know that most of them won’t change.
 Most of them are not a big problems and they are it is hard to fall into them.
 Still, they are there, and they are Kotlins fly in the ointment.&lt;/p&gt;
@@ -45,11 +43,15 @@ parameter. But now it needs to be implemented the same way in Kotlin\JavaScipt a
 
 &lt;p&gt;Let’s look at this operation:&lt;/p&gt;
 
-&lt;p&gt;println(listOf(2,2,2) - 2) // [2, 2]&lt;/p&gt;
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;listOf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// [2, 2]
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Result is intuitive- we are removing element from list so we get list without it. Now let’s look at this operation:&lt;/p&gt;
 
-&lt;p&gt;println(listOf(2,2,2) - listOf(2))&lt;/p&gt;
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;listOf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;listOf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;What is the result? Empty list! Pretty unintuitive, and I &lt;a href=&quot;https://youtrack.jetbrains.com/issue/KT-11453&quot;&gt;report it over a year ago&lt;/a&gt;.
 But the answer was “As Designed”. It is true, while function description is following:&lt;/p&gt;
@@ -67,7 +69,7 @@ But the answer was “As Designed”. It is true, while function description is 
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Or this, which is the most complex to understand: (thanks to (Maciej Górski)[https://github.com/mg6maciej] for showing it to me)&lt;/p&gt;
+&lt;p&gt;Or this, which is the most complex to understand: (thanks to &lt;a href=&quot;https://github.com/mg6maciej&quot;&gt;Maciej Górski&lt;/a&gt; for showing it to me)&lt;/p&gt;
 
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;inc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 2&lt;/span&gt;
 &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;dec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 0&lt;/span&gt;
@@ -102,7 +104,7 @@ to Int. This is why this two last lines are the same as:&lt;/p&gt;
 
 &lt;h1 id=&quot;tuples-vs-sam&quot;&gt;Tuples vs SAM&lt;/h1&gt;
 
-&lt;p&gt;(Kotlin resigned from tuples)[https://blog.jetbrains.com/kotlin/migrating-tuples/] and left just Pair and Triple. The reason was that there should be data classes used instead.
+&lt;p&gt;&lt;a href=&quot;https://blog.jetbrains.com/kotlin/migrating-tuples/&quot;&gt;Kotlin resigned from tuples&lt;/a&gt; and left just Pair and Triple. The reason was that there should be data classes used instead.
 What is the difference? Data class contains name, and all properties are named too. Except that, it can be used like tuple:&lt;/p&gt;
 
 &lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;data class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Student&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
@@ -141,11 +143,13 @@ And it is not isolationism, because tuples are implemented in most modern langua
 &lt;p&gt;There are multiple Kotlin extensions to any object and I see lot’s of creativity in their usege. In Kotlin, you can
 replace this definition:&lt;/p&gt;
 
-&lt;p&gt;val list = if(student != null) {
-    getListForStudent(student)
-} else {
-    getStandardList()
-}&lt;/p&gt;
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;list&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;student&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;getListForStudent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;student&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;getStandardList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;With this:&lt;/p&gt;
 

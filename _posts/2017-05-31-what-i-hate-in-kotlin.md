@@ -9,8 +9,6 @@ tags: [Kotlin]
 icon: fa-ban
 ---
 
-#### What do I hate in Kotlin
-
 I love Kotlin. It is the best language I ever learned, and I really enjoy writing applications in it since over 2 years.
 After all, like in even the best old marriage, I have a bunch of stuff that I hate and I know that most of them won't change.
 Most of them are not a big problems and they are it is hard to fall into them.
@@ -43,11 +41,15 @@ parameter. But now it needs to be implemented the same way in Kotlin\JavaScipt a
 
 Let's look at this operation:
 
+```kotlin
 println(listOf(2,2,2) - 2) // [2, 2]
+```
 
 Result is intuitive- we are removing element from list so we get list without it. Now let's look at this operation:
 
+```kotlin
 println(listOf(2,2,2) - listOf(2))
+```
 
 What is the result? Empty list! Pretty unintuitive, and I [report it over a year ago](https://youtrack.jetbrains.com/issue/KT-11453).
 But the answer was "As Designed". It is true, while function description is following:
@@ -65,7 +67,7 @@ But it doesn't make it's behavior better. Let's look at some more unintuitive re
 '1'.toInt() // 49 - its ASCII code
 ```
 
-Or this, which is the most complex to understand: (thanks to (Maciej Górski)[https://github.com/mg6maciej] for showing it to me)
+Or this, which is the most complex to understand: (thanks to [Maciej Górski](https://github.com/mg6maciej) for showing it to me)
 
 ```java
 1.inc() // 2
@@ -100,7 +102,7 @@ From rational point of view it is ok, but I think that everyone feels that `-2` 
 
 # Tuples vs SAM
 
-(Kotlin resigned from tuples)[https://blog.jetbrains.com/kotlin/migrating-tuples/] and left just Pair and Triple. The reason was that there should be data classes used instead.
+[Kotlin resigned from tuples](https://blog.jetbrains.com/kotlin/migrating-tuples/) and left just Pair and Triple. The reason was that there should be data classes used instead.
 What is the difference? Data class contains name, and all properties are named too. Except that, it can be used like tuple:
 
 ```kotlin
@@ -139,11 +141,13 @@ And it is not isolationism, because tuples are implemented in most modern langua
 There are multiple Kotlin extensions to any object and I see lot's of creativity in their usege. In Kotlin, you can
 replace this definition:
 
+```kotlin
 val list = if(student != null) {
     getListForStudent(student)
 } else {
     getStandardList()
 }
+```
 
 With this:
 
