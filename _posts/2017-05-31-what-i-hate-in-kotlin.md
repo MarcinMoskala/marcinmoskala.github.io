@@ -180,5 +180,6 @@ And it is not isolationism, because tuples are implemented in most modern langua
 # Summary
 
 This are, in fact, just a small things. It is nothing comparing to what can be found in JavaScript, PHP or Ruby.
-Kotlin was well designed from the beginning, and it is a solution to a lot of problems.  Just some small stuff that didn't go well enough.
-Still it is and it will be for at least few years my most favourite language.
+Kotlin was well designed from the beginning, and it is a solution to a lot of problems.
+There are just some small stuff that didn't go well enough.
+Still it is and it will be my most favourite language for at least few more years.
