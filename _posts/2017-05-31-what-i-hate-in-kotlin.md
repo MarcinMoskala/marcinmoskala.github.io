@@ -60,7 +60,17 @@ But it doesn't make it's behavior better. This is one example of implementation 
 '1'.toInt() // 49 - its ASCII code
 ```
 
-Or this, which is the most complex to understand: (thanks to [Maciej Górski](https://github.com/mg6maciej) for showing it to me)
+It is correct, but wired in the same time. Note that predicates are true:
+
+```
+"1".toInt() != '1'.toInt()
+"1".toInt() != "1"[0].toInt()
+```
+
+While any non-numeric character in `String` will cause `NumberFormatException`, there is also `toIntOrNull` function for String that is returning null instead.
+I think that it is good enough argument that this function should be named in different way in the first place. Maybe `parseInt`?
+
+Let's go to another thing, but this one is more complex to understand: (thanks to [Maciej Górski](https://github.com/mg6maciej) for showing it to me)
 
 ```java
 1.inc() // 2
@@ -96,7 +106,7 @@ From rational point of view it is ok, but I think that everyone feels that `-2` 
 # Isolationism
 
 There are multiple Kotlin extensions to any object (like let, apply, run, also, to, takeIf, ...), and I see lot's of
-creativity in their usege. In Kotlin, you can replace this definition:
+creativity in their usage. In Kotlin, you can replace this definition:
 
 ```kotlin
 val list = if(student != null) {
@@ -140,7 +150,7 @@ of Kotlin specific features should start later. Right now, there is still a lot 
 
 # Tuples vs SAM
 
-[Kotlin resigned from tuples](https://blog.jetbrains.com/kotlin/migrating-tuples/) and left just Pair and Triple.
+[Kotlin resigned from tuples](https://blog.jetbrains.com/kotlin/migrating-tuples/) and left just `Pair` and `Triple`.
 The reason was that there should be data classes used instead.
 What is the difference? Data class contains name, and all its properties are named too. Except that, it can be used like tuple:
 
@@ -182,4 +192,4 @@ And it is not isolationism, because tuples are implemented in most modern langua
 This are, in fact, just a small things. It is nothing comparing to what can be found in JavaScript, PHP or Ruby.
 Kotlin was well designed from the beginning, and it is a solution to a lot of problems.
 There are just some small stuff that didn't go well enough.
-Still it is and it will be my most favourite language for at least few more years.
+Still it is, and it will be, my most favourite language for at least few more years.
