@@ -21,7 +21,7 @@
     "my_projects": "Projects",
     "GamekitQuiz": "Quiz about games application, that allows to get points that can be used to buy real games. ",
     "DocplannerDoctor": "Mobile application for Docplanner. It allows doctors to easily manage their schedule and contact with patients. ",
-    "WartaMobile": "Mobile application made for Warta - the polish popular insurance company. Application helps for Warta clients to easily and quickly go through process of closing insurance claim.",
+    "WartaMobile": "Mobile application, that helps for Warta clients to easily and quickly go through process of closing insurance claim.",
     "ActivityStarter": "Android Library that provides simpler way to start the Activities with arguments. Written in Kotlin and supporting Kotlin projects.",
     "KotlinWonders": "Artificial intelligence for \"7 wonders\" board game. Written completely functionally in Kotlin. ",
     "KotlinPreferences": "Kotlin Android Library, that makes preference usage easy.",
