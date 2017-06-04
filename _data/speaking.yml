@@ -26,6 +26,7 @@
     detail:
     i18n: mv_job
   icon: fa-commenting-o
+  link: https://bulldogjob.pl/news/173-najciekawsze-prelekcje-na-warszawskich-dniach-informatyki/
 
 - name:
     detail: 'Article "ReactiveX - reactive programming in nearly any language"'
