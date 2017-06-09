@@ -74,21 +74,6 @@
   link: /static/files/MMReactiveX.pdf
 
 - name:
-    detail: 'Inner company presentation: ReactiveX'
-    i18n: docplannerreactivex
-  desc:
-    detail:
-    i18n: docplannerreactivex_des
-  date:
-    detail:
-    i18n: docplannerreactivex_date
-  job:
-    detail:
-    i18n: docplannerreactivex_job
-  icon: fa-file-powerpoint-o
-  link:
-
-- name:
     detail: 'Article "Kotlin: Future of Java?"'
     i18n: kotlinarticle
   desc:
@@ -102,18 +87,3 @@
     i18n: kotlinarticle_job
   icon: fa-newspaper-o
   link: /static/files/MMKotlin.pdf
-
-- name:
-    detail: 'Inner company presentation: Kotlin after year on production'
-    i18n: docplannerkotlin
-  desc:
-    detail:
-    i18n: docplannerkotlin_des
-  date:
-    detail:
-    i18n: docplannerkotlin_date
-  job:
-    detail:
-    i18n: docplannerkotlin_job
-  icon: fa-file-powerpoint-o
-  link: http://slides.com/marcinmoskala/deck
