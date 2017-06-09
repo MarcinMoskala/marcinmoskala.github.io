@@ -1,14 +1,44 @@
 - name:
     detail: "Kotlin: Next Level of Android Development"
-    i18n: nextlevel
+    i18n: nov
   desc:
     detail: 
-    i18n: nextlevel_des
+    i18n: nov_des
   date:
-    detail: 
-    i18n: nextlevel_date
+    detail: Novosibirsk, 23-24 September, 2017
+    i18n: nov_date
   job:
     detail: 
+    i18n: nov_job
+  icon: fa-file-powerpoint-o
+  link: https://gdg-siberia.com/speakers/
+
+- name:
+    detail: "MVC, MVP, MVVM"
+    i18n: devjs
+  desc:
+    detail:
+    i18n: devjs_des
+  date:
+    detail:
+    i18n: devjs_date
+  job:
+    detail:
+    i18n: devjs_job
+  icon: fa-file-powerpoint-o
+  link: https://devjswwa2.evenea.pl/
+
+- name:
+    detail: "Kotlin: Next Level of Android Development"
+    i18n: nextlevel
+  desc:
+    detail:
+    i18n: nextlevel_des
+  date:
+    detail:
+    i18n: nextlevel_date
+  job:
+    detail:
     i18n: nextlevel_job
   icon: fa-google
   link: http://www.techbite.pl/
