@@ -55,7 +55,7 @@
   job:
     detail:
     i18n: mv_job
-  icon: fa-commenting-o
+  icon: fa-file-powerpoint-o
   link: http://www.warszawskiedniinformatyki.pl/
 
 - name:
