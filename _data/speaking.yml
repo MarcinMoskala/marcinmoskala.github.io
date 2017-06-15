@@ -70,7 +70,7 @@
   job:
     detail: 
     i18n: reactivex_job
-  icon: fa-commenting-o
+  icon: fa-newspaper-o
   link: /static/files/MMReactiveX.pdf
 
 - name:
