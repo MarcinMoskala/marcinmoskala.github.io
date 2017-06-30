@@ -2,7 +2,7 @@
     detail: "Kotlin: Next Level of Android Development"
     i18n: nov
   desc:
-    detail: 
+    detail: "Presentation on DevFest Siberia"
     i18n: nov_des
   date:
     detail: Novosibirsk, 23-24 September, 2017
@@ -12,6 +12,21 @@
     i18n: nov_job
   icon: fa-file-powerpoint-o
   link: https://gdg-siberia.com/speakers/
+
+- name:
+    detail: "Android Development with Kotlin"
+    i18n: kotlinbook
+  desc:
+    detail: "Book published by Packt"
+    i18n: kotlinbook_des
+  date:
+    detail: "August 2017"
+    i18n: kotlinbook_date
+  job:
+    detail:
+    i18n: kotlinbook_job
+  icon: fa-book
+  link: https://www.packtpub.com/application-development/android-development-kotlin
 
 - name:
     detail: "MVC, MVP, MVVM"
@@ -27,6 +42,8 @@
     i18n: devjs_job
   icon: fa-file-powerpoint-o
   link: https://devjswwa2.evenea.pl/
+  video: https://www.youtube.com/watch?v=0Fnu3opUYI0
+  presentation: https://docs.google.com/presentation/d/1qUtZNB1C7KUYeet75UqHymyRAh7oV_K4qiyKveBTT1g/edit?usp=sharing
 
 - name:
     detail: "Kotlin: Next Level of Android Development"
@@ -42,6 +59,8 @@
     i18n: nextlevel_job
   icon: fa-google
   link: http://www.techbite.pl/
+  video: https://www.youtube.com/watch?v=1jGchtuFayc
+  presentation: http://slides.com/marcinmoskala/kotlin-next-level
 
 - name:
     detail: "MVC, MVP, MVVM. What are they?"
