@@ -1,17 +1,32 @@
 - name:
-    detail: "Kotlin: Next Level of Android Development"
+    detail: "Superpowers of Kotlin delegation"
     i18n: nov
   desc:
     detail: "Presentation on DevFest Siberia"
     i18n: nov_des
   date:
-    detail: Novosibirsk, 23-24 September, 2017
+    detail: "Novosibirsk, 23-24 September, 2017"
     i18n: nov_date
   job:
     detail: 
     i18n: nov_job
   icon: fa-file-powerpoint-o
   link: https://gdg-siberia.com/speakers/
+
+- name:
+    detail: "MVC vs MVP vs MVVM vs MVVI"
+    i18n: mobilewarsaw
+  desc:
+    detail: "Presentation on Mobile Warsaw"
+    i18n: mobilewarsaw_des
+  date:
+    detail: "Warsaw, 22 August, 2017"
+    i18n: mobilewarsaw_date
+  job:
+    detail:
+    i18n: mobilewarsaw_job
+  icon: fa-file-powerpoint-o
+  link: https://docs.google.com/presentation/d/1qUtZNB1C7KUYeet75UqHymyRAh7oV_K4qiyKveBTT1g/edit?usp=sharing
 
 - name:
     detail: "Android Development with Kotlin"
