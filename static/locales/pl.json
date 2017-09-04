@@ -20,7 +20,8 @@
   "projects":{
     "my_projects": "Projekty",
 
-    "GamekitQuiz": "Aplikcja Quiz, która pozwala na zdobywanie punktów, które można wymienić na prawdziwe gry. Na razie niedostępna w polsce. ",
+    "GamekitSlide": "Gra w trafianie liczby, gdzie można wygrywać punkty Dogry. Na razie niedostępna w polsce. ",
+    "GamekitQuiz": "Aplikcja Quiz, która pozwala na zdobywanie punktów Dogry. Na razie niedostępna w polsce. ",
     
     "DocplannerDoctor": "Aplikacja lekarska dla portalu ZnanyLekarz, pozwalająca lekarzom na łatwiejsze zarządzanie swoim grafikiem oraz komunikację z pacjentami.",
     "WartaMobile": "Aplikacja dla klientów Warty, którzy doznali szkody. Pozwala ona na prostszą komunikację, dostarczenia dokumentacji i zamknięcie szkody. ",
