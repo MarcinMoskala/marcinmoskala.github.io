@@ -28,12 +28,6 @@
   img: 'static/img/landing/github.png'
   desc: ""
 
-- name: 'Kotlin Wonders'
-  i18n: 'KotlinWonders'
-  url: '//github.com/MarcinMoskala/kotlinWonders'
-  img: 'static/img/landing/github.png'
-  desc: ""
-
 - name: 'PreferenceHolder'
   i18n: 'PreferenceHolder'
   url: 'https://github.com/MarcinMoskala/PreferenceHolder'
