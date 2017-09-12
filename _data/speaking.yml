@@ -1,4 +1,19 @@
 - name:
+    detail: "MVC vs MVP vs MVVM vs MVVI"
+    i18n: mobilization
+  desc:
+    detail: "Presentation on Mobilization"
+    i18n: mobilization_des
+  date:
+    detail: "Warsaw, 21 October, 2017"
+    i18n: mobilization_date
+  job:
+    detail:
+    i18n: mobilization_job
+  icon: fa-file-powerpoint-o
+  link: https://docs.google.com/presentation/d/1qUtZNB1C7KUYeet75UqHymyRAh7oV_K4qiyKveBTT1g/edit?usp=sharing
+
+- name:
     detail: "Superpowers of Kotlin delegation"
     i18n: nov
   desc:
@@ -8,7 +23,7 @@
     detail: "Novosibirsk, 23-24 September, 2017"
     i18n: nov_date
   job:
-    detail: 
+    detail:
     i18n: nov_job
   icon: fa-file-powerpoint-o
   link: https://gdg-siberia.com/speakers/
