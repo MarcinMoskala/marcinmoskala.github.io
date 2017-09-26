@@ -20,6 +20,8 @@
   "projects":{
     "my_projects": "Projekty",
 
+    "SweetTooth": "Aplikacja do zamawiania cukierków typu krówka z własnym zdjęciem.",
+
     "GamekitSlide": "Gra w trafianie liczby, gdzie można wygrywać punkty Dogry. Na razie niedostępna w polsce. ",
     "GamekitQuiz": "Aplikcja Quiz, która pozwala na zdobywanie punktów Dogry. Na razie niedostępna w polsce. ",
     

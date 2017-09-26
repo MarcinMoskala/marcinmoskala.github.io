@@ -12,14 +12,16 @@
   },
   "about_me": {
     "about_me": "About Me",
-    "des": "Professionally I am main Android Developer for Docplanner, where I write on Kotlin. I am also doing Machine Learning projects. I write articles and develop Open-Source libraries. I also have double engineer title, from Computer Science and Telecommunication. Occasionally I have a pleasure to make some lecture. Mostly about Kotlin, Android and RxJava. Together with my girlfriend we created Nootro - startup that is producing and selling supplements for brain"
+    "des": "Author of \"Android Development with Kotlin\" and Kotlin evangelist. Passionate about work and open-source."
   },
   "skills": {
     "my_skills": "My Skills"
   },
   "projects": {
     "my_projects": "Projects",
-    "GamekitQuiz": "Quiz about games application, that allows to get points that can be used to buy real games. ",
+    "SweetTooth": "Application for ordering candies with custom design.",
+    "GamekitSlide": "Slide game, that allows to get Gamekit points. ",
+    "GamekitQuiz": "Quiz about games, that allows to get Gamekit points. ",
     "DocplannerDoctor": "Mobile application for Docplanner. It allows doctors to easily manage their schedule and contact with patients. ",
     "WartaMobile": "Mobile application, that helps for Warta clients to easily and quickly go through process of closing insurance claim.",
     "ActivityStarter": "Android Library that provides simpler way to start the Activities with arguments. Written in Kotlin and supporting Kotlin projects.",
@@ -55,10 +57,18 @@
   },
   "speaking": {
     "my_speaking": "My writing and speaking",
-    "nov":"Kotlin: Next Level of Android Development",
-    "nov_des":"Presentation on DevFest Siberia",
+    "mobilization":"MVC vs MVP vs MVVM vs MVI",
+    "mobilization_des":"Presentation on Mobilization conference",
+    "mobilization_date":"Warsaw, 21 October, 2017",
+    "mobilization_job":"",
+    "nov":"Superpowers of Kotlin delegation",
+    "nov_des":"Presentation on DevFest Siberia conference",
     "nov_date":"Novosibirsk, 23-24.9.2017",
     "nov_job":"",
+    "mobilewarsaw":"MVC vs MVP vs MVVM vs MVI",
+    "mobilewarsaw_des":"Presentation on Mobile Warsaw",
+    "mobilewarsaw_date":"Warsaw, 22 August, 2017",
+    "mobilewarsaw_job":"",
     "kotlinbook":"Android Development with Kotlin",
     "kotlinbook_des":"Book published by Packt",
     "kotlinbook_date":"August 2017",

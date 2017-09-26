@@ -19,6 +19,7 @@
   },
   "projects": {
     "my_projects": "Projects",
+    "SweetTooth": "Application for ordering candies with custom design.",
     "GamekitSlide": "Slide game, that allows to get Gamekit points. ",
     "GamekitQuiz": "Quiz about games, that allows to get Gamekit points. ",
     "DocplannerDoctor": "Mobile application for Docplanner. It allows doctors to easily manage their schedule and contact with patients. ",

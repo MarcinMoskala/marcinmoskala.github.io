@@ -12,7 +12,7 @@
   },
   "about_me":{
     "about_me": "O mnie",
-    "des": "Zawodowo jestem głównym programistą Kotlina na platformę Android dla ZnanegoLekarza. Do tego zajmuję się Machine Learningiem. Piszę artykuły oraz tworzę i rozwijam biblioteki Open-Source. Mam podwójny tytuł inżyniera w dziedzinie Informatyki oraz Telekomunikacji. Także sporadycznie mam przyjemność prowadzić wykłady. Najczęściej na temat Kotlina, Androida oraz RxJavy. Razem ze swoją dziewczyną założyliśmy Nootro, gdzie produkujemy suplement dla mózgu - nRise."
+    "des": "Autor \"Android Development with Kotlin\" i ewangelista języka Kotlin. Pracuję z pasją i rozwijam biblioteki open-source."
   },
   "skills":{
     "my_skills": "Umiejętności"
@@ -20,7 +20,10 @@
   "projects":{
     "my_projects": "Projekty",
 
-    "GamekitQuiz": "Aplikcja Quiz, która pozwala na zdobywanie punktów, które można wymienić na prawdziwe gry. Na razie niedostępna w polsce. ",
+    "SweetTooth": "Aplikacja do zamawiania cukierków typu krówka z własnym zdjęciem.",
+
+    "GamekitSlide": "Gra w trafianie liczby, gdzie można wygrywać punkty Dogry. Na razie niedostępna w polsce. ",
+    "GamekitQuiz": "Aplikcja Quiz, która pozwala na zdobywanie punktów Dogry. Na razie niedostępna w polsce. ",
     
     "DocplannerDoctor": "Aplikacja lekarska dla portalu ZnanyLekarz, pozwalająca lekarzom na łatwiejsze zarządzanie swoim grafikiem oraz komunikację z pacjentami.",
     "WartaMobile": "Aplikacja dla klientów Warty, którzy doznali szkody. Pozwala ona na prostszą komunikację, dostarczenia dokumentacji i zamknięcie szkody. ",
@@ -61,10 +64,18 @@
   },
   "speaking":{
     "my_speaking": "Moje wystąpienia i artykuły",
-    "nov":"Kotlin: Następny poziom programowania w Androidzie",
-    "nov_des":"Prezentacja na DevFest Siberia",
-    "nov_date":"Nowosybirsk, 23-24.9.2017",
+    "mobilization":"MVC vs MVP vs MVVM vs MVI",
+    "mobilization_des":"Prezentacja konferencji Mobilization",
+    "mobilization_date":"Warszawa, 21.10.2017",
+    "mobilization_job":"",
+    "nov":"Superpowers of Kotlin delegation",
+    "nov_des":"Prezentacja na konferencji DevFest Siberia",
+    "nov_date":"Nowosybirsk, 24.9.2017",
     "nov_job":"",
+    "mobilewarsaw":"MVC vs MVP vs MVVM vs MVI",
+    "mobilewarsaw_des":"Prezentacja na Mobile Warsaw",
+    "mobilewarsaw_date":"Warszawa, 22 Sierpień, 2017",
+    "mobilewarsaw_job":"",
     "kotlinbook":"Android Development with Kotlin",
     "kotlinbook_des":"Książka opublikowana przez Packt",
     "kotlinbook_date":"Sierpień 2017",

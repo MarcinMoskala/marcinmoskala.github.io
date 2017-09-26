@@ -2,68 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>http://localhost:4000/kotlin/2017/05/31/what-i-hate-in-kotlin.html</loc>
+        <loc>http://www.marcinmoskala.com/kotlin/2017/05/31/what-i-hate-in-kotlin.html</loc>
     </url>
 
     <url>
-        <loc>http://localhost:4000/android/kotlin/2017/05/05/still-mvp-or-already-mvvm.html</loc>
+        <loc>http://www.marcinmoskala.com/android/kotlin/2017/05/05/still-mvp-or-already-mvvm.html</loc>
     </url>
 
     <url>
-        <loc>http://localhost:4000/android/kotlin/2017/05/04/findmyphone.html</loc>
+        <loc>http://www.marcinmoskala.com/android/kotlin/2017/05/04/findmyphone.html</loc>
     </url>
 
 
     <url>
-        <loc>http://localhost:4000/404.html</loc>
+        <loc>http://www.marcinmoskala.com/404.html</loc>
     </url>
 
     <url>
-        <loc>http://localhost:4000/android/</loc>
+        <loc>http://www.marcinmoskala.com/android/</loc>
     </url>
 
     <url>
-        <loc>http://localhost:4000/blog/</loc>
+        <loc>http://www.marcinmoskala.com/blog/</loc>
     </url>
 
     <url>
-        <loc>http://localhost:4000/search/cb-search.json</loc>
+        <loc>http://www.marcinmoskala.com/search/cb-search.json</loc>
     </url>
 
     <url>
-        <loc>http://localhost:4000/consulting.html</loc>
+        <loc>http://www.marcinmoskala.com/consulting.html</loc>
     </url>
 
     <url>
-        <loc>http://localhost:4000/feed.xml</loc>
+        <loc>http://www.marcinmoskala.com/delegates</loc>
     </url>
 
     <url>
-        <loc>http://localhost:4000/</loc>
+        <loc>http://www.marcinmoskala.com/feed.xml</loc>
     </url>
 
     <url>
-        <loc>http://localhost:4000/kotlin/</loc>
+        <loc>http://www.marcinmoskala.com/</loc>
     </url>
 
     <url>
-        <loc>http://localhost:4000/life/</loc>
+        <loc>http://www.marcinmoskala.com/kotlin/</loc>
     </url>
 
     <url>
-        <loc>http://localhost:4000/productivity/</loc>
+        <loc>http://www.marcinmoskala.com/life/</loc>
     </url>
 
     <url>
-        <loc>http://localhost:4000/robots.txt</loc>
+        <loc>http://www.marcinmoskala.com/productivity/</loc>
     </url>
 
     <url>
-        <loc>http://localhost:4000/sitemap.xml</loc>
+        <loc>http://www.marcinmoskala.com/robots.txt</loc>
     </url>
 
     <url>
-        <loc>http://localhost:4000/skills.html</loc>
+        <loc>http://www.marcinmoskala.com/sitemap.xml</loc>
+    </url>
+
+    <url>
+        <loc>http://www.marcinmoskala.com/skills.html</loc>
     </url>
 
 </urlset>

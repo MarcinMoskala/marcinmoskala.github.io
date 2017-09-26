@@ -1,0 +1,56 @@
+---
+layout: post
+title:  "Mastering property delegation"
+date:   2017-05-04
+desc: "Things that you possibly missed when you were learning about property delegation."
+keywords: "Kotlin, Property delegation, Delegation"
+categories: [Kotlin]
+tags: [Kotlin]
+icon: fa-mobile
+---
+
+# Mastering property delegation
+
+Property delegation is one of the most inconspicuous Kotlin feature. It is easy to describe how it is working, but like in iceberg, most important is are hidden. Most people, after description which explains how property delegation is working, still does not have any idea how it might be used. While there are numerous usages of both stdlib and custom property delegates, we spend nearly 30 pages in "Kotlin in "
+
+## What is property reference?
+
+
+## What is property reference?
+
+
+
+## Property is delegated to value, not to the property
+
+I realize it during Slack discussion when someone step into this problem. Let's look at the following example:
+
+```kotlin
+class User(var map: Map<String, Any>) {
+    val name: String by map
+}
+
+fun main(args: Array<String>) {
+    var user = User(mapOf("name" to "Marcin"))
+    user.map += "name" to "Maja"
+    print(user.name)
+}
+```
+
+What will be printed? Intuitive answer is `Maja`, because is what would be printed for ```print(user.map["name"])```. Correct answer is `Marcin`, because during property delegation, property is delegated to value (```map("name" to "Marcin")```) and not to property ```map```. Class `User` after compilation will look similar to this one:
+
+```kotlin
+class User(var map: Map<String, Any>) {
+    val $$delegatedProperties = //...
+    val name$delegate = map
+    val name: String
+        get() {
+            Map var1 = this.name$delegate
+            KProperty var3 = $$delegatedProperties[0]
+            return getOrImplicitDefaultNullable(var1, var3.getName())
+        }
+}
+```
+
+As we can see, value of `map` is assigned to `name$delegate`. This means that if object would change (it would be possible fro `MutableMap`) then value returned by `name` could change too. But when we changed value of property instead of object (in `user.map += "name" to "Maja"` statement) then `name$delegat` stays unchanged and value returned by name stays the same.
+
+## Property delegates for local variables
