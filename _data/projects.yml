@@ -1,3 +1,9 @@
+- name: 'Sweet Tooth'
+  i18n: 'SweetTooth'
+  url: 'https://play.google.com/store/apps/details?id=com.marcinmoskala.toffe'
+  img: 'static/img/landing/sweettooth.png'
+  desc: ""
+
 - name: 'Gamekit Slide'
   i18n: 'GamekitSlide'
   url: 'https://play.google.com/store/apps/details?id=com.gamekit.slider'
