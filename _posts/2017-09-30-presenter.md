@@ -4,7 +4,7 @@ title:  "Path of automatic Presenter lifecycle implementation"
 date:   2017-09-30
 desc: "Evolution of MVP Presenter implementation for Android"
 keywords: "Kotlin, Android, Lazy, Property delegation, MVP, Design Patterns, Presenter, View"
-categories: [kotlin, android]
+categories: [Android, Kotlin]
 tags: [Kotlin, MVP]
 icon: fa-code
 ---
