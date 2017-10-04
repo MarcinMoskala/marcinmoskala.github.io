@@ -213,7 +213,7 @@ creation more efficient, we might want o make presenter creation lazy:
 ```kotlin
 abstract class BaseActivityWithPresenter : BaseActivity(), PresenterView {
 
-    fun presenter(init: ()->Presenter) = lazy(init).also { lazyPresenters += it }
+    fun <T: Presenter> presenter(init: ()->T) = lazy(init).also { lazyPresenters += it }
     
     private var lazyPresenters: List<Lazy<Presenter>> = emptyList()
     
