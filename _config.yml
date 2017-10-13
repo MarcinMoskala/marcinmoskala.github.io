@@ -39,10 +39,10 @@ sections:
     tpl: 'skills.html'
     css: 'team'
 
-  - id: 'speaking'
-    i18n: 'nav.speaking'
-    name: 'Speaking'
-    tpl: 'speaking.html'
+  - id: 'talks'
+    i18n: 'nav.talks'
+    name: 'Talks'
+    tpl: 'talks.html'
     css: 'timeline'
 
   - id: 'projects'
@@ -50,6 +50,12 @@ sections:
     name: 'Projects'
     tpl: 'projects.html'
     css: 'project'
+
+  - id: 'publications'
+    i18n: 'nav.publications'
+    name: 'Publications'
+    tpl: 'publications.html'
+    css: 'timeline'
 
   - id: 'consulting'
     i18n: 'nav.consulting'
