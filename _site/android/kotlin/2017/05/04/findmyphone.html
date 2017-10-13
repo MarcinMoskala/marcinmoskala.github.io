@@ -92,7 +92,7 @@
 
     <div class="wrapper wrapper-content  animated fadeInRight article">
     <div class="row">
-        <div class="col-lg-10 col-lg-offset-1">
+        <div class="col-lg-8 col-lg-offset-2">
             <div class="ibox">
                 <div class="ibox-content">
                     <div class="pull-right">
@@ -125,24 +125,23 @@
 working.</p>
 
 <p style="text-align: center;">
-    <img src="http://localhost:4000/static/img/blog/firebase_support.PNG" alt="Firebase support" style="height: 400px;" />
+    <img src="http://www.marcinmoskala.com/static/img/blog/firebase_support.PNG" alt="Firebase support" style="height: 400px;" />
 </p>
 
 <p>Notifications also were simple with Firebase. I just needed to define service and that’s it. There is magic there I don’t like: If you define notification fields in sent notification and app is in the background, then it is shown as notification no matter what service is saying. Not only wired to me, but also pretty insecure. If somebody would steal the Token, then he could be able to send whatever notification he likes. Again: magic but it is working in no time.</p>
 
-<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">RefreshTokenService</span> <span class="p">:</span> <span class="n">FirebaseInstanceIdService</span><span class="p">()</span> <span class="p">{</span>
+<div class="language-kotlin highlighter-rouge"><pre class="codehilite"><code><span class="kd">class</span> <span class="nc">RefreshTokenService</span> <span class="p">:</span> <span class="n">FirebaseInstanceIdService</span><span class="p">()</span> <span class="p">{</span>
 
     <span class="k">override</span> <span class="k">fun</span> <span class="nf">onTokenRefresh</span><span class="p">()</span> <span class="p">{</span>
         <span class="kd">val</span> <span class="py">refreshedToken</span> <span class="p">=</span> <span class="n">FirebaseInstanceId</span><span class="p">.</span><span class="n">getInstance</span><span class="p">().</span><span class="n">token</span> <span class="o">?:</span> <span class="k">return</span>
         <span class="n">saveToken</span><span class="p">(</span><span class="n">refreshedToken</span><span class="p">)</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 <p>The database from Android perspective is also really simple. Firebase database looks like a big map from String to String or another map. Sound scary for the bigger project, but perfect for small projects made for fun. The tricky part is how to secure it. The easiest way is to identify used by his UID and allow read and write only to branch with that UID:</p>
 
-<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="p">{</span>
+<div class="language-kotlin highlighter-rouge"><pre class="codehilite"><code><span class="p">{</span>
   <span class="s">"rules"</span><span class="p">:</span> <span class="p">{</span>
     <span class="s">"$uid"</span><span class="p">:</span> <span class="p">{</span>
       <span class="s">".write"</span><span class="p">:</span> <span class="s">"$uid === auth.uid"</span><span class="p">,</span>
@@ -150,37 +149,32 @@ working.</p>
     <span class="p">}</span>
   <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 <p>Here is the code used to save token.:</p>
 
-<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="n">FirebaseDatabase</span>
+<div class="language-kotlin highlighter-rouge"><pre class="codehilite"><code><span class="n">FirebaseDatabase</span>
         <span class="p">.</span><span class="n">getInstance</span><span class="p">()</span>
         <span class="p">.</span><span class="n">getReference</span><span class="p">(</span><span class="n">uid</span><span class="p">)</span>
         <span class="p">.</span><span class="n">setValue</span><span class="p">(</span><span class="n">token</span><span class="p">)</span> 
-</code></pre>
-</div>
+</code></pre></div>
 
 <p>It is just setting branch to one equal to user UID (getReference(uid)) and then setting it’s value to token (setValue(token)).</p>
 
 <p>This are most tricky parts on the Android side. Time to make some hosting. Again: few clicks and it is alive. To make files locally all I needed is:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>firebase init
-</code></pre>
-</div>
+<div class="highlighter-rouge"><pre class="codehilite"><code>firebase init
+</code></pre></div>
 
 <p>then I can make changes and deploy it on</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>firebase deploy
-</code></pre>
-</div>
+<div class="highlighter-rouge"><pre class="codehilite"><code>firebase deploy
+</code></pre></div>
 
 <p>or run locally by</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>firebase serve
-</code></pre>
-</div>
+<div class="highlighter-rouge"><pre class="codehilite"><code>firebase serve
+</code></pre></div>
 
 <p>Making Google Authentication is not so simple, but there are libraries that are making it easy. I used firebaseui. It took few hours to make it work, but when I did then the project was nearly ready. Notification sending is pretty easy because it is only one request to Google. Although I don’t like lack of support for that in all these firebase libraries. And weak documentation. Finally, I made it work in 2 days. Like in hackathons, but alone.</p>
 

@@ -1,0 +1,59 @@
+- name:
+    detail: "I started Kotlin Academy on Medium"
+    i18n: kotlinacademymedium
+  desc:
+    detail: "Book on Medium"
+    i18n: kotlinacademymedium_des
+  date:
+    detail: "October 2017"
+    i18n: kotlinacademymedium_date
+  job:
+    detail:
+    i18n: kotlinacademymedium_job
+  icon: fa-rss-square
+  link: https://medium.com/kotlin-academy/programmer-dictionary-parameter-vs-argument-type-parameter-vs-type-argument-b965d2cc6929
+
+- name:
+    detail: "Android Development with Kotlin"
+    i18n: kotlinbook
+  desc:
+    detail: "Book published by Packt"
+    i18n: kotlinbook_des
+  date:
+    detail: "August 2017"
+    i18n: kotlinbook_date
+  job:
+    detail:
+    i18n: kotlinbook_job
+  icon: fa-book
+  link: https://www.packtpub.com/application-development/android-development-kotlin
+
+- name:
+    detail: 'Article "ReactiveX - reactive programming in nearly any language"'
+    i18n: reactivex
+  desc:
+    detail: 
+    i18n: reactivex_des
+  date:
+    detail: 
+    i18n: reactivex_date
+  job:
+    detail: 
+    i18n: reactivex_job
+  icon: fa-newspaper-o
+  link: /static/files/MMReactiveX.pdf
+
+- name:
+    detail: 'Article "Kotlin: Future of Java?"'
+    i18n: kotlinarticle
+  desc:
+    detail: 
+    i18n: kotlinarticle_des
+  date:
+    detail: 
+    i18n: kotlinarticle_date
+  job:
+    detail:
+    i18n: kotlinarticle_job
+  icon: fa-newspaper-o
+  link: /static/files/MMKotlin.pdf

@@ -92,7 +92,7 @@
 
     <div class="wrapper wrapper-content  animated fadeInRight article">
     <div class="row">
-        <div class="col-lg-10 col-lg-offset-1">
+        <div class="col-lg-8 col-lg-offset-2">
             <div class="ibox">
                 <div class="ibox-content">
                     <div class="pull-right">
@@ -112,13 +112,12 @@
 
 <p>Everyone who applied clean MVP in the Android project knows, that it is not so simple. MVP is great because it allows us to unit-test presentation logic and separates it from view logic. Remember, that is nearly impossible to test Activity by unit-tests, while Presenter should be designed to allow that. This is why Presenter cannot contain any view elements (like Button, EditText etc.). The Presenter should apply changes on the View by invoking methods that are specified by an interface, which is in standard approach implemented by Activity or mocked by unit tests. Example</p>
 
-<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="kd">interface</span> <span class="nc">MainView</span><span class="p">:</span> <span class="n">PresenterBaseView</span> <span class="p">{</span>
+<div class="language-kotlin highlighter-rouge"><pre class="codehilite"><code><span class="kd">interface</span> <span class="nc">MainView</span><span class="p">:</span> <span class="n">PresenterBaseView</span> <span class="p">{</span>
     <span class="k">fun</span> <span class="nf">showToast</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="n">String</span><span class="p">)</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div>
 
-<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">MainActivity</span> <span class="p">:</span> <span class="n">BaseActivity</span><span class="p">(),</span> <span class="n">MainView</span> <span class="p">{</span>
+<div class="language-kotlin highlighter-rouge"><pre class="codehilite"><code><span class="kd">class</span> <span class="nc">MainActivity</span> <span class="p">:</span> <span class="n">BaseActivity</span><span class="p">(),</span> <span class="n">MainView</span> <span class="p">{</span>
 
     <span class="k">override</span> <span class="k">fun</span> <span class="nf">showToast</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="n">String</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">toast</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
@@ -126,23 +125,21 @@
     
     <span class="c1">//...
 </span><span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div>
 
-<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">MainPresenter</span><span class="p">(</span><span class="kd">val</span> <span class="py">view</span><span class="p">:</span> <span class="n">MainView</span><span class="p">)</span> <span class="p">{</span>
+<div class="language-kotlin highlighter-rouge"><pre class="codehilite"><code><span class="kd">class</span> <span class="nc">MainPresenter</span><span class="p">(</span><span class="kd">val</span> <span class="py">view</span><span class="p">:</span> <span class="n">MainView</span><span class="p">)</span> <span class="p">{</span>
 
     <span class="k">fun</span> <span class="nf">onStart</span><span class="p">()</span> <span class="p">{</span>
         <span class="n">view</span><span class="p">.</span><span class="n">showToast</span><span class="p">(</span><span class="s">"I am working"</span><span class="p">)</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 <p>Also, clean guidelines are saying, that Activity should not depend on Data Model, so View methods should have just language basic types (Int, String) or mapper designed to pass bundle of data
 (like in <a href="https://github.com/android10/Android-CleanArchitecture/blob/master/presentation/src/main/java/com/fernandocejas/android10/sample/presentation/mapper/UserModelDataMapper.java">Android-CleanArchitecture</a>)
 The result is that Activity is often full of 3-line methods, that are just setting something on layout or checking some properties:</p>
 
-<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="k">override</span> <span class="k">fun</span> <span class="nf">getEmail</span><span class="p">():</span> <span class="n">String</span> <span class="p">{</span>
+<div class="language-kotlin highlighter-rouge"><pre class="codehilite"><code><span class="k">override</span> <span class="k">fun</span> <span class="nf">getEmail</span><span class="p">():</span> <span class="n">String</span> <span class="p">{</span>
     <span class="k">return</span> <span class="n">emailView</span><span class="p">.</span><span class="n">text</span><span class="p">.</span><span class="n">toString</span><span class="p">()</span>
 <span class="p">}</span>
 
@@ -157,8 +154,7 @@ The result is that Activity is often full of 3-line methods, that are just setti
 <span class="k">override</span> <span class="k">fun</span> <span class="nf">setPassword</span><span class="p">(</span><span class="n">password</span><span class="p">:</span> <span class="n">String</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">passwordView</span><span class="p">.</span><span class="n">text</span> <span class="p">=</span> <span class="n">name</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 <p>This is problematic, because:</p>
 <ul>
@@ -179,7 +175,7 @@ without any annotation processing or any magic proxy. And this idea stands behin
 <p>Think about it this way: TextView is element of view, but from the presenter perspective, it is just field that contains some text. It is because it is the only important property for Presenter. Unless it also wants to change or read something else. Then it looks at View as text and some other property.</p>
 
 <p>For example, TextView in XML looks following:</p>
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;TextView
+<div class="highlighter-rouge"><pre class="codehilite"><code>&lt;TextView
     android:id="@+id/registerButton"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -187,37 +183,33 @@ without any annotation processing or any magic proxy. And this idea stands behin
     android:padding="10dp"
     android:text="@string/action_go_to_register"
     android:textColor="@android:color/white" /&gt;
-</code></pre>
-</div>
+</code></pre></div>
 
 <p>But from Presenter perspective is looks following:</p>
-<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="kd">interface</span> <span class="nc">MainView</span> <span class="p">{</span>
+<div class="language-kotlin highlighter-rouge"><pre class="codehilite"><code><span class="kd">interface</span> <span class="nc">MainView</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="py">text</span><span class="p">:</span> <span class="n">String</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 <p>Do we need to set some onClickListener? Then it looks as follow:</p>
-<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="kd">interface</span> <span class="nc">MainView</span> <span class="p">{</span>
+<div class="language-kotlin highlighter-rouge"><pre class="codehilite"><code><span class="kd">interface</span> <span class="nc">MainView</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="py">text</span><span class="p">:</span> <span class="n">String</span>
     <span class="kd">var</span> <span class="py">onTextClicked</span><span class="p">:</span> <span class="p">()-&gt;</span><span class="n">Unit</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 <p>It would be problematic to implement all this setters and getters, but with <a href="https://github.com/MarcinMoskala/KotlinAndroidViewBindings">KotlinAndroidViewBindings</a> we can use Property Delegation to make bindings between properties and view element properties as simply as possible:</p>
 
-<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="py">text</span> <span class="k">by</span> <span class="n">bindToText</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="n">id</span><span class="p">.</span><span class="n">emailView</span><span class="p">)</span>
+<div class="language-kotlin highlighter-rouge"><pre class="codehilite"><code><span class="kd">var</span> <span class="py">text</span> <span class="k">by</span> <span class="n">bindToText</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="n">id</span><span class="p">.</span><span class="n">emailView</span><span class="p">)</span>
 <span class="kd">var</span> <span class="py">onTextClicked</span> <span class="k">by</span> <span class="n">bindToRequestFocus</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="n">id</span><span class="p">.</span><span class="n">emailView</span><span class="p">)</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 <p>Time to some bigger example. It’s simple example from <a href="https://github.com/MarcinMoskala/KotlinAndroidViewBindings">KotlinAndroidViewBindings</a>, and same similar example in wider context can be found on my <a href="https://github.com/MarcinMoskala/SimpleKotlinMvpBoilerplate">SimpleKotlinMvpBoilerplate</a>.</p>
 
 <p>For the need of presentation, I implemented login functionality. It is showing different errors and 
 requesting focus if field is incorrect according to validation. It is also showing loading when using repository. All logic is placed on Presenter, which is well unit-tested. View definition is following:</p>
 
-<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="kd">interface</span> <span class="nc">LoginView</span> <span class="p">{</span>
+<div class="language-kotlin highlighter-rouge"><pre class="codehilite"><code><span class="kd">interface</span> <span class="nc">LoginView</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="py">progressVisible</span><span class="p">:</span> <span class="n">Boolean</span>
     <span class="kd">var</span> <span class="py">email</span><span class="p">:</span> <span class="n">String</span>
     <span class="kd">val</span> <span class="py">emailRequestFocus</span><span class="p">:</span> <span class="p">()-&gt;</span><span class="n">Unit</span>
@@ -229,12 +221,11 @@ requesting focus if field is incorrect according to validation. It is also showi
     <span class="k">fun</span> <span class="nf">informAboutLoginSuccess</span><span class="p">(</span><span class="n">token</span><span class="p">:</span> <span class="n">String</span><span class="p">)</span>
     <span class="k">fun</span> <span class="nf">informAboutError</span><span class="p">(</span><span class="n">error</span><span class="p">:</span> <span class="n">Throwable</span><span class="p">)</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 <p>Pretty big, but note that these are minimal capabilities. We just defined quite a complex functionality (we can split it into multiple presenters or views with presenters, but I decided to skip it to keep example more typical).</p>
 
-<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">LoginActivity</span> <span class="p">:</span> <span class="n">AppCompatActivity</span><span class="p">(),</span> <span class="n">LoginView</span> <span class="p">{</span>
+<div class="language-kotlin highlighter-rouge"><pre class="codehilite"><code><span class="kd">class</span> <span class="nc">LoginActivity</span> <span class="p">:</span> <span class="n">AppCompatActivity</span><span class="p">(),</span> <span class="n">LoginView</span> <span class="p">{</span>
 
     <span class="k">override</span> <span class="kd">var</span> <span class="py">progressVisible</span> <span class="k">by</span> <span class="n">bindToLoading</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="n">id</span><span class="p">.</span><span class="n">progressView</span><span class="p">,</span> <span class="n">R</span><span class="p">.</span><span class="n">id</span><span class="p">.</span><span class="n">loginFormView</span><span class="p">)</span>
 
@@ -269,12 +260,11 @@ requesting focus if field is incorrect according to validation. It is also showi
         <span class="n">toast</span><span class="p">(</span><span class="s">"Error: "</span> <span class="p">+</span> <span class="n">error</span><span class="p">.</span><span class="n">message</span><span class="p">)</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 <p>And Presenter:</p>
 
-<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">LoginPresenter</span><span class="p">(</span><span class="kd">val</span> <span class="py">view</span><span class="p">:</span> <span class="n">LoginView</span><span class="p">)</span> <span class="p">{</span>
+<div class="language-kotlin highlighter-rouge"><pre class="codehilite"><code><span class="kd">class</span> <span class="nc">LoginPresenter</span><span class="p">(</span><span class="kd">val</span> <span class="py">view</span><span class="p">:</span> <span class="n">LoginView</span><span class="p">)</span> <span class="p">{</span>
 
     <span class="kd">val</span> <span class="py">loginUseCase</span> <span class="k">by</span> <span class="n">lazy</span> <span class="p">{</span> <span class="n">LoginUseCase</span><span class="p">()</span> <span class="p">}</span>
     <span class="kd">val</span> <span class="py">validateLoginFieldsUseCase</span> <span class="k">by</span> <span class="n">lazy</span> <span class="p">{</span> <span class="n">ValidateLoginFieldsUseCase</span><span class="p">()</span> <span class="p">}</span>
@@ -316,11 +306,10 @@ requesting focus if field is incorrect according to validation. It is also showi
                 <span class="p">)</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 <p>And it is all easy to unit-test with mocked View: (full tests <a href="https://github.com/MarcinMoskala/SimpleKotlinMvpBoilerplate/blob/master/app/src/test/java/com/marcinmoskala/simplekotlinmvpboilerplate/LoginPresenterTest.kt">here</a>)</p>
-<div class="language-kotlin highlighter-rouge"><pre class="highlight"><code><span class="n">@Test</span>
+<div class="language-kotlin highlighter-rouge"><pre class="codehilite"><code><span class="n">@Test</span>
 <span class="k">fun</span> <span class="nf">checkBothLoginFieldsEmpty</span><span class="p">()</span> <span class="p">{</span>
     <span class="kd">val</span> <span class="py">mockedView</span> <span class="p">=</span> <span class="n">MockedLoginView</span><span class="p">()</span>
     <span class="kd">val</span> <span class="py">presenter</span> <span class="p">=</span> <span class="n">LoginPresenter</span><span class="p">(</span><span class="n">mockedView</span><span class="p">)</span>
@@ -331,8 +320,7 @@ requesting focus if field is incorrect according to validation. It is also showi
             <span class="n">expectedPasswordError</span> <span class="p">=</span> <span class="n">R</span><span class="p">.</span><span class="n">string</span><span class="p">.</span><span class="n">error_field_required</span>
     <span class="p">)</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div>
 
 <p>But what about initial question? Still MVP or already MVVM? Well, I am not sure. Too much philosophy. I prefer programming. And it is definitely useful.</p>
 
