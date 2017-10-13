@@ -62,8 +62,23 @@
     "college_date": "",
     "college_job": "Student"
   },
-  "speaking":{
-    "my_speaking": "Moje wystąpienia i artykuły",
+  "publications": {
+    "title": "Publikacje",
+    "kotlinbook":"Android Development with Kotlin",
+    "kotlinbook_des":"Książka opublikowana przez Packt",
+    "kotlinbook_date":"Sierpień 2017",
+    "kotlinbook_job":"",
+    "reactivex": "ReactiveX – programowanie reaktywne w niemalże każdym języku i systemie",
+    "reactivex_des": "Artykuł dla magazynu Programista - największego programistycznego magazynu w Polsce",
+    "reactivex_date": "Wydane 2.2017",
+    "reactivex_job": "",
+    "kotlinarticle": "Język Kotlin – przyszłość Javy?",
+    "kotlinarticle_des": "Artykuł dla magazynu Programista - największego programistycznego magazynu w Polsce",
+    "kotlinarticle_date": "Wydane 8.2016",
+    "kotlinarticle_job": ""
+  },
+  "talks": {
+    "title": "Wystąpienia",
     "mobilization":"MVC vs MVP vs MVVM vs MVI",
     "mobilization_des":"Prezentacja konferencji Mobilization",
     "mobilization_date":"Warszawa, 21.10.2017",
@@ -76,10 +91,6 @@
     "mobilewarsaw_des":"Prezentacja na Mobile Warsaw",
     "mobilewarsaw_date":"Warszawa, 22 Sierpień, 2017",
     "mobilewarsaw_job":"",
-    "kotlinbook":"Android Development with Kotlin",
-    "kotlinbook_des":"Książka opublikowana przez Packt",
-    "kotlinbook_date":"Sierpień 2017",
-    "kotlinbook_job":"",
     "devjs":"MVC vs MVP vs MVVM",
     "devjs_des":"Prezentacja na dev.js",
     "devjs_date":"Warszawa, 27.6.2017",
@@ -91,15 +102,7 @@
     "mv": "Szkoły: MVC, MVP, MVVM. Czym się jednak różnią? Jakie mają silne i mocne strony?",
     "mv_des": "Prezentacja na Warszawskie Dni Informatyki - największa konferencja programistyczna w Polsce",
     "mv_date": "Warszawa, 29.3.2017",
-    "mv_job": "",
-    "reactivex": "ReactiveX – programowanie reaktywne w niemalże każdym języku i systemie",
-    "reactivex_des": "Artykuł dla magazynu Programista - największego programistycznego magazynu w Polsce",
-    "reactivex_date": "Wydane 2.2017",
-    "reactivex_job": "",
-    "kotlinarticle": "Język Kotlin – przyszłość Javy?",
-    "kotlinarticle_des": "Artykuł dla magazynu Programista - największego programistycznego magazynu w Polsce",
-    "kotlinarticle_date": "Wydane 8.2016",
-    "kotlinarticle_job": ""
+    "mv_job": ""
   },
   "consultation":{
     "consultation_offer": "Chcesz się skontaktować?",
