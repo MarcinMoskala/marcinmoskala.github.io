@@ -33,7 +33,8 @@ $(document).ready(function() {
     $('#i18_skills').i18n();
     $('#i18_projects').i18n();
     $('#i18_career').i18n();
-    $('#i18_speaking').i18n();
+    $('#i18_talks').i18n();
+    $('#i18_publications').i18n();
     $('#i18_blog').i18n();
     $('#i18_link').i18n();
   };
