@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirected
 sitemap: false
 redirect_to:  https://medium.com/@marcinmoskala/path-of-automatic-presenter-lifecycle-implementation-e39a244e1fdc
 title:  "Path of automatic Presenter lifecycle implementation"
