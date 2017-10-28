@@ -1,5 +1,7 @@
 ---
 layout: post
+sitemap: false
+redirect_to:  https://medium.com/@marcinmoskala/path-of-automatic-presenter-lifecycle-implementation-e39a244e1fdc
 title:  "Path of automatic Presenter lifecycle implementation"
 date:   2017-09-30
 desc: "Evolution of MVP Presenter implementation for Android"
