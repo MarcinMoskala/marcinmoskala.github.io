@@ -1,5 +1,7 @@
 ---
-layout: post
+layout: redirected
+sitemap: false
+redirect_to: "https://medium.com/@marcinmoskala/still-mvp-or-already-mvvm-d3e2c7c44a03"
 title:  "Still MVP or already MVVM?"
 date:   2017-05-05
 desc: "Idea and purpose behind KotlinAndroidViewBindings."
