@@ -1,13 +1,13 @@
 - name: 'Kotlin Academy Android application'
   i18n: 'KAAndroid'
   url: 'https://play.google.com/store/apps/details?id=org.kotlinacademy.mobile'
-  img: 'static/img/landing/ka.png'
+  img: 'static/img/landing/ka_icon.png'
   desc: ""
 
 - name: 'Kotlin Academy website'
   i18n: 'KAWeb'
   url: 'http://portal.kotlin-academy.com/'
-  img: 'static/img/landing/ka.png'
+  img: 'static/img/landing/ka_icon.png'
   desc: ""
 
 - name: 'Sweet Tooth'
