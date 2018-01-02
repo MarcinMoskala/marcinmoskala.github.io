@@ -1,4 +1,19 @@
 - name:
+    detail: "Kotlin: Next level of Android development"
+    i18n: ndc_london
+  desc:
+    detail: "Presentation on NDC London"
+    i18n: ndc_london_des
+  date:
+    detail: "Warsaw, 16 September, 2018"
+    i18n: ndc_london_date
+  job:
+    detail:
+    i18n: ndc_london_job
+  icon: fa-file-powerpoint-o
+  link: https://ndc-london.com/speaker/marcin-moska%C5%82a/
+
+- name:
     detail: "MVC vs MVP vs MVVM vs MVVI"
     i18n: mobilization
   desc:
@@ -7,7 +22,7 @@
   date:
     detail: "Warsaw, 21 October, 2017"
     i18n: mobilization_date
-  job:
+ * job:
     detail:
     i18n: mobilization_job
   icon: fa-file-powerpoint-o
