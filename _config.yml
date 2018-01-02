@@ -3,7 +3,7 @@
 # Website settings
 title: "Marcin Moskala"
 description: "The web page of Marcin Moskala"
-keywords: "Marcin, Moskala, github, Kotlin, RxJava"
+keywords: "Marcin, Moskala, github, Kotlin, multiplatform, Kotlin Academy, Marcin Moskala"
 baseurl: "/"
 url: "http://www.marcinmoskala.com"
 # url: "http://127.0.0.1:4000"
@@ -16,6 +16,7 @@ author:
   email: 'marcinmoskala@gmail.com'
   facebook_username: 'mmoskala'
   github_username: 'MarcinMoskala'
+  twitter_username: 'marcinmoskala'
   head_img: 'static/img/landing/marcin.jpg'
   desc: 'I am Android Kotlin developer, telecommunicant and machine learning passionate'
 
