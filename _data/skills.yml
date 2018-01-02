@@ -1,11 +1,11 @@
 - name: Kotlin
-  percentage: 95
+  percentage: 100
 
 - name: Java
   percentage: 90
 
 - name: Android
-  percentage: 80
+  percentage: 85
 
 - name: RxJava
   percentage: 60
@@ -14,4 +14,4 @@
   percentage: 40
 
 - name: Python
-  percentage: 30
+  percentage: 35
