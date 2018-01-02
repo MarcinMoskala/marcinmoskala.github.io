@@ -19,6 +19,8 @@
   },
   "projects": {
     "my_projects": "Projects",
+    "KAWeb": "Kotlin Academy website.",
+    "KAAndroid": "Kotlin Academy Android app.",
     "SweetTooth": "Application for ordering candies with custom design.",
     "GamekitSlide": "Slide game, that allows to get Gamekit points. ",
     "GamekitQuiz": "Quiz about games, that allows to get Gamekit points. ",

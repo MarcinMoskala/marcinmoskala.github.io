@@ -20,6 +20,10 @@
   "projects":{
     "my_projects": "Projekty",
 
+    "KAWeb": "Strona Kotlin Academy.",
+    "KAAndroid": "Aplikacja Kotlin Academy na Android.",
+
+
     "SweetTooth": "Aplikacja do zamawiania cukierków typu krówka z własnym zdjęciem.",
 
     "GamekitSlide": "Gra w trafianie liczby, gdzie można wygrywać punkty Dogry. Na razie niedostępna w polsce. ",
