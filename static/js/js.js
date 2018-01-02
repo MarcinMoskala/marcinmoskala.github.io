@@ -24,7 +24,6 @@ function buildCodeBlocks() {
     "</div>";
 }
 
-
 function getHtml() {
     var clone, ul, li, code;
 
@@ -38,6 +37,4 @@ function getHtml() {
     code = clone.html();
 
     return cleanHTML(code).replace(/</gi, "&lt;").replace(/>/gi, "&gt;");;
-    //code = $.tabifier(code, "HTML").replace(/</gi, "&lt;").replace(/>/gi, "&gt;");
-
 }
