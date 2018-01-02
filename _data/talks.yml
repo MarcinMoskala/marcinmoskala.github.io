@@ -22,7 +22,7 @@
   date:
     detail: "Warsaw, 21 October, 2017"
     i18n: mobilization_date
- * job:
+  job:
     detail:
     i18n: mobilization_job
   icon: fa-file-powerpoint-o
