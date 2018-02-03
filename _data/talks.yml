@@ -1,5 +1,50 @@
 - name:
     detail: "Kotlin: Next level of Android development"
+    i18n: voxx_bucharest
+  desc:
+    detail: "Presentation on Voxxed Days Bucharest 2018"
+    i18n: voxx_bucharest_des
+  date:
+    detail: "Bucharest, 22 March, 2018"
+    i18n: voxx_bucharest_date
+  job:
+    detail:
+    i18n: voxx_bucharest_job
+  icon: fa-file-powerpoint-o
+  link: https://voxxeddays.com/romania/bucharest/
+
+- name:
+    detail: "MVC vs MVP vs MVVM"
+    i18n: appdevcon
+  desc:
+    detail: "Presentation on AppDevCon"
+    i18n: appdevcon_des
+  date:
+    detail: "Amsterdam, 16 March, 2018"
+    i18n: appdevcon_date
+  job:
+    detail:
+    i18n: appdevcon_job
+  icon: fa-file-powerpoint-o
+  link: http://appdevcon.nl/session/mvc-vs-mvp-vs-mvvm/
+
+- name:
+    detail: "Kotlin Coroutines in action"
+    i18n: voxx_vienna
+  desc:
+    detail: "Presentation on Voxxed Days Vienna 2018"
+    i18n: voxx_vienna_des
+  date:
+    detail: "Vienna, 12 September, 2018"
+    i18n: voxx_vienna_date
+  job:
+    detail:
+    i18n: voxx_vienna_job
+  icon: fa-file-powerpoint-o
+  link: https://voxxeddays.com/vienna/
+
+- name:
+    detail: "Kotlin: Next level of Android development"
     i18n: ndc_london
   desc:
     detail: "Presentation on NDC London"
