@@ -68,7 +68,7 @@
     "reactivex_date": "2.2017",
     "kotlinarticle": "Article 'Kotlin - Future of Java?'",
     "kotlinarticle_des": "Programmer Magazine - biggest programmer magazine in Poland",
-    "kotlinarticle_date": "8.2016",
+    "kotlinarticle_date": "8.2016"
   },
   "talks": {
     "title": "Talks",
@@ -99,7 +99,7 @@
     "nextlevel_date": "Warsaw, 31.5.2017",
     "mv": "MVC, MVP, MVVM. What are they? What are the differences?",
     "mv_des": "Warszawskie Dni Informatyki - biggest programming event in Poland",
-    "mv_date": "Warsaw, 29.3.2017",
+    "mv_date": "Warsaw, 29.3.2017"
   },
   "consultation": {
     "consultation_offer": "Need a contact?",
