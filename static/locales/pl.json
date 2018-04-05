@@ -20,6 +20,8 @@
   "projects":{
     "my_projects": "Projekty",
 
+    "Dogry": "Aplikacja, która za używanie innych aplikacji przyznaje Ci punkty." ,
+
     "KAWeb": "Strona Kotlin Academy.",
     "KAAndroid": "Aplikacja Kotlin Academy na Android.",
 
@@ -38,7 +40,6 @@
     "PreferenceHolder": "Biblioteka Open-Source dla Kotlina w Androidzie, która upraszcza korzystanie z SharedPreferences tak bardzo jak to tylko możliwe.",
     "Nootro": "Startup tworzący i sprzedający suplement dla rozwoju mózgu.",
 
-    "StackTester": "Aplikacja do testowania jak działają flagi stosu w Androidzie. " ,
     "FindMyPhone": "Prosta aplikacja wspomagająca odnalezienie wyciszonego telefonu."
   },
   "career":{
