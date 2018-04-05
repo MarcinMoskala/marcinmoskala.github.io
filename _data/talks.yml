@@ -1,138 +1,84 @@
 - name:
-    detail: "Kotlin: Next level of Android development"
     i18n: voxx_bucharest
   desc:
-    detail: "Presentation on Voxxed Days Bucharest 2018"
     i18n: voxx_bucharest_des
   date:
-    detail: "Bucharest, 22 March, 2018"
     i18n: voxx_bucharest_date
-  job:
-    detail:
-    i18n: voxx_bucharest_job
   icon: fa-file-powerpoint-o
   link: https://voxxeddays.com/romania/bucharest/
 
 - name:
-    detail: "MVC vs MVP vs MVVM"
     i18n: appdevcon
   desc:
-    detail: "Presentation on AppDevCon"
     i18n: appdevcon_des
   date:
-    detail: "Amsterdam, 16 March, 2018"
     i18n: appdevcon_date
-  job:
-    detail:
-    i18n: appdevcon_job
   icon: fa-file-powerpoint-o
   link: http://appdevcon.nl/session/mvc-vs-mvp-vs-mvvm/
 
 - name:
-    detail: "Kotlin: Next level of Android development"
     i18n: ndc_london
   desc:
-    detail: "Presentation on NDC London"
     i18n: ndc_london_des
   date:
-    detail: "Warsaw, 16 September, 2018"
     i18n: ndc_london_date
-  job:
-    detail:
-    i18n: ndc_london_job
   icon: fa-file-powerpoint-o
   link: https://ndc-london.com/speaker/marcin-moska%C5%82a/
 
 - name:
-    detail: "MVC vs MVP vs MVVM vs MVVI"
     i18n: mobilization
   desc:
-    detail: "Presentation on Mobilization"
     i18n: mobilization_des
   date:
-    detail: "Warsaw, 21 October, 2017"
     i18n: mobilization_date
-  job:
-    detail:
-    i18n: mobilization_job
   icon: fa-file-powerpoint-o
   link: https://docs.google.com/presentation/d/1qUtZNB1C7KUYeet75UqHymyRAh7oV_K4qiyKveBTT1g/edit?usp=sharing
 
 - name:
-    detail: "Superpowers of Kotlin delegation"
     i18n: nov
   desc:
-    detail: "Presentation on DevFest Siberia"
     i18n: nov_des
   date:
-    detail: "Novosibirsk, 23-24 September, 2017"
     i18n: nov_date
-  job:
-    detail:
-    i18n: nov_job
   icon: fa-file-powerpoint-o
   link: https://gdg-siberia.com/speakers/
 
 - name:
-    detail: "MVC vs MVP vs MVVM vs MVVI"
     i18n: mobilewarsaw
   desc:
-    detail: "Presentation on Mobile Warsaw"
     i18n: mobilewarsaw_des
   date:
-    detail: "Warsaw, 22 August, 2017"
     i18n: mobilewarsaw_date
-  job:
-    detail:
-    i18n: mobilewarsaw_job
   icon: fa-file-powerpoint-o
   link: https://docs.google.com/presentation/d/1qUtZNB1C7KUYeet75UqHymyRAh7oV_K4qiyKveBTT1g/edit?usp=sharing
 
 - name:
-    detail: "MVC, MVP, MVVM"
     i18n: devjs
   desc:
-    detail:
     i18n: devjs_des
   date:
-    detail:
     i18n: devjs_date
-  job:
-    detail:
-    i18n: devjs_job
   icon: fa-file-powerpoint-o
   link: https://devjswwa2.evenea.pl/
   video: https://www.youtube.com/watch?v=0Fnu3opUYI0
   presentation: https://docs.google.com/presentation/d/1qUtZNB1C7KUYeet75UqHymyRAh7oV_K4qiyKveBTT1g/edit?usp=sharing
 
 - name:
-    detail: "Kotlin: Next Level of Android Development"
     i18n: nextlevel
   desc:
-    detail:
     i18n: nextlevel_des
   date:
-    detail:
     i18n: nextlevel_date
-  job:
-    detail:
-    i18n: nextlevel_job
   icon: fa-google
   link: http://www.techbite.pl/
   video: https://www.youtube.com/watch?v=1jGchtuFayc
   presentation: http://slides.com/marcinmoskala/kotlin-next-level
 
 - name:
-    detail: "MVC, MVP, MVVM. What are they?"
     i18n: mv
   desc:
-    detail:
     i18n: mv_des
   date:
-    detail:
     i18n: mv_date
-  job:
-    detail:
-    i18n: mv_job
   icon: fa-file-powerpoint-o
   link: http://www.warszawskiedniinformatyki.pl/
