@@ -19,6 +19,7 @@
   },
   "projects": {
     "my_projects": "Projects",
+    "Dogry": "App that gives you points for using apps." ,
     "KAWeb": "Kotlin Academy website.",
     "KAAndroid": "Kotlin Academy Android app.",
     "SweetTooth": "Application for ordering candies with custom design.",

@@ -1,3 +1,10 @@
+
+- name: 'Dogry'
+  i18n: 'Dogry'
+  url: 'https://play.google.com/store/apps/details?id=com.gamekit.dogryapp'
+  img: 'static/img/landing/dogry.png'
+  desc: ""
+
 - name: 'Kotlin Academy Android application'
   i18n: 'KAAndroid'
   url: 'https://play.google.com/store/apps/details?id=org.kotlinacademy.mobile'
@@ -56,12 +63,6 @@
   i18n: 'Nootro'
   url: 'http://nootro.pl/'
   img: 'static/img/landing/nootro.png'
-  desc: ""
-
-- name: 'Stack Tester'
-  i18n: 'StackTester'
-  url: 'https://github.com/MarcinMoskala/StackTester'
-  img: 'static/img/landing/st.png'
   desc: ""
 
 - name: 'FindMyPhone'
