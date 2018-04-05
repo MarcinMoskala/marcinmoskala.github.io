@@ -1,11 +1,11 @@
 - name:
-    i18n: voxx_bucharest
+    i18n: turin
   desc:
-    i18n: voxx_bucharest_des
+    i18n: turin_des
   date:
-    i18n: voxx_bucharest_date
+    i18n: turin_date
   icon: fa-file-powerpoint-o
-  link: https://voxxeddays.com/romania/bucharest/
+  link: http://it.droidcon.com/2018/speakers/Marcin%20-Moska%C5%82a-591/
 
 - name:
     i18n: appdevcon
