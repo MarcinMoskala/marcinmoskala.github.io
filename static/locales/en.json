@@ -60,6 +60,9 @@
   },
   "publications": {
     "title": "Publications",
+    "kotlinacademymedium":"Kotlin Academy",
+    "kotlinacademymedium_des":"Publication about Kotlinie",
+    "kotlinacademymedium_date":"October 2017",
     "kotlinbook": "Android Development with Kotlin",
     "kotlinbook_des": "Book published by Packt",
     "kotlinbook_date": "August 2017",
