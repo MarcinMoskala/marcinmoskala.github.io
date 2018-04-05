@@ -72,6 +72,9 @@
   },
   "talks": {
     "title": "Talks",
+    "turin":"Multiplatform development in Kotlin",
+    "turin_des":"Presentation on droidcon italy",
+    "turin_date":"Turin, 19.04.2018",
     "voxx_bucharest":"Kotlin: Next level of Android development",
     "voxx_bucharest_des":"Presentation on Voxxed Days Bucharest 2018",
     "voxx_bucharest_date":"Bucharest, 22 March, 2018",
