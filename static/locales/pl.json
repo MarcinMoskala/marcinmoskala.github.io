@@ -88,6 +88,9 @@
   },
   "talks": {
     "title": "Wystąpienia",
+    "kotlinconf18":"Effective multiplatform development in Kotlin",
+    "kotlinconf18_des":"Prezentacja na KotlinConf 2018",
+    "kotlinconf18_date":"Amsterdam, 3-5.10.2018",
     "turin":"Multiplatform development in Kotlin",
     "turin_des":"Prezentacja na droidcon italy",
     "turin_date":"Turyn, 19.04.2018",
