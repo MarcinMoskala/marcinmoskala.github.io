@@ -113,27 +113,7 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a class="page-scroll" href="/blog/"></a></li>
-                        
-                            
-                            <li class="active">
-                            
-                            <a class="page-scroll" href="/android/">Android</a></li>
-                        
-                            
-                            <li>
-                            
-                            <a class="page-scroll" href="/kotlin/">Kotlin</a></li>
-                        
-                            
-                            <li>
-                            
-                            <a class="page-scroll" href="/life/">Life</a></li>
-                        
-                            
-                            <li>
-                            
-                            <a class="page-scroll" href="/productivity/">Productivity</a></li>
+                        <li><a class="page-scroll" href="https://medium.com/@marcinmoskala"></a></li>
                         
                     </ul>
                 </div>
@@ -320,33 +300,6 @@ I was surprised how easy to use Firebase is. I wanted to test its abiliti...
   </script>
 
 
-
-  <script type="text/javascript">
-    var disqusShortName = "marcinmoskala";
-
-    var disqusPublicKey = "tj2MPaNlHMONwTH5bGDNSXyaBpW7q282MeUzh5CwcjJerNhK8Kxk3aWo7IckzTX7";
-
-    var urlArray = [];
-    $('.disqus-comment-count').each(function () {
-      var url = $(this).attr('data-disqus-url');
-      urlArray.push('link:' + url);
-    });
-    $.ajax({
-      type: 'GET',
-      url: "https://disqus.com/api/3.0/threads/set.jsonp",
-      data: { api_key: disqusPublicKey, forum : disqusShortName, thread : urlArray },
-      cache: false,
-      dataType: "jsonp",
-      success: function (result) {
-        for (var i in result.response) {
-          var count = result.response[i].posts;
-          if ( count ) {
-            $('.disqus-comment-count[data-disqus-url="' + result.response[i].link + '"]').html(count);
-          }
-        }
-      }
-    });
-</script>
 
 
 

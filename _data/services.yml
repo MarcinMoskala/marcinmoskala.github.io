@@ -1,0 +1,7 @@
+- name: "Workshop"
+  button: "Fill contact form"
+  url: "https://marcinmoskala.typeform.com/to/iwKnN9"
+
+- name: "Consultation"
+  button: "Contact us"
+  url: "mailto:marcinmoskala@gmail.com"

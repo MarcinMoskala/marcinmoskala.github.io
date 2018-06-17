@@ -1,38 +1,72 @@
-- name:
-    i18n: kotlinacademymedium
+- name: "Kotlin Cheat Sheet"
   desc:
-    i18n: kotlinacademymedium_des
-  date:
-    i18n: kotlinacademymedium_date
+    i18n: cheetsheet_des
+  date: "21.5.2018"
   icon: fa-rss-square
-  link: https://medium.com/kotlin-academy/programmer-dictionary-parameter-vs-argument-type-parameter-vs-type-argument-b965d2cc6929
+  link: https://blog.kotlin-academy.com/kotlin-cheat-sheet-1137588c75a
 
-- name:
-    i18n: kotlinbook
+- name: "Effective Kotlin"
+  desc:
+    i18n: effectivekotlin_des
+  date: ""
+  icon: fa-rss-square
+  link: https://medium.com/kotlin-academy/character/home
+
+- name: "Kotlin generic variance modifiers"
+  desc:
+    i18n: genericmodifiers_des
+  date: "18.1.2018"
+  icon: fa-rss-square
+  link: https://blog.kotlin-academy.com/kotlin-generics-variance-modifiers-36b82c7caa39
+
+- name: "Multiplatform Kotlin Developlemnt"
+  desc:
+    i18n: multiplatform_des
+  date: ""
+  icon: fa-rss-square
+  link: https://blog.kotlin-academy.com/multiplatform/home
+
+- name: "My favorite examples of functional programming in Kotlin"
+  desc:
+    i18n: examplesfunctional_des
+  date: "8.1.2018"
+  icon: fa-rss-square
+  link: https://medium.freecodecamp.org/my-favorite-examples-of-functional-programming-in-kotlin-e69217b39112
+
+- name: "How to solve the Google recruiters’ puzzle about throwing eggs from a building"
+  desc:
+    i18n: eggs_des
+  date: "21.12.2017"
+  icon: fa-rss-square
+  link: https://medium.freecodecamp.org/how-to-solve-the-google-recruiters-puzzle-about-throwing-eggs-from-a-building-de6e7ef1755d
+
+- name: "Kotlin programmer dictionary"
+  desc:
+    i18n: dictionary_des
+  date: ""
+  icon: fa-rss-square
+  link: https://blog.kotlin-academy.com/kotlin-programmer-dictionary
+
+- name: "Android Development with Kotlin"
   desc:
     i18n: kotlinbook_des
-  date:
-    i18n: kotlinbook_date
+  date: "8.2017"
   icon: fa-book
   link: https://www.packtpub.com/application-development/android-development-kotlin
 
-- name:
-    i18n: reactivex
+- name: "ReactiveX – programowanie reaktywne w niemalże każdym języku i systemie"
   desc:
     i18n: reactivex_des
-  date:
-    i18n: reactivex_date
+  date: "2.2017"
   job:
     i18n: reactivex_job
   icon: fa-newspaper-o
   link: /static/files/MMReactiveX.pdf
 
-- name:
-    i18n: kotlinarticle
+- name: "Język Kotlin – przyszłość Javy?"
   desc:
     i18n: kotlinarticle_des
-  date:
-    i18n: kotlinarticle_date
+  date: "8.2016"
   job:
     i18n: kotlinarticle_job
   icon: fa-newspaper-o

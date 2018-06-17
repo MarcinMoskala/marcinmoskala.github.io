@@ -24,6 +24,7 @@
 
     "KAWeb": "Strona Kotlin Academy.",
     "KAAndroid": "Aplikacja Kotlin Academy na Android.",
+    "KA": "Portal z misją by nauczać Kotlina.",
 
     "SweetTooth": "Aplikacja do zamawiania cukierków typu krówka z własnym zdjęciem.",
     "GamekitSlide": "Gra w trafianie liczby, gdzie można wygrywać punkty Dogry. Na razie niedostępna w polsce. ",
@@ -44,9 +45,13 @@
   },
   "career":{
     "my_career": "Moja kariera",
+    "workshops": "Szkolenia",
+    "workshops_des": "Prowadzę szkolenia w firmach na całym świecie. ",
+    "workshops_date": "Od 5.2018 do teraz",
+    "workshops_job": "Trener",
     "gamekit": "Gamekit",
     "gamekit_des": "Główny programista Android tworzący gry i aplikcaje dla Gamekit. ",
-    "gamekit_date": "From 5.2017 till now",
+    "gamekit_date": "Od 5.2017 do 5.2018",
     "gamekit_job": "Master of Android Development",
     "docplanner": "Znany Lekarz",
     "docplanner_des": "Głowny programista Android dla ZnanyLekarz (DocPlanner).",
@@ -67,18 +72,19 @@
   },
   "publications": {
     "title": "Publikacje",
-    "kotlinacademymedium":"Kotlin Academy",
-    "kotlinacademymedium_des":"Publikacja o Kotlinie",
-    "kotlinacademymedium_date":"Październik 2017",
-    "kotlinbook":"Android Development with Kotlin",
+
+    "explanation": "To tylko część moich publikacji. Znajdują się tu jednak wyłącznie takie publikacje które zrobiły się bardziej popularne i przyciągnęły uwagę tysięcy ludzi. Aby zobaczyć wszystkie moje artykuły przejdź do mojego profilu na Medium",
+    "eggs_des": "Artykuł prezentuje popularną zagadkę z rozmów kwalifikacyjnych, jej rozwiązanie oraz implementację która odnajduje perfekcyjne rozwiązanie",
+    "cheetsheet_des": "Cheet Sheet dla języka Kotlin",
+    "examplesfunctional_des": "Artykuł opublikowany na FreeCodeCamp, prezentuje ciekawe przykłady programowania funkcyjnego",
+    "genericmodifiers_des": "Pełne wyjaśnienie modyfikatorów dla parametrów generycznych w Kotlinie",
+    "effectivekotlin_des": "Series of articles with rules for effective and efficient development",
+    "multiplatform_des": "Series of articles about multiplatform development and possibility it gives",
+    "dictionary_des": "Series of articles explaining commonly misunderstood terms from Kotlin",
+
     "kotlinbook_des":"Książka opublikowana przez Packt",
-    "kotlinbook_date":"Sierpień 2017",
-    "reactivex": "ReactiveX – programowanie reaktywne w niemalże każdym języku i systemie",
     "reactivex_des": "Artykuł dla magazynu Programista - największego programistycznego magazynu w Polsce",
-    "reactivex_date": "Wydane 2.2017",
-    "kotlinarticle": "Język Kotlin – przyszłość Javy?",
-    "kotlinarticle_des": "Artykuł dla magazynu Programista - największego programistycznego magazynu w Polsce",
-    "kotlinarticle_date": "Wydane 8.2016"
+    "kotlinarticle_des": "Artykuł dla magazynu Programista - największego programistycznego magazynu w Polsce"
   },
   "talks": {
     "title": "Wystąpienia",

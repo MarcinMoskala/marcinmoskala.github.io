@@ -20,30 +20,38 @@
   "projects":{
     "my_projects": "Projekty",
 
-    "SweetTooth": "Aplikacja do zamawiania cukierków typu krówka z własnym zdjęciem.",
+    "Dogry": "Aplikacja, która za używanie innych aplikacji przyznaje Ci punkty." ,
 
+    "KAWeb": "Strona Kotlin Academy.",
+    "KAAndroid": "Aplikacja Kotlin Academy na Android.",
+    "KA": "Portal z misją by nauczać Kotlina.",
+
+    "SweetTooth": "Aplikacja do zamawiania cukierków typu krówka z własnym zdjęciem.",
     "GamekitSlide": "Gra w trafianie liczby, gdzie można wygrywać punkty Dogry. Na razie niedostępna w polsce. ",
+
     "GamekitQuiz": "Aplikcja Quiz, która pozwala na zdobywanie punktów Dogry. Na razie niedostępna w polsce. ",
-    
     "DocplannerDoctor": "Aplikacja lekarska dla portalu ZnanyLekarz, pozwalająca lekarzom na łatwiejsze zarządzanie swoim grafikiem oraz komunikację z pacjentami.",
+
     "WartaMobile": "Aplikacja dla klientów Warty, którzy doznali szkody. Pozwala ona na prostszą komunikację, dostarczenia dokumentacji i zamknięcie szkody. ",
-    
     "ActivityStarter": "Biblioteka dla Androida, która przy pomocy generacji kodu tworzy prosty sposób na uruchamianie Activity, zawierające dane przekazywane jako argumenty.",
+
     "KotlinWonders": "Sztuczna inteligencja do gry planszowej \"7 cudów świata\" oparta na algorytmie MCTS i napisana w Kotlinie w stylu funkcyjnym. ",
-    
     "KotlinPreferences": "Biblioteka dla Androida, która ułatwia korzystanie z SharedPreferences dzięki sprytnemu rozwiązaniu wykorzystującemu nietypowe cechy Kotlina.",
+
     "PreferenceHolder": "Biblioteka Open-Source dla Kotlina w Androidzie, która upraszcza korzystanie z SharedPreferences tak bardzo jak to tylko możliwe.",
-    
     "Nootro": "Startup tworzący i sprzedający suplement dla rozwoju mózgu.",
-    "StackTester": "Aplikacja do testowania jak działają flagi stosu w Androidzie. " ,
 
     "FindMyPhone": "Prosta aplikacja wspomagająca odnalezienie wyciszonego telefonu."
   },
   "career":{
     "my_career": "Moja kariera",
+    "workshops": "Szkolenia",
+    "workshops_des": "Prowadzę szkolenia w firmach na całym świecie. ",
+    "workshops_date": "Od 5.2018 do teraz",
+    "workshops_job": "Trener",
     "gamekit": "Gamekit",
     "gamekit_des": "Główny programista Android tworzący gry i aplikcaje dla Gamekit. ",
-    "gamekit_date": "From 5.2017 till now",
+    "gamekit_date": "Od 5.2017 do 5.2018",
     "gamekit_job": "Master of Android Development",
     "docplanner": "Znany Lekarz",
     "docplanner_des": "Głowny programista Android dla ZnanyLekarz (DocPlanner).",
@@ -64,45 +72,58 @@
   },
   "publications": {
     "title": "Publikacje",
-    "kotlinbook":"Android Development with Kotlin",
+
+    "explanation": "To tylko część moich publikacji. Znajdują się tu jednak wyłącznie takie publikacje które zrobiły się bardziej popularne i przyciągnęły uwagę tysięcy ludzi. Aby zobaczyć wszystkie moje artykuły przejdź do mojego profilu na Medium",
+    "eggs_des": "Artykuł prezentuje popularną zagadkę z rozmów kwalifikacyjnych, jej rozwiązanie oraz implementację która odnajduje perfekcyjne rozwiązanie",
+    "cheetsheet_des": "Cheet Sheet dla języka Kotlin",
+    "examplesfunctional_des": "Artykuł opublikowany na FreeCodeCamp, prezentuje ciekawe przykłady programowania funkcyjnego",
+    "genericmodifiers_des": "Pełne wyjaśnienie modyfikatorów dla parametrów generycznych w Kotlinie",
+    "effectivekotlin_des": "Series of articles with rules for effective and efficient development",
+    "multiplatform_des": "Series of articles about multiplatform development and possibility it gives",
+    "dictionary_des": "Series of articles explaining commonly misunderstood terms from Kotlin",
+
     "kotlinbook_des":"Książka opublikowana przez Packt",
-    "kotlinbook_date":"Sierpień 2017",
-    "kotlinbook_job":"",
-    "reactivex": "ReactiveX – programowanie reaktywne w niemalże każdym języku i systemie",
     "reactivex_des": "Artykuł dla magazynu Programista - największego programistycznego magazynu w Polsce",
-    "reactivex_date": "Wydane 2.2017",
-    "reactivex_job": "",
-    "kotlinarticle": "Język Kotlin – przyszłość Javy?",
-    "kotlinarticle_des": "Artykuł dla magazynu Programista - największego programistycznego magazynu w Polsce",
-    "kotlinarticle_date": "Wydane 8.2016",
-    "kotlinarticle_job": ""
+    "kotlinarticle_des": "Artykuł dla magazynu Programista - największego programistycznego magazynu w Polsce"
   },
   "talks": {
     "title": "Wystąpienia",
+    "turin":"Multiplatform development in Kotlin",
+    "turin_des":"Prezentacja na droidcon italy",
+    "turin_date":"Turyn, 19.04.2018",
+    "wdi2":"Wzorzec delegacji, na przykładzie jezyka Kotlin",
+    "wdi2_des":"Prezentacja na Warszawskich Dniach Informatyki",
+    "wdi2_date":"Warszawa, 27.03.2018",
+    "voxxeddays_bucharest":"Kotlin: Next level of Android Development",
+    "voxxeddays_bucharest_des":"Prezentacja na Voxxeddays Romania",
+    "voxxeddays_bucharest_date":"Bukareszt, 22.03.2018",
+    "mw2":"Superpowers of Kotlin delegation",
+    "mw2_des":"Prezentacja na Mobile Warsaw",
+    "mw2_date":"Warszawa, 7.03.2018",
+    "appdevcon":"MVC vs MVP vs MVVM",
+    "appdevcon_des":"Prezentacja na AppDevCon",
+    "appdevcon_date":"Amsterdam, 16.03.2018",
+    "ndc_london":"Kotlin: Next level of Android development",
+    "ndc_london_des":"Prezentacja na konferencji NDC London",
+    "ndc_london_date":"Londyn, 16.01.2018",
     "mobilization":"MVC vs MVP vs MVVM vs MVI",
-    "mobilization_des":"Prezentacja konferencji Mobilization",
-    "mobilization_date":"Warszawa, 21.10.2017",
-    "mobilization_job":"",
+    "mobilization_des":"Prezentacja na konferencji Mobilization",
+    "mobilization_date":"Łódź, 21.10.2017",
     "nov":"Superpowers of Kotlin delegation",
     "nov_des":"Prezentacja na konferencji DevFest Siberia",
     "nov_date":"Nowosybirsk, 24.9.2017",
-    "nov_job":"",
     "mobilewarsaw":"MVC vs MVP vs MVVM vs MVI",
     "mobilewarsaw_des":"Prezentacja na Mobile Warsaw",
-    "mobilewarsaw_date":"Warszawa, 22 Sierpień, 2017",
-    "mobilewarsaw_job":"",
+    "mobilewarsaw_date":"Warszawa, 22 sierpień, 2017",
     "devjs":"MVC vs MVP vs MVVM",
     "devjs_des":"Prezentacja na dev.js",
     "devjs_date":"Warszawa, 27.6.2017",
-    "devjs_job":"",
     "nextlevel": "Kotlin: Następny poziom programowania w Androidzie",
     "nextlevel_des": "Prezentacja na Google Developer Group TechBite Warszawa",
     "nextlevel_date": "Warszawa, 31.5.2017",
-    "nextlevel_job": "",
     "mv": "Szkoły: MVC, MVP, MVVM. Czym się jednak różnią? Jakie mają silne i mocne strony?",
     "mv_des": "Prezentacja na Warszawskie Dni Informatyki - największa konferencja programistyczna w Polsce",
-    "mv_date": "Warszawa, 29.3.2017",
-    "mv_job": ""
+    "mv_date": "Warszawa, 29.3.2017"
   },
   "consultation":{
     "consultation_offer": "Chcesz się skontaktować?",

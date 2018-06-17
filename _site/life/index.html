@@ -113,27 +113,7 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a class="page-scroll" href="/blog/"></a></li>
-                        
-                            
-                            <li>
-                            
-                            <a class="page-scroll" href="/android/">Android</a></li>
-                        
-                            
-                            <li>
-                            
-                            <a class="page-scroll" href="/kotlin/">Kotlin</a></li>
-                        
-                            
-                            <li class="active">
-                            
-                            <a class="page-scroll" href="/life/">Life</a></li>
-                        
-                            
-                            <li>
-                            
-                            <a class="page-scroll" href="/productivity/">Productivity</a></li>
+                        <li><a class="page-scroll" href="https://medium.com/@marcinmoskala"></a></li>
                         
                     </ul>
                 </div>
@@ -190,37 +170,12 @@
 		<ul id="pag-itemContainer" style="list-style:none;">
     
 		
-		
-		<li>
-        <div class="col-lg-8 col-lg-offset-2">
-            <div class="ibox">
-                <div class="ibox-content">
-                    <a href="/life/productivity/2017/09/28/idiots.html" class="btn-link">
-                        <h2>
-                            How not to lose trust and respect
-                        </h2>
-                    </a>
-                    <div class="small m-b-xs">
-                        <strong>Marcin Moskala</strong> <span class="text-muted"><i class="fa fa-clock-o"></i> 28 Sep 2017</span>
-                    </div>
-                    <p>
-                    	Since last year, I have been cooperating with people who have shown me something I could have nev...
-                    </p>
-                    <div class="row">
-                        <div class="col-md-6">
-                                <h5 style="display: inline;">Tags:</h5>
-                                
-                                    <button class="btn btn-white btn-xs" type="button">Psychology</button>
-                                
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </li>
-        
         </ul>
         
+
+    <div class="col-lg-8 col-lg-offset-2">
+		<p>Sorry,no blog！</p>
+    </div>
 
 
 
@@ -248,33 +203,6 @@
   </script>
 
 
-
-  <script type="text/javascript">
-    var disqusShortName = "marcinmoskala";
-
-    var disqusPublicKey = "tj2MPaNlHMONwTH5bGDNSXyaBpW7q282MeUzh5CwcjJerNhK8Kxk3aWo7IckzTX7";
-
-    var urlArray = [];
-    $('.disqus-comment-count').each(function () {
-      var url = $(this).attr('data-disqus-url');
-      urlArray.push('link:' + url);
-    });
-    $.ajax({
-      type: 'GET',
-      url: "https://disqus.com/api/3.0/threads/set.jsonp",
-      data: { api_key: disqusPublicKey, forum : disqusShortName, thread : urlArray },
-      cache: false,
-      dataType: "jsonp",
-      success: function (result) {
-        for (var i in result.response) {
-          var count = result.response[i].posts;
-          if ( count ) {
-            $('.disqus-comment-count[data-disqus-url="' + result.response[i].link + '"]').html(count);
-          }
-        }
-      }
-    });
-</script>
 
 
 
