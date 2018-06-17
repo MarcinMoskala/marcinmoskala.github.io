@@ -1,4 +1,13 @@
 - name:
+    i18n: kotlinconf18
+  desc:
+    i18n: kotlinconf18_des
+  date:
+    i18n: kotlinconf18_date
+  icon: fa-file-powerpoint-o
+  link: https://kotlinconf.com/speakers/
+
+- name:
     i18n: turin
   desc:
     i18n: turin_des
