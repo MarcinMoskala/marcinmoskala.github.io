@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-lg-12 text-center">
             <div class="navy-line"></div>
-            <h1><span data-i18n="publications.title">Publications</span></h1>
+            <h1><span data-i18n="publications.title">Key publications</span></h1>
         </div>
     </div>
     <div class="row features-block">
@@ -14,17 +14,17 @@
                     <div class="vertical-timeline-icon navy-bg wow rotateIn">
                         <i class="fa {{ publication.icon }}"></i>
                     </div>
-                    <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
+                    <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}" style="padding-top: 7px;">
                         <h2>
                             <a href="{{ publication.link }}">
-                                <span data-i18n="publications.{{ publication.name.i18n }}"></span>
+                                <span> {{ publication.name }} </span>
                             </a>
                         </h2>
                         <p>
                             <span data-i18n="publications.{{ publication.desc.i18n }}"></span>
                         </p>
                         <span class="vertical-date">
-                            <span data-i18n="publications.{{ publication.date.i18n }}"></span>
+                            <span>{{ publication.date }}</span>
                         </span>
                     </div>
                 </div>

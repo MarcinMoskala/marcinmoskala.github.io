@@ -1,4 +1,14 @@
 - name:
+    i18n: workshops
+  desc:
+    i18n: workshops_des
+  date:
+    i18n: workshops_date
+  job:
+    i18n: workshops_job
+  icon: fa-building
+
+- name:
     i18n: gamekit
   desc:
     i18n: gamekit_des

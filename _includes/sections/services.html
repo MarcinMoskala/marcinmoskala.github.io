@@ -1,12 +1,12 @@
 <div class="container">
     <div class="row">
-        <div class="col-lg-12 text-center" id="i18_skills">
+        <div class="col-lg-12 text-center" id="i18_services">
             <div class="navy-line"></div>
-            <h1><span data-i18n="skills.my_skills">My Skills</span></h1>
+            <h1><span data-i18n="services.my_services">Services</span></h1>
         </div>
     </div>
     <div class="row features-block">
-        {% for skill in site.data.skills %}
+        {% for skill in site.data.services %}
             {% assign loopindex = forloop.index | modulo: 2 %}
         <div class="row">
             <div class="col-lg-1 col-lg-offset-2 wow {% if loopindex == 1 %} fadeInLeft {% else %} fadeInRight {% endif %}">

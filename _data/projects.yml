@@ -3,6 +3,11 @@
   url: 'https://play.google.com/store/apps/details?id=com.gamekit.dogryapp'
   img: 'static/img/landing/dogry.png'
 
+- name: 'Kotlin Academy'
+  i18n: 'KA'
+  url: 'https://blog.kotlin-academy.com/'
+  img: 'static/img/landing/ka_icon.png'
+
 - name: 'Kotlin Academy Android application'
   i18n: 'KAAndroid'
   url: 'https://play.google.com/store/apps/details?id=org.kotlinacademy.mobile'

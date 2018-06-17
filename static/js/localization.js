@@ -30,7 +30,7 @@ $(document).ready(function() {
     $('.i18container').i18n();
     $('#i18_navbar').i18n();
     $('#i18_about_me').i18n();
-    $('#i18_skills').i18n();
+    $('#i18_services').i18n();
     $('#i18_projects').i18n();
     $('#i18_career').i18n();
     $('#i18_talks').i18n();
