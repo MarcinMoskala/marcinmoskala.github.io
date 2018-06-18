@@ -70,6 +70,18 @@
     "college_date": "",
     "college_job": "Student"
   },
+  "services": {
+    "services": "Usługi",
+    "workshops":"Warsztaty",
+    "consultations":"Konsultacje biznesowe",
+    "other":"Konsultacje prywatne lub code review",
+    "workshops_btn":"Formularz kontaktowy",
+    "consultations_btn":"Email",
+    "other_btn":"Codementor",
+    "workshops_des":"Prowadzę warsztaty specjalistyczne dostosowane do potrzeb klientów z zakresu Kotlina, Androida i dobrych praktyk.",
+    "consultations_des":"Udzielam konsultacji w firmach, główine dotyczących Androida, wdrażania Kotlina oraz wdrażania dobrych praktyk.",
+    "other_des":"Udzielam konsultacji, code review oraz daje prywatne lekcje. Napisz maila albo wystaw zapytanie na Codementor."
+  },
   "publications": {
     "title": "Publikacje",
 
@@ -78,11 +90,9 @@
     "cheetsheet_des": "Cheet Sheet dla języka Kotlin",
     "examplesfunctional_des": "Artykuł opublikowany na FreeCodeCamp, prezentuje ciekawe przykłady programowania funkcyjnego",
     "genericmodifiers_des": "Pełne wyjaśnienie modyfikatorów dla parametrów generycznych w Kotlinie",
-    "effectivekotlin_des": "Series of articles with rules for effective and efficient development",
-    "multiplatform_des": "Series of articles about multiplatform development and possibility it gives",
-    "dictionary_des": "Series of articles explaining commonly misunderstood terms from Kotlin",
-
-    "kotlinbook_des":"Książka opublikowana przez Packt",
+    "effectivekotlin_des": "Seria artykułów dotycząca reguł efektywnego programowania",
+    "multiplatform_des": "Seria artykułów o programowaniu wieloplatformowym i możliwościach jakie daje",
+    "dictionary_des": "Seria artykułów wyjaśniająca często mylone pojęcia z Kotlina",
     "reactivex_des": "Artykuł dla magazynu Programista - największego programistycznego magazynu w Polsce",
     "kotlinarticle_des": "Artykuł dla magazynu Programista - największego programistycznego magazynu w Polsce"
   },
@@ -91,6 +101,9 @@
     "kotlinconf18":"Effective multiplatform development in Kotlin",
     "kotlinconf18_des":"Prezentacja na KotlinConf 2018",
     "kotlinconf18_date":"Amsterdam, 3-5.10.2018",
+    "geecon":"Kotlin Coroutines in Action",
+    "geecon_des":"Prezentacja na GeeCON #10",
+    "geecon_date":"Kraków, 10.05.2018",
     "turin":"Multiplatform development in Kotlin",
     "turin_des":"Prezentacja na droidcon italy",
     "turin_date":"Turyn, 19.04.2018",
@@ -125,7 +138,7 @@
     "nextlevel_des": "Prezentacja na Google Developer Group TechBite Warszawa",
     "nextlevel_date": "Warszawa, 31.5.2017",
     "mv": "Szkoły: MVC, MVP, MVVM. Czym się jednak różnią? Jakie mają silne i mocne strony?",
-    "mv_des": "Prezentacja na Warszawskie Dni Informatyki - największa konferencja programistyczna w Polsce",
+    "mv_des": "Prezentacja na Warszawskich Dniach Informatyki - największa konferencja programistyczna w Polsce",
     "mv_date": "Warszawa, 29.3.2017"
   },
   "consultation":{
