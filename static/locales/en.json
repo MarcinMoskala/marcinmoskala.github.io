@@ -12,10 +12,19 @@
   },
   "about_me": {
     "about_me": "About Me",
-    "des": "Experienced Android and Kotlin developer. Co-author of the book \"Android Development with Kotlin\", founder of Kotlin Academy, an active member of programming and Kotlin community, speaker at international conferences, consultant, and teacher. Except for those activities, Marcin travels and makes data science analysis. He also develops Kotlin Academy portal, which is not only the place where Kotlin community shares knowledge and news, but also the biggest open-source multiplatform Kotlin project."
+    "des": "Experienced Android and Kotlin developer. Co-author of the book \"Android Development with Kotlin\", founder of Kotlin Academy, an active member of programming and Kotlin community, speaker on international conferences, consultant and teacher. Except for those activities, Marcin travels and makes data science analysis. He also develops Kotlin Academy portal, which is not only the place where Kotlin community shares knowledge and news, but also the biggest open-source multiplatform Kotlin project."
   },
   "services": {
-    "my_services": "Services"
+    "services": "Services",
+    "workshops":"Workshops",
+    "consultations":"Business consultations",
+    "other":"Code review or private consultations",
+    "workshops_btn":"Contact form",
+    "consultations_btn":"Contact me",
+    "other_btn":"Codementor",
+    "workshops_des":"I conduct programming workshops all over the world. I teach mainly Kotlin, Android development and good practices.",
+    "consultations_des":"I mainly help in: Android technology stack design, good practices in development, learning culture introduction.",
+    "other_des":"I do code review, teach and give online consultations. Contact me by email or using Codementor."
   },
   "projects": {
     "my_projects": "Projects",
@@ -59,7 +68,7 @@
     "samsung_date": "2014.10-2015.3",
     "samsung_job": "Java and JavaScript Developer",
     "college": "Graduation",
-    "college_des": "I got an engineer degree from Telecommunication (finished with A), and another engineer degree in Computer Science (also with A). Both courses were finished on Warsaw University of Technology - biggest and most prestigious technical university in Poland.",
+    "college_des": "I got an engineer degree from Telecommunication (finished with A), and another engineer degree in Computer Science (also with A). Both courses were finished on Warsaw University of Technology - the biggest and the most prestigious technical university in Poland.",
     "college_date": "",
     "college_job": "Student"
   },
@@ -73,15 +82,17 @@
     "effectivekotlin_des": "Series of articles with rules for effective and efficient development",
     "multiplatform_des": "Series of articles about multiplatform development and possibility it gives",
     "dictionary_des": "Series of articles explaining commonly misunderstood terms from Kotlin",
-    "kotlinbook_des": "Book designed for Android developers who want to switch to Kotlin, published by Packt",
-    "reactivex_des": "Article 'ReactiveX - reactive programming in nearly any language' in Programmer Magazine - biggest programmer magazine in Poland",
-    "kotlinarticle_des": "Article 'Kotlin - Future of Java?' in Programmer Magazine - biggest programmer magazine in Poland"
+    "reactivex_des": "Article 'ReactiveX - reactive programming in nearly any language' in Programmer Magazine - the biggest programmer magazine in Poland",
+    "kotlinarticle_des": "Article 'Kotlin - Future of Java?' in Programmer Magazine - the biggest programmer magazine in Poland"
   },
   "talks": {
     "title": "Talks",
     "kotlinconf18":"Effective multiplatform development in Kotlin",
     "kotlinconf18_des":"Presentation on KotlinConf 2018",
     "kotlinconf18_date":"Amsterdam, 3-5.10.2018",
+    "geecon":"Kotlin Coroutines in Action",
+    "geecon_des":"Presentation on GeeCON #10",
+    "geecon_date":"Kracow, 10.05.2018",
     "turin":"Multiplatform development in Kotlin",
     "turin_des":"Presentation on droidcon italy",
     "turin_date":"Turin, 19.04.2018",
@@ -117,7 +128,7 @@
     "nextlevel_des": "Presentation on Google Developer Group TechBite Warsaw",
     "nextlevel_date": "Warsaw, 31.5.2017",
     "mv": "MVC, MVP, MVVM. What are they? What are the differences?",
-    "mv_des": "Warszawskie Dni Informatyki - biggest programming event in Poland",
+    "mv_des": "Warszawskie Dni Informatyki - the biggest programming event in Poland",
     "mv_date": "Warsaw, 29.3.2017"
   },
   "consultation": {

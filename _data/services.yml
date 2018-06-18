@@ -1,7 +1,11 @@
-- name: "Workshop"
-  button: "Fill contact form"
+- i18n: workshops
+  img: fa fa-chalkboard-teacher
   url: "https://marcinmoskala.typeform.com/to/iwKnN9"
 
-- name: "Consultation"
-  button: "Contact us"
+- i18n: consultations
+  img: fa fa-comments
   url: "mailto:marcinmoskala@gmail.com"
+
+- i18n: other
+  img: fa fa-code
+  url: "https://www.codementor.io/marcinmoskala"

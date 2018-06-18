@@ -18,7 +18,7 @@
   <link href="http://marcinmoskala.com/bower_components/normalize-css/normalize.min.css" rel="stylesheet">
   <link href="http://marcinmoskala.com/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="http://marcinmoskala.com/bower_components/animate.css/animate.min.css" rel="stylesheet">
-  <link href="http://marcinmoskala.com/bower_components/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link href="http://marcinmoskala.com/static/font-mfizz/font-mfizz.css" rel="stylesheet">
   <!-- <link href="http://marcinmoskala.com/bower_components/toastr/toastr.min.css" rel="stylesheet"> -->
   <link href="http://marcinmoskala.com/bower_components/jquery.gritter/css/jquery.gritter.css" rel="stylesheet">
@@ -44,7 +44,7 @@
 
 <body id="page-top" class="landing-page">
 
-        <div class="navbar-wrapper">
+    <div class="navbar-wrapper">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
@@ -66,8 +66,20 @@
                     </li>
                 
                     <li>
+                      <a class="page-scroll" href="#services">
+                        <span data-i18n="nav.services">Services</span>
+                      </a>
+                    </li>
+                
+                    <li>
                       <a class="page-scroll" href="#talks">
                         <span data-i18n="nav.talks">Talks</span>
+                      </a>
+                    </li>
+                
+                    <li>
+                      <a class="page-scroll" href="#books">
+                        <span data-i18n="nav.books">Books</span>
                       </a>
                     </li>
                 
@@ -186,12 +198,12 @@
                 <h4><span class="navy">Moskala Marcin</span></h4>
                 <ul class="list-inline social-icon">
                     </li>
-                    <li><a href="https://twitter.com/marcinmoskala" target="blank"><i class="fa fa-twitter"></i></a>
+                    <li><a href="https://twitter.com/marcinmoskala" target="blank"><i class="fab fa-twitter"></i></a>
                     </li>
-                    <li><a href="https://github.com/MarcinMoskala" target="blank"><i class="fa fa-github"></i></a>
+                    <li><a href="https://github.com/MarcinMoskala" target="blank"><i class="fab fa-github"></i></a>
                     </li>
-                    <li><a href="https://www.facebook.com/mmoskala" target="blank"><i class="fa fa-facebook"></i></a>
-                    <li><a href="mailto:marcinmoskala@gmail.com"><i class="fa fa-envelope-o"></i></a>
+                    <li><a href="https://www.facebook.com/mmoskala" target="blank"><i class="fab fa-facebook"></i></a>
+                    <li><a href="mailto:marcinmoskala@gmail.com"><i class="fas fa-envelope"></i></a>
                     </li>
                 </ul>
             </div>
@@ -221,6 +233,70 @@
   </section>
 
   
+  <section id="services" class="features  timeline" style="margin-top: 0px;">
+    <div class="container" id="i18_projects">
+    <div class="row m-b-lg">
+        <div class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1><span data-i18n="services.services"></span></h1>
+        </div>
+    </div>
+    <div class="row">
+        
+        <div class="col-sm-4 wow zoomIn">
+            <div class="team-member">
+                <!--<img src="fa fa-chalkboard-teacher" class="img-responsive img-circle img-small" alt="">-->
+                <div class="img-responsive img-circle img-small" alt="" style="margin: auto;    margin-top: 10px;margin-bottom: 20px;background: #3385FF;color: #fff;padding: 4px 8px;height: 88px;width: 88px;display: block;border-radius: 50px;">
+                    <i class="fa fa-chalkboard-teacher" style="margin-top: 18px;font-size: 45px;"></i>
+                </div>
+
+                <h2><a href="https://marcinmoskala.typeform.com/to/iwKnN9" target="blank"><span class="navy" data-i18n="services.workshops"></span></a></h2>
+                <p style="height: 60px;" ><span data-i18n="services.workshops_des"></span></p>
+
+                <a class="btn btn-lg btn-default btn-rounded btn-outline wow bounceIn" href="https://marcinmoskala.typeform.com/to/iwKnN9" style="visibility: visible; animation-name: bounceIn;">
+                    <span data-i18n="services.workshops_btn"></span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="col-sm-4 wow zoomIn">
+            <div class="team-member">
+                <!--<img src="fa fa-comments" class="img-responsive img-circle img-small" alt="">-->
+                <div class="img-responsive img-circle img-small" alt="" style="margin: auto;    margin-top: 10px;margin-bottom: 20px;background: #3385FF;color: #fff;padding: 4px 8px;height: 88px;width: 88px;display: block;border-radius: 50px;">
+                    <i class="fa fa-comments" style="margin-top: 18px;font-size: 45px;"></i>
+                </div>
+
+                <h2><a href="mailto:marcinmoskala@gmail.com" target="blank"><span class="navy" data-i18n="services.consultations"></span></a></h2>
+                <p style="height: 60px;" ><span data-i18n="services.consultations_des"></span></p>
+
+                <a class="btn btn-lg btn-default btn-rounded btn-outline wow bounceIn" href="mailto:marcinmoskala@gmail.com" style="visibility: visible; animation-name: bounceIn;">
+                    <span data-i18n="services.consultations_btn"></span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="col-sm-4 wow zoomIn">
+            <div class="team-member">
+                <!--<img src="fa fa-code" class="img-responsive img-circle img-small" alt="">-->
+                <div class="img-responsive img-circle img-small" alt="" style="margin: auto;    margin-top: 10px;margin-bottom: 20px;background: #3385FF;color: #fff;padding: 4px 8px;height: 88px;width: 88px;display: block;border-radius: 50px;">
+                    <i class="fa fa-code" style="margin-top: 18px;font-size: 45px;"></i>
+                </div>
+
+                <h2><a href="https://www.codementor.io/marcinmoskala" target="blank"><span class="navy" data-i18n="services.other"></span></a></h2>
+                <p style="height: 60px;" ><span data-i18n="services.other_des"></span></p>
+
+                <a class="btn btn-lg btn-default btn-rounded btn-outline wow bounceIn" href="https://www.codementor.io/marcinmoskala" style="visibility: visible; animation-name: bounceIn;">
+                    <span data-i18n="services.other_btn"></span>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+  </section>
+
+  
   <section id="talks" class="features  gray-section  timeline" style="margin-top: 0px;">
     <div class="container" id="i18_talks">
     <div class="row">
@@ -236,9 +312,37 @@
                 
                 <div class="vertical-timeline-block">
                     <div class="vertical-timeline-icon navy-bg wow rotateIn">
-                        <i class="fa fa-file-powerpoint-o"></i>
+                        <i class="far fa-file-powerpoint"></i>
                     </div>
-                    <div class="vertical-timeline-content wow  rotateInUpRight ">
+                    <div class="vertical-timeline-content wow  rotateInUpRight " style="padding-top: 7px;">
+                        <h2><a href="https://kotlinconf.com/speakers/"><span data-i18n="talks.kotlinconf18"></span></a></h2>
+                        <p><span data-i18n="talks.kotlinconf18_des"></span></p>
+                        <span class="vertical-date">
+                            <span data-i18n="talks.kotlinconf18_date"></span>
+                        </span>
+                    </div>
+                </div>
+                
+                
+                <div class="vertical-timeline-block">
+                    <div class="vertical-timeline-icon navy-bg wow rotateIn">
+                        <i class="far fa-file-powerpoint"></i>
+                    </div>
+                    <div class="vertical-timeline-content wow  rotateInUpLeft " style="padding-top: 7px;">
+                        <h2><a href="https://2018.geecon.org/speakers/info.html?id=389"><span data-i18n="talks.geecon"></span></a></h2>
+                        <p><span data-i18n="talks.geecon_des"></span></p>
+                        <span class="vertical-date">
+                            <span data-i18n="talks.geecon_date"></span>
+                        </span>
+                    </div>
+                </div>
+                
+                
+                <div class="vertical-timeline-block">
+                    <div class="vertical-timeline-icon navy-bg wow rotateIn">
+                        <i class="far fa-file-powerpoint"></i>
+                    </div>
+                    <div class="vertical-timeline-content wow  rotateInUpRight " style="padding-top: 7px;">
                         <h2><a href="http://it.droidcon.com/2018/speakers/Marcin%20-Moska%C5%82a-591/"><span data-i18n="talks.turin"></span></a></h2>
                         <p><span data-i18n="talks.turin_des"></span></p>
                         <span class="vertical-date">
@@ -250,9 +354,9 @@
                 
                 <div class="vertical-timeline-block">
                     <div class="vertical-timeline-icon navy-bg wow rotateIn">
-                        <i class="fa fa-file-powerpoint-o"></i>
+                        <i class="far fa-file-powerpoint"></i>
                     </div>
-                    <div class="vertical-timeline-content wow  rotateInUpLeft ">
+                    <div class="vertical-timeline-content wow  rotateInUpLeft " style="padding-top: 7px;">
                         <h2><a href="https://warszawskiedniinformatyki.pl/"><span data-i18n="talks.wdi2"></span></a></h2>
                         <p><span data-i18n="talks.wdi2_des"></span></p>
                         <span class="vertical-date">
@@ -264,9 +368,9 @@
                 
                 <div class="vertical-timeline-block">
                     <div class="vertical-timeline-icon navy-bg wow rotateIn">
-                        <i class="fa fa-file-powerpoint-o"></i>
+                        <i class="far fa-file-powerpoint"></i>
                     </div>
-                    <div class="vertical-timeline-content wow  rotateInUpRight ">
+                    <div class="vertical-timeline-content wow  rotateInUpRight " style="padding-top: 7px;">
                         <h2><a href="https://voxxeddays.com/romania/2018/01/11/kotlin-next-level-of-android-development/"><span data-i18n="talks.voxxeddays_bucharest"></span></a></h2>
                         <p><span data-i18n="talks.voxxeddays_bucharest_des"></span></p>
                         <span class="vertical-date">
@@ -278,9 +382,9 @@
                 
                 <div class="vertical-timeline-block">
                     <div class="vertical-timeline-icon navy-bg wow rotateIn">
-                        <i class="fa fa-file-powerpoint-o"></i>
+                        <i class="far fa-file-powerpoint"></i>
                     </div>
-                    <div class="vertical-timeline-content wow  rotateInUpLeft ">
+                    <div class="vertical-timeline-content wow  rotateInUpLeft " style="padding-top: 7px;">
                         <h2><a href="https://www.meetup.com/Mobile-Warsaw/events/248229614/"><span data-i18n="talks.mw2"></span></a></h2>
                         <p><span data-i18n="talks.mw2_des"></span></p>
                         <span class="vertical-date">
@@ -292,9 +396,9 @@
                 
                 <div class="vertical-timeline-block">
                     <div class="vertical-timeline-icon navy-bg wow rotateIn">
-                        <i class="fa fa-file-powerpoint-o"></i>
+                        <i class="far fa-file-powerpoint"></i>
                     </div>
-                    <div class="vertical-timeline-content wow  rotateInUpRight ">
+                    <div class="vertical-timeline-content wow  rotateInUpRight " style="padding-top: 7px;">
                         <h2><a href="http://appdevcon.nl/session/mvc-vs-mvp-vs-mvvm/"><span data-i18n="talks.appdevcon"></span></a></h2>
                         <p><span data-i18n="talks.appdevcon_des"></span></p>
                         <span class="vertical-date">
@@ -306,9 +410,9 @@
                 
                 <div class="vertical-timeline-block">
                     <div class="vertical-timeline-icon navy-bg wow rotateIn">
-                        <i class="fa fa-file-powerpoint-o"></i>
+                        <i class="far fa-file-powerpoint"></i>
                     </div>
-                    <div class="vertical-timeline-content wow  rotateInUpLeft ">
+                    <div class="vertical-timeline-content wow  rotateInUpLeft " style="padding-top: 7px;">
                         <h2><a href="https://ndc-london.com/speaker/marcin-moska%C5%82a/"><span data-i18n="talks.ndc_london"></span></a></h2>
                         <p><span data-i18n="talks.ndc_london_des"></span></p>
                         <span class="vertical-date">
@@ -320,9 +424,9 @@
                 
                 <div class="vertical-timeline-block">
                     <div class="vertical-timeline-icon navy-bg wow rotateIn">
-                        <i class="fa fa-file-powerpoint-o"></i>
+                        <i class="far fa-file-powerpoint"></i>
                     </div>
-                    <div class="vertical-timeline-content wow  rotateInUpRight ">
+                    <div class="vertical-timeline-content wow  rotateInUpRight " style="padding-top: 7px;">
                         <h2><a href="https://docs.google.com/presentation/d/1qUtZNB1C7KUYeet75UqHymyRAh7oV_K4qiyKveBTT1g/edit?usp=sharing"><span data-i18n="talks.mobilization"></span></a></h2>
                         <p><span data-i18n="talks.mobilization_des"></span></p>
                         <span class="vertical-date">
@@ -334,9 +438,9 @@
                 
                 <div class="vertical-timeline-block">
                     <div class="vertical-timeline-icon navy-bg wow rotateIn">
-                        <i class="fa fa-file-powerpoint-o"></i>
+                        <i class="far fa-file-powerpoint"></i>
                     </div>
-                    <div class="vertical-timeline-content wow  rotateInUpLeft ">
+                    <div class="vertical-timeline-content wow  rotateInUpLeft " style="padding-top: 7px;">
                         <h2><a href="https://gdg-siberia.com/speakers/"><span data-i18n="talks.nov"></span></a></h2>
                         <p><span data-i18n="talks.nov_des"></span></p>
                         <span class="vertical-date">
@@ -348,9 +452,9 @@
                 
                 <div class="vertical-timeline-block">
                     <div class="vertical-timeline-icon navy-bg wow rotateIn">
-                        <i class="fa fa-file-powerpoint-o"></i>
+                        <i class="far fa-file-powerpoint"></i>
                     </div>
-                    <div class="vertical-timeline-content wow  rotateInUpRight ">
+                    <div class="vertical-timeline-content wow  rotateInUpRight " style="padding-top: 7px;">
                         <h2><a href="https://docs.google.com/presentation/d/1qUtZNB1C7KUYeet75UqHymyRAh7oV_K4qiyKveBTT1g/edit?usp=sharing"><span data-i18n="talks.mobilewarsaw"></span></a></h2>
                         <p><span data-i18n="talks.mobilewarsaw_des"></span></p>
                         <span class="vertical-date">
@@ -362,9 +466,9 @@
                 
                 <div class="vertical-timeline-block">
                     <div class="vertical-timeline-icon navy-bg wow rotateIn">
-                        <i class="fa fa-file-powerpoint-o"></i>
+                        <i class="far fa-file-powerpoint"></i>
                     </div>
-                    <div class="vertical-timeline-content wow  rotateInUpLeft ">
+                    <div class="vertical-timeline-content wow  rotateInUpLeft " style="padding-top: 7px;">
                         <h2><a href="https://devjswwa2.evenea.pl/"><span data-i18n="talks.devjs"></span></a></h2>
                         <p><span data-i18n="talks.devjs_des"></span></p>
                         <span class="vertical-date">
@@ -376,9 +480,9 @@
                 
                 <div class="vertical-timeline-block">
                     <div class="vertical-timeline-icon navy-bg wow rotateIn">
-                        <i class="fa fa-google"></i>
+                        <i class="fab fa-google"></i>
                     </div>
-                    <div class="vertical-timeline-content wow  rotateInUpRight ">
+                    <div class="vertical-timeline-content wow  rotateInUpRight " style="padding-top: 7px;">
                         <h2><a href="http://www.techbite.pl/"><span data-i18n="talks.nextlevel"></span></a></h2>
                         <p><span data-i18n="talks.nextlevel_des"></span></p>
                         <span class="vertical-date">
@@ -390,9 +494,9 @@
                 
                 <div class="vertical-timeline-block">
                     <div class="vertical-timeline-icon navy-bg wow rotateIn">
-                        <i class="fa fa-file-powerpoint-o"></i>
+                        <i class="far fa-file-powerpoint"></i>
                     </div>
-                    <div class="vertical-timeline-content wow  rotateInUpLeft ">
+                    <div class="vertical-timeline-content wow  rotateInUpLeft " style="padding-top: 7px;">
                         <h2><a href="http://www.warszawskiedniinformatyki.pl/"><span data-i18n="talks.mv"></span></a></h2>
                         <p><span data-i18n="talks.mv_des"></span></p>
                         <span class="vertical-date">
@@ -409,7 +513,33 @@
   </section>
 
   
-  <section id="publications" class="features  timeline" style="margin-top: 0px;">
+  <section id="books" class="features  " style="margin-top: 0px;">
+    <div class="container" id="i18_projects">
+    <div class="row m-b-lg">
+        <div class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1><span data-i18n="books.title">Books</span></h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="wow zoomIn">
+            <span class="team-member" >
+                <a href="https://www.packtpub.com/application-development/android-development-kotlin" target="_blank" >
+                    <img src="http://t3.gstatic.com/images?q=tbn:ANd9GcR4KKE0qlk29I1AcnAFa0AV20pD5GTQ3Pbe9acfcvVW31Z2myPg" class="img-responsive img-big" style="width: 350px;padding-top: 0px;padding-bottom: 50px;" alt="">
+                </a>
+                <!--<div class="col-lg-offset-2 text-center">-->
+                    <!--<p style="height: 60px;" ><span data-i18n="">Android Development with Kotlin</span></p>-->
+                    <!--<span data-i18n=""></span>-->
+                <!--</div>-->
+            </span>
+        </div>
+    </div>
+</div>
+
+  </section>
+
+  
+  <section id="publications" class="features  gray-section  timeline" style="margin-top: 0px;">
     <div class="container" id="i18_publications">
     <div class="row">
         <div class="col-lg-12 text-center">
@@ -424,9 +554,9 @@
                 
                 <div class="vertical-timeline-block">
                     <div class="vertical-timeline-icon navy-bg wow rotateIn">
-                        <i class="fa fa-rss-square"></i>
+                        <i class="fas fa-rss-square"></i>
                     </div>
-                    <div class="vertical-timeline-content wow  rotateInUpRight " style="padding-top: 7px;">
+                    <div class="vertical-timeline-content wow  rotateInUpRight ">
                         <h2>
                             <a href="https://blog.kotlin-academy.com/kotlin-cheat-sheet-1137588c75a">
                                 <span> Kotlin Cheat Sheet </span>
@@ -444,9 +574,9 @@
                 
                 <div class="vertical-timeline-block">
                     <div class="vertical-timeline-icon navy-bg wow rotateIn">
-                        <i class="fa fa-rss-square"></i>
+                        <i class="fas fa-rss-square"></i>
                     </div>
-                    <div class="vertical-timeline-content wow  rotateInUpLeft " style="padding-top: 7px;">
+                    <div class="vertical-timeline-content wow  rotateInUpLeft ">
                         <h2>
                             <a href="https://medium.com/kotlin-academy/character/home">
                                 <span> Effective Kotlin </span>
@@ -464,9 +594,9 @@
                 
                 <div class="vertical-timeline-block">
                     <div class="vertical-timeline-icon navy-bg wow rotateIn">
-                        <i class="fa fa-rss-square"></i>
+                        <i class="fas fa-rss-square"></i>
                     </div>
-                    <div class="vertical-timeline-content wow  rotateInUpRight " style="padding-top: 7px;">
+                    <div class="vertical-timeline-content wow  rotateInUpRight ">
                         <h2>
                             <a href="https://blog.kotlin-academy.com/kotlin-generics-variance-modifiers-36b82c7caa39">
                                 <span> Kotlin generic variance modifiers </span>
@@ -484,9 +614,9 @@
                 
                 <div class="vertical-timeline-block">
                     <div class="vertical-timeline-icon navy-bg wow rotateIn">
-                        <i class="fa fa-rss-square"></i>
+                        <i class="fas fa-rss-square"></i>
                     </div>
-                    <div class="vertical-timeline-content wow  rotateInUpLeft " style="padding-top: 7px;">
+                    <div class="vertical-timeline-content wow  rotateInUpLeft ">
                         <h2>
                             <a href="https://blog.kotlin-academy.com/multiplatform/home">
                                 <span> Multiplatform Kotlin Developlemnt </span>
@@ -504,9 +634,9 @@
                 
                 <div class="vertical-timeline-block">
                     <div class="vertical-timeline-icon navy-bg wow rotateIn">
-                        <i class="fa fa-rss-square"></i>
+                        <i class="fas fa-rss-square"></i>
                     </div>
-                    <div class="vertical-timeline-content wow  rotateInUpRight " style="padding-top: 7px;">
+                    <div class="vertical-timeline-content wow  rotateInUpRight ">
                         <h2>
                             <a href="https://medium.freecodecamp.org/my-favorite-examples-of-functional-programming-in-kotlin-e69217b39112">
                                 <span> My favorite examples of functional programming in Kotlin </span>
@@ -524,9 +654,9 @@
                 
                 <div class="vertical-timeline-block">
                     <div class="vertical-timeline-icon navy-bg wow rotateIn">
-                        <i class="fa fa-rss-square"></i>
+                        <i class="fas fa-rss-square"></i>
                     </div>
-                    <div class="vertical-timeline-content wow  rotateInUpLeft " style="padding-top: 7px;">
+                    <div class="vertical-timeline-content wow  rotateInUpLeft ">
                         <h2>
                             <a href="https://medium.freecodecamp.org/how-to-solve-the-google-recruiters-puzzle-about-throwing-eggs-from-a-building-de6e7ef1755d">
                                 <span> How to solve the Google recruiters’ puzzle about throwing eggs from a building </span>
@@ -544,9 +674,9 @@
                 
                 <div class="vertical-timeline-block">
                     <div class="vertical-timeline-icon navy-bg wow rotateIn">
-                        <i class="fa fa-rss-square"></i>
+                        <i class="fas fa-rss-square"></i>
                     </div>
-                    <div class="vertical-timeline-content wow  rotateInUpRight " style="padding-top: 7px;">
+                    <div class="vertical-timeline-content wow  rotateInUpRight ">
                         <h2>
                             <a href="https://blog.kotlin-academy.com/kotlin-programmer-dictionary">
                                 <span> Kotlin programmer dictionary </span>
@@ -564,29 +694,9 @@
                 
                 <div class="vertical-timeline-block">
                     <div class="vertical-timeline-icon navy-bg wow rotateIn">
-                        <i class="fa fa-book"></i>
+                        <i class="far fa-newspaper"></i>
                     </div>
-                    <div class="vertical-timeline-content wow  rotateInUpLeft " style="padding-top: 7px;">
-                        <h2>
-                            <a href="https://www.packtpub.com/application-development/android-development-kotlin">
-                                <span> Android Development with Kotlin </span>
-                            </a>
-                        </h2>
-                        <p>
-                            <span data-i18n="publications.kotlinbook_des"></span>
-                        </p>
-                        <span class="vertical-date">
-                            <span>8.2017</span>
-                        </span>
-                    </div>
-                </div>
-                
-                
-                <div class="vertical-timeline-block">
-                    <div class="vertical-timeline-icon navy-bg wow rotateIn">
-                        <i class="fa fa-newspaper-o"></i>
-                    </div>
-                    <div class="vertical-timeline-content wow  rotateInUpRight " style="padding-top: 7px;">
+                    <div class="vertical-timeline-content wow  rotateInUpLeft ">
                         <h2>
                             <a href="/static/files/MMReactiveX.pdf">
                                 <span> ReactiveX – programowanie reaktywne w niemalże każdym języku i systemie </span>
@@ -604,9 +714,9 @@
                 
                 <div class="vertical-timeline-block">
                     <div class="vertical-timeline-icon navy-bg wow rotateIn">
-                        <i class="fa fa-newspaper-o"></i>
+                        <i class="far fa-newspaper"></i>
                     </div>
-                    <div class="vertical-timeline-content wow  rotateInUpLeft " style="padding-top: 7px;">
+                    <div class="vertical-timeline-content wow  rotateInUpRight ">
                         <h2>
                             <a href="/static/files/MMKotlin.pdf">
                                 <span> Język Kotlin – przyszłość Javy? </span>
@@ -629,7 +739,7 @@
   </section>
 
   
-  <section id="projects" class="features  gray-section  project" style="margin-top: 0px;">
+  <section id="projects" class="features  project" style="margin-top: 0px;">
     <div class="container" id="i18_projects">
     <div class="row m-b-lg">
         <div class="col-lg-12 text-center">
@@ -791,7 +901,7 @@
   </section>
 
   
-  <section id="career" class="features  timeline" style="margin-top: 0px;">
+  <section id="career" class="features  gray-section  timeline" style="margin-top: 0px;">
     <div class="container" id="i18_career">
     <div class="row">
         <div class="col-lg-12 text-center">
@@ -889,7 +999,7 @@
   </section>
 
   
-  <section id="consulting" class="features  gray-section  testimonials navy-section" style="margin-top: 0px;">
+  <section id="consulting" class="features  testimonials navy-section" style="margin-top: 0px;">
     <div class="container">
     <div class="row">
         <div class="col-lg-12 text-center wow zoomIn" id="i18_blog">

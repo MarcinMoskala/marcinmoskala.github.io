@@ -28,11 +28,23 @@ sections:
     tpl: 'about.html'
     css: ''
     
+  - id: 'services'
+    i18n: 'nav.services'
+    name: 'Services'
+    tpl: 'services.html'
+    css: 'timeline'
+
   - id: 'talks'
     i18n: 'nav.talks'
     name: 'Talks'
     tpl: 'talks.html'
     css: 'timeline'
+
+  - id: 'books'
+    i18n: 'nav.books'
+    name: 'Books'
+    tpl: 'books.html'
+    css: ''
 
   - id: 'publications'
     i18n: 'nav.publications'

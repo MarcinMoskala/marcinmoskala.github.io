@@ -1,25 +1,27 @@
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12 text-center" id="i18_services">
+<div class="container" id="i18_projects">
+    <div class="row m-b-lg">
+        <div class="col-lg-12 text-center">
             <div class="navy-line"></div>
-            <h1><span data-i18n="services.my_services">Services</span></h1>
+            <h1><span data-i18n="services.services"></span></h1>
         </div>
     </div>
-    <div class="row features-block">
-        {% for skill in site.data.services %}
-            {% assign loopindex = forloop.index | modulo: 2 %}
-        <div class="row">
-            <div class="col-lg-1 col-lg-offset-2 wow {% if loopindex == 1 %} fadeInLeft {% else %} fadeInRight {% endif %}">
-                <p>{{ skill.name }}</p>
-            </div>
-            <div class="col-lg-7 wow  {% if loopindex == 1 %} fadeInRight {% else %} fadeInLeft {% endif %}">
-                <div class="progress progress-bar-default">
-                    <div style="width: {{ skill.percentage }}%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="{{ skill.percentage }}" role="progressbar" class="progress-bar">
-                    </div>
+    <div class="row">
+        {% for service in site.data.services %}
+        <div class="col-sm-4 wow zoomIn">
+            <div class="team-member">
+                <!--<img src="{{ service.img }}" class="img-responsive img-circle img-small" alt="">-->
+                <div class="img-responsive img-circle img-small" alt="" style="margin: auto;    margin-top: 10px;margin-bottom: 20px;background: #3385FF;color: #fff;padding: 4px 8px;height: 88px;width: 88px;display: block;border-radius: 50px;">
+                    <i class="{{ service.img }}" style="margin-top: 18px;font-size: 45px;"></i>
                 </div>
+
+                <h2><a href="{{ service.url}}" target="blank"><span class="navy" data-i18n="services.{{ service.i18n }}"></span></a></h2>
+                <p style="height: 60px;" ><span data-i18n="services.{{ service.i18n }}_des"></span></p>
+
+                <a class="btn btn-lg btn-default btn-rounded btn-outline wow bounceIn" href="{{ service.url }}" style="visibility: visible; animation-name: bounceIn;">
+                    <span data-i18n="services.{{ service.i18n }}_btn"></span>
+                </a>
             </div>
         </div>
-        <br>
         {% endfor %}
     </div>
 </div>

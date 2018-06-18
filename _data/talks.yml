@@ -4,8 +4,17 @@
     i18n: kotlinconf18_des
   date:
     i18n: kotlinconf18_date
-  icon: fa-file-powerpoint-o
+  icon: far fa-file-powerpoint
   link: https://kotlinconf.com/speakers/
+
+- name:
+    i18n: geecon
+  desc:
+    i18n: geecon_des
+  date:
+    i18n: geecon_date
+  icon: far fa-file-powerpoint
+  link: https://2018.geecon.org/speakers/info.html?id=389
 
 - name:
     i18n: turin
@@ -13,7 +22,7 @@
     i18n: turin_des
   date:
     i18n: turin_date
-  icon: fa-file-powerpoint-o
+  icon: far fa-file-powerpoint
   link: http://it.droidcon.com/2018/speakers/Marcin%20-Moska%C5%82a-591/
 
 - name:
@@ -22,7 +31,7 @@
     i18n: wdi2_des
   date:
     i18n: wdi2_date
-  icon: fa-file-powerpoint-o
+  icon: far fa-file-powerpoint
   link: https://warszawskiedniinformatyki.pl/
 
 - name:
@@ -31,7 +40,7 @@
     i18n: voxxeddays_bucharest_des
   date:
     i18n: voxxeddays_bucharest_date
-  icon: fa-file-powerpoint-o
+  icon: far fa-file-powerpoint
   link: https://voxxeddays.com/romania/2018/01/11/kotlin-next-level-of-android-development/
 
 - name:
@@ -40,7 +49,7 @@
     i18n: mw2_des
   date:
     i18n: mw2_date
-  icon: fa-file-powerpoint-o
+  icon: far fa-file-powerpoint
   link: https://www.meetup.com/Mobile-Warsaw/events/248229614/
 
 - name:
@@ -49,7 +58,7 @@
     i18n: appdevcon_des
   date:
     i18n: appdevcon_date
-  icon: fa-file-powerpoint-o
+  icon: far fa-file-powerpoint
   link: http://appdevcon.nl/session/mvc-vs-mvp-vs-mvvm/
 
 - name:
@@ -58,7 +67,7 @@
     i18n: ndc_london_des
   date:
     i18n: ndc_london_date
-  icon: fa-file-powerpoint-o
+  icon: far fa-file-powerpoint
   link: https://ndc-london.com/speaker/marcin-moska%C5%82a/
 
 - name:
@@ -67,7 +76,7 @@
     i18n: mobilization_des
   date:
     i18n: mobilization_date
-  icon: fa-file-powerpoint-o
+  icon: far fa-file-powerpoint
   link: https://docs.google.com/presentation/d/1qUtZNB1C7KUYeet75UqHymyRAh7oV_K4qiyKveBTT1g/edit?usp=sharing
 
 - name:
@@ -76,7 +85,7 @@
     i18n: nov_des
   date:
     i18n: nov_date
-  icon: fa-file-powerpoint-o
+  icon: far fa-file-powerpoint
   link: https://gdg-siberia.com/speakers/
 
 - name:
@@ -85,7 +94,7 @@
     i18n: mobilewarsaw_des
   date:
     i18n: mobilewarsaw_date
-  icon: fa-file-powerpoint-o
+  icon: far fa-file-powerpoint
   link: https://docs.google.com/presentation/d/1qUtZNB1C7KUYeet75UqHymyRAh7oV_K4qiyKveBTT1g/edit?usp=sharing
 
 - name:
@@ -94,7 +103,7 @@
     i18n: devjs_des
   date:
     i18n: devjs_date
-  icon: fa-file-powerpoint-o
+  icon: far fa-file-powerpoint
   link: https://devjswwa2.evenea.pl/
   video: https://www.youtube.com/watch?v=0Fnu3opUYI0
   presentation: https://docs.google.com/presentation/d/1qUtZNB1C7KUYeet75UqHymyRAh7oV_K4qiyKveBTT1g/edit?usp=sharing
@@ -105,7 +114,7 @@
     i18n: nextlevel_des
   date:
     i18n: nextlevel_date
-  icon: fa-google
+  icon: fab fa-google
   link: http://www.techbite.pl/
   video: https://www.youtube.com/watch?v=1jGchtuFayc
   presentation: http://slides.com/marcinmoskala/kotlin-next-level
@@ -116,5 +125,5 @@
     i18n: mv_des
   date:
     i18n: mv_date
-  icon: fa-file-powerpoint-o
+  icon: far fa-file-powerpoint
   link: http://www.warszawskiedniinformatyki.pl/
