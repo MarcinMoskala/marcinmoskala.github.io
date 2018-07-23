@@ -10,6 +10,13 @@
     i18n: effectivekotlin_des
   date: ""
   icon: fas fa-rss-square
+  link: https://blog.kotlin-academy.com/effective-kotlin/home
+
+- name: "The character of Kotlin"
+  desc:
+    i18n: characterofkotlin_des
+  date: ""
+  icon: fas fa-rss-square
   link: https://medium.com/kotlin-academy/character/home
 
 - name: "Kotlin generic variance modifiers"
