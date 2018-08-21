@@ -27,48 +27,56 @@ sections:
     name: 'About'
     tpl: 'about.html'
     css: ''
+    in_menu: false
     
   - id: 'services'
     i18n: 'nav.services'
     name: 'Services'
     tpl: 'services.html'
     css: 'timeline'
+    in_menu: true
 
   - id: 'talks'
     i18n: 'nav.talks'
     name: 'Talks'
     tpl: 'talks.html'
     css: 'timeline'
+    in_menu: true
 
   - id: 'books'
     i18n: 'nav.books'
     name: 'Books'
     tpl: 'books.html'
     css: ''
+    in_menu: false
 
   - id: 'publications'
     i18n: 'nav.publications'
     name: 'Key publications'
     tpl: 'publications.html'
     css: 'timeline'
+    in_menu: true
 
   - id: 'projects'
     i18n: 'nav.projects'
     name: 'Projects'
     tpl: 'projects.html'
     css: 'project'
+    in_menu: true
 
   - id: 'career'
     i18n: 'nav.career'
     name: 'Career'
     tpl: 'career.html'
     css: 'timeline'
+    in_menu: true
 
   - id: 'consulting'
     i18n: 'nav.consulting'
     name: 'Contact'
     tpl: 'consulting.html'
     css: 'testimonials navy-section'
+    in_menu: true
 
 # localization
 languages:
