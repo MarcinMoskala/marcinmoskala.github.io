@@ -13,7 +13,7 @@
   },
   "about_me": {
     "about_me": "About Me",
-    "des": "Experienced Android and Kotlin developer. Co-author of the book \"Android Development with Kotlin\", founder of Kot. Academy, an active member of programming and Kotlin community, speaker on international conferences, consultant and teacher. Except for those activities, Marcin travels and makes data science analysis. He also develops Kot. Academy portal, which is not only the place where Kotlin community shares knowledge and news, but also the biggest open-source multiplatform Kotlin project."
+    "des": "Marcin Moskala is an experienced Android developer passionate about Kotlin since its early beta release. He is the creator of Kotlin Academy and author of the book \"Android Development with Kotlin\". He is Kotlin evangelist and the main author on the biggest medium publication about Kotlin: blog.kotlin-academy.com. He is also the autor of libraries like ActivityStarter, ArcSeekBar, KotlinAndroidViewBinding and PreferenceHolder."
   },
   "services": {
     "services": "Services",
