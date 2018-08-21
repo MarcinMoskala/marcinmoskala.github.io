@@ -12,7 +12,8 @@
   },
   "about_me":{
     "about_me": "O mnie",
-    "des": "Autor \"Android Development with Kotlin\" i ewangelista języka Kotlin. Pracuję z pasją i rozwijam biblioteki open-source."
+    "des": "Doświadczony Android Developer i pasjonat Kotlina od jego wersji beta. Autor \"Android Development with Kotlin\" i twórca Kot. Academy. Ewangelista Kotlina i główny autor największej publikacji o Kotlinie: blog.kotlin-academy.com. Także autor bibliotek, takich jak: like ActivityStarter, ArcSeekBar, KotlinAndroidViewBinding and PreferenceHolder.
+"
   },
   "skills":{
     "my_skills": "Umiejętności"
