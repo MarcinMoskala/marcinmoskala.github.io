@@ -27,7 +27,7 @@ sections:
     name: 'About'
     tpl: 'about.html'
     css: ''
-    in_menu: false
+    in_menu: true
     
   - id: 'services'
     i18n: 'nav.services'
@@ -55,7 +55,7 @@ sections:
     name: 'Key publications'
     tpl: 'publications.html'
     css: 'timeline'
-    in_menu: true
+    in_menu: false
 
   - id: 'projects'
     i18n: 'nav.projects'
