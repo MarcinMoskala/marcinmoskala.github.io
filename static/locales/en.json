@@ -12,7 +12,7 @@
   },
   "about_me": {
     "about_me": "About Me",
-    "des": "Experienced Android and Kotlin developer. Co-author of the book \"Android Development with Kotlin\", founder of Kotlin Academy, an active member of programming and Kotlin community, speaker on international conferences, consultant and teacher. Except for those activities, Marcin travels and makes data science analysis. He also develops Kotlin Academy portal, which is not only the place where Kotlin community shares knowledge and news, but also the biggest open-source multiplatform Kotlin project."
+    "des": "Experienced Android and Kotlin developer. Co-author of the book \"Android Development with Kotlin\", founder of Kot. Academy, an active member of programming and Kotlin community, speaker on international conferences, consultant and teacher. Except for those activities, Marcin travels and makes data science analysis. He also develops Kot. Academy portal, which is not only the place where Kotlin community shares knowledge and news, but also the biggest open-source multiplatform Kotlin project."
   },
   "services": {
     "services": "Services",
@@ -29,8 +29,8 @@
   "projects": {
     "my_projects": "Projects",
     "Dogry": "App that gives you points for using apps." ,
-    "KAWeb": "Kotlin Academy website.",
-    "KAAndroid": "Kotlin Academy Android app.",
+    "KAWeb": "Kot. Academy website.",
+    "KAAndroid": "Kot. Academy Android app.",
     "KA": "Community initiative with mission to teach Kotlin.",
     "SweetTooth": "Application for ordering candies with custom design.",
     "GamekitSlide": "Slide game, that allows to get Gamekit points. ",
