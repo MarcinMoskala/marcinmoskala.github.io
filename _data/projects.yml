@@ -3,17 +3,17 @@
   url: 'https://play.google.com/store/apps/details?id=com.gamekit.dogryapp'
   img: 'static/img/landing/dogry.png'
 
-- name: 'Kot. Academy'
+- name: 'Kt. Academy'
   i18n: 'KA'
   url: 'https://blog.kotlin-academy.com/'
   img: 'static/img/landing/ka_icon.png'
 
-- name: 'Kot. Academy Android application'
+- name: 'Kt. Academy Android application'
   i18n: 'KAAndroid'
   url: 'https://play.google.com/store/apps/details?id=org.kotlinacademy.mobile'
   img: 'static/img/landing/ka_icon.png'
 
-- name: 'Kot. Academy website'
+- name: 'Kt. Academy website'
   i18n: 'KAWeb'
   url: 'http://portal.kotlin-academy.com/'
   img: 'static/img/landing/ka_icon.png'

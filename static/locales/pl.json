@@ -5,6 +5,8 @@
   "nav":{
     "home": "Główna",
     "about_me": "O mnie",
+    "services": "Usługi",
+    "talks": "Wystąpienia",
     "skills": "Umiejętności",
     "projects": "Projekty",
     "career": "Kariera",
@@ -12,7 +14,7 @@
   },
   "about_me":{
     "about_me": "O mnie",
-    "des": "Doświadczony Android Developer i pasjonat Kotlina od jego wersji beta. Autor \"Android Development with Kotlin\" i twórca Kot. Academy. Ewangelista Kotlina i główny autor największej publikacji o Kotlinie: blog.kotlin-academy.com. Także autor bibliotek, takich jak: like ActivityStarter, ArcSeekBar, KotlinAndroidViewBinding and PreferenceHolder."
+    "des": "Doświadczony Android Developer i pasjonat Kotlina od jego wersji beta. Autor \"Android Development with Kotlin\" i twórca Kt. Academy. Ewangelista Kotlina i główny autor największej publikacji o Kotlinie: blog.kotlin-academy.com. Także autor bibliotek, takich jak: like ActivityStarter, ArcSeekBar, KotlinAndroidViewBinding and PreferenceHolder."
   },
   "skills":{
     "my_skills": "Umiejętności"
@@ -22,8 +24,8 @@
 
     "Dogry": "Aplikacja, która za używanie innych aplikacji przyznaje Ci punkty." ,
 
-    "KAWeb": "Strona Kot. Academy.",
-    "KAAndroid": "Aplikacja Kot. Academy na Android.",
+    "KAWeb": "Strona Kt. Academy.",
+    "KAAndroid": "Aplikacja Kt. Academy na Android.",
     "KA": "Portal z misją by nauczać Kotlina.",
 
     "SweetTooth": "Aplikacja do zamawiania cukierków typu krówka z własnym zdjęciem.",
@@ -99,6 +101,24 @@
   },
   "talks": {
     "title": "Wystąpienia",
+    "devfestsyberia18":"Kotlin Coroutines in Action",
+    "devfestsyberia18_des":"Warsztat na DevFest Syberia 2018",
+    "devfestsyberia18_date":"Nowosybirsk, 23-25.11.2018",
+    "devfestbaltic":"Superpowers of Property Delegation",
+    "devfestbaltic_des":"Prezentacja na DevFest Baltics 2018",
+    "devfestbaltic_date":"Jurmala, 16-17.11.2018",
+    "gdgwroclaw":"Kotlin Coroutines in Action",
+    "gdgwroclaw_des":"Warsztat na GDG DevFest Wrocław 2018",
+    "gdgwroclaw_date":"Wrocław, 26-27.10.2018",
+    "mobilization18w":"From Java to Kotlin",
+    "mobilization18w_des":"Warsztat na Mobilization 2018",
+    "mobilization18w_date":"Łódź, 22.10.2018",
+    "mobilization18":"Superpowers of Kotlin Delegation",
+    "mobilization18_des":"Prezentacja na Mobilization 2018",
+    "mobilization18_date":"Łódź, 20.10.2018",
+    "mobileOptimized":"Kotlin Coroutines in action",
+    "mobileOptimized_des":"Prezentacja na Mobile Optimized 2018",
+    "mobileOptimized_date":"Minsk, 7.10.2018",
     "kotlinconf18":"Effective multiplatform development in Kotlin",
     "kotlinconf18_des":"Prezentacja na KotlinConf 2018",
     "kotlinconf18_date":"Amsterdam, 3-5.10.2018",

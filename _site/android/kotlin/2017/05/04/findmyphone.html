@@ -132,7 +132,7 @@ working.</p>
 
 <div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">RefreshTokenService</span> <span class="p">:</span> <span class="n">FirebaseInstanceIdService</span><span class="p">()</span> <span class="p">{</span>
 
-    <span class="k">override</span> <span class="k">fun</span> <span class="n">onTokenRefresh</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">override</span> <span class="k">fun</span> <span class="nf">onTokenRefresh</span><span class="p">()</span> <span class="p">{</span>
         <span class="kd">val</span> <span class="py">refreshedToken</span> <span class="p">=</span> <span class="n">FirebaseInstanceId</span><span class="p">.</span><span class="n">getInstance</span><span class="p">().</span><span class="n">token</span> <span class="o">?:</span> <span class="k">return</span>
         <span class="n">saveToken</span><span class="p">(</span><span class="n">refreshedToken</span><span class="p">)</span>
     <span class="p">}</span>

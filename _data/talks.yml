@@ -1,4 +1,58 @@
 - name:
+    i18n: devfestsyberia18
+  desc:
+    i18n: devfestsyberia18_des
+  date:
+    i18n: devfestsyberia18_date
+  icon: far fa-file-powerpoint
+  link: https://gdg-siberia.com/speakers?show=mobile
+
+- name:
+    i18n: devfestbaltic
+  desc:
+    i18n: devfestbaltic_des
+  date:
+    i18n: devfestbaltic_date
+  icon: far fa-file-powerpoint
+  link: https://devfest2018.gdg.lv/
+
+- name:
+    i18n: gdgwroclaw
+  desc:
+    i18n: gdgwroclaw_des
+  date:
+    i18n: gdgwroclaw_date
+  icon: far fa-file-powerpoint
+  link: https://wroclaw.devfest.pl/speakers/
+
+- name:
+    i18n: mobilization18w
+  desc:
+    i18n: mobilization18w_des
+  date:
+    i18n: mobilization18w_date
+  icon: far fa-file-powerpoint
+  link: http://2018.mobilization.pl/index.html#ts-talks
+
+- name:
+    i18n: mobilization18
+  desc:
+    i18n: mobilization18_des
+  date:
+    i18n: mobilization18_date
+  icon: far fa-file-powerpoint
+  link: http://2018.mobilization.pl/index.html#ts-talks
+
+- name:
+    i18n: mobileOptimized
+  desc:
+    i18n: mobileOptimized_des
+  date:
+    i18n: mobileOptimized_date
+  icon: far fa-file-powerpoint
+  link: https://moconf.by/#MarcinMoskala
+
+- name:
     i18n: kotlinconf18
   desc:
     i18n: kotlinconf18_des
