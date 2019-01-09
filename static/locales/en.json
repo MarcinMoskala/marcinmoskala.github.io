@@ -14,7 +14,7 @@
   },
   "about_me": {
     "about_me": "About Me",
-    "des": "Marcin Moskala is an experienced Android developer passionate about Kotlin since its early beta release. He is the creator of Kotlin Academy and author of the book \"Android Development with Kotlin\". He is Kotlin evangelist and the main author on the biggest medium publication about Kotlin: blog.kotlin-academy.com. He is also the autor of libraries like ActivityStarter, ArcSeekBar, KotlinAndroidViewBinding and PreferenceHolder."
+    "des": "Marcin Moskala is an experienced developer, speaker and technology evangelist, founder of Kt. Academy, author of the book \"Android Development with Kotlin\", active programming community member. He is also the autor of libraries like ActivityStarter, ArcSeekBar, KotlinAndroidViewBinding and PreferenceHolder."
   },
   "services": {
     "services": "Services",
