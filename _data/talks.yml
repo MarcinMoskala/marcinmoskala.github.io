@@ -1,4 +1,31 @@
 - name:
+    i18n: geecon19
+  desc:
+    i18n: geecon19_des
+  date:
+    i18n: geecon19_date
+  icon: far fa-file-powerpoint
+  link: https://2019.geecon.org/speakers/info.html?id=533
+  
+  - name:
+    i18n: Segfault19
+  desc:
+    i18n: Segfault19_des
+  date:
+    i18n: Segfault19_date
+  icon: far fa-file-powerpoint
+  link: https://segfault.events/sites/gdansk2019/speakers/marcin-moskala/
+  
+  - name:
+    i18n: KotlinNightWarsaw19
+  desc:
+    i18n: KotlinNightWarsaw19_des
+  date:
+    i18n: KotlinNightWarsaw19_date
+  icon: far fa-file-powerpoint
+  link: https://www.meetup.com/Kotlin-Warsaw-by-Kt-Academy/events/258459508/
+
+- name:
     i18n: devfestsyberia18
   desc:
     i18n: devfestsyberia18_des
