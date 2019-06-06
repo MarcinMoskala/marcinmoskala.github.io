@@ -7,7 +7,7 @@
   icon: far fa-file-powerpoint
   link: https://2019.geecon.org/speakers/info.html?id=533
   
-  - name:
+- name:
     i18n: Segfault19
   desc:
     i18n: Segfault19_des
@@ -16,7 +16,7 @@
   icon: far fa-file-powerpoint
   link: https://segfault.events/sites/gdansk2019/speakers/marcin-moskala/
   
-  - name:
+- name:
     i18n: KotlinNightWarsaw19
   desc:
     i18n: KotlinNightWarsaw19_des
