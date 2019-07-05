@@ -3,18 +3,20 @@ title:  "Conferences guidelines"
 layout: page
 ---
 
-#### Conferences guidelines
+#### Guidelines for Marcin Moskała presentations and workshops on conferences
 
-When you invite me as a speaker for a conference or meetup, it is expected that you cover full travel costs including:
+I am open for invitations for conferences, and I am thrilled to share the knowledge during Kotlin presentations and workshops, although I have some requirements.
+When you invite me as a speaker for a conference or a meetup, I expect covering travel expenses including:
 * Flight
-* Hotel with a breakfest
+* Hotel with a breakfast
 
-If you are not planning to cover those, please, do not bother with invitation. If you do invite me, I assume those as expected. 
+If you invite me, I assume the travel expenses will be covered.
 
 I might make an exception only when:
-* I am to appear as a keynote speaker in front of more then 500 people.
-* I am to appear on a discussion panel. 
+* I will appear as a keynote speaker in front of more than 300 people.
+* I will appear on a discussion panel.
 
-When I am to participate in a conference, I can make more then one presentation. It is actually a preferred option as it makes time spent on travel relatively less costly.
+Please, do not place my presentation before 10 am or as the last presentation in the day unless it is opening or closing keynote.
 
-Please, do not place my presentation before 10 am or as the last presentation in the day undless it is to be opening or closing keynote.
+I am open to making more than one presentation or workshop. I actually prefere an option with both a presentation and a workshop or two presentations. It makes the time spent on travel more rewarding.
+
