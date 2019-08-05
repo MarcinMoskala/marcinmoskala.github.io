@@ -35,6 +35,10 @@
     </url>
 
     <url>
+        <loc>http://localhost:4000/conf.html</loc>
+    </url>
+
+    <url>
         <loc>http://localhost:4000/consulting.html</loc>
     </url>
 

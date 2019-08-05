@@ -5,9 +5,9 @@
     <description>The web page of Marcin Moskala</description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 30 Dec 2018 15:22:35 +0100</pubDate>
-    <lastBuildDate>Sun, 30 Dec 2018 15:22:35 +0100</lastBuildDate>
-    <generator>Jekyll v3.8.5</generator>
+    <pubDate>Mon, 05 Aug 2019 17:08:05 +0200</pubDate>
+    <lastBuildDate>Mon, 05 Aug 2019 17:08:05 +0200</lastBuildDate>
+    <generator>Jekyll v3.8.6</generator>
     
       <item>
         <title>Path of automatic Presenter lifecycle implementation</title>
@@ -306,9 +306,9 @@ parameter. Now it needs to be implemented the same way in Kotlin\JavaScipt and K
 &lt;p&gt;What is the result? Empty list! Pretty unintuitive, and I &lt;a href=&quot;https://youtrack.jetbrains.com/issue/KT-11453&quot;&gt;report it over a year ago&lt;/a&gt;.
 But the answer was “As Designed”. It is true, while function description is following:&lt;/p&gt;
 
-&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cm&quot;&gt;/*
-// Returns a list containing all elements of the original collection except the elements contained in the given [elements] collection.
-*/&lt;/span&gt;
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cm&quot;&gt;/*&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;cm&quot;&gt;// Returns a list containing all elements of the original collection except the elements contained in the given [elements] collection.&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;cm&quot;&gt;*/&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;But it doesn’t make it’s behavior better. This is one example of implementation that is unintuitive. Let’s look at some more unintuitive results:&lt;/p&gt;

@@ -14,7 +14,8 @@
   },
   "about_me":{
     "about_me": "O mnie",
-    "des": "Doświadczony Android Developer i pasjonat Kotlina od jego wersji beta. Autor \"Android Development with Kotlin\" i twórca Kt. Academy. Ewangelista Kotlina i główny autor największej publikacji o Kotlinie: blog.kotlin-academy.com. Także autor bibliotek, takich jak: like ActivityStarter, ArcSeekBar, KotlinAndroidViewBinding and PreferenceHolder."
+    "des": "Doświadczony Android Developer i trener Kotlina. Założyciel Kt. Academy i oficjalny parter JetBrains w zakresie szkoleń z języka Kotlin, autor książek \"Android Development with Kotlin\" oraz \"Effective Kotlin\". Jest także głównym autorem na największej publikacji medium o Kotlinie (blog.kotlin-academy.com) i mówcą zapraszanym na wiele programistycznych konferencji."
+
   },
   "skills":{
     "my_skills": "Umiejętności"
@@ -47,10 +48,10 @@
   },
   "career":{
     "my_career": "Moja kariera",
-    "workshops": "Szkolenia",
-    "workshops_des": "Prowadzę szkolenia w firmach na całym świecie. ",
+    "workshops": "Kt. Academy",
+    "workshops_des": "Prowadzę szkolenia z Kotlina w firmach na całym świecie. ",
     "workshops_date": "Od 5.2018 do teraz",
-    "workshops_job": "Trener",
+    "workshops_job": "Trener języka Kotlin",
     "gamekit": "Gamekit",
     "gamekit_des": "Główny programista Android tworzący gry i aplikcaje dla Gamekit. ",
     "gamekit_date": "Od 5.2017 do 5.2018",
@@ -77,12 +78,15 @@
     "workshops":"Warsztaty",
     "consultations":"Konsultacje biznesowe",
     "other":"Konsultacje prywatne lub code review",
-    "workshops_btn":"Formularz kontaktowy",
+    "workshops_btn":"Zobacz szkolenia",
     "consultations_btn":"Email",
-    "other_btn":"Codementor",
-    "workshops_des":"Prowadzę warsztaty specjalistyczne dostosowane do potrzeb klientów z zakresu Kotlina, Androida i dobrych praktyk.",
+    "other_btn":"Email",
+    "workshops_des":"Prowadzę warsztaty z Kotlina skupiając się na dobrych praktykach. Szkolę zarówno programistów android jak i backend.",
     "consultations_des":"Udzielam konsultacji w firmach, główine dotyczących Androida, wdrażania Kotlina oraz wdrażania dobrych praktyk.",
-    "other_des":"Udzielam konsultacji, code review oraz daje prywatne lekcje. Napisz maila albo wystaw zapytanie na Codementor."
+    "other_des":"Udzielam też konsultacji prywatnych i robię code review."
+  },
+  "books": {
+    "my_books": "Książki"
   },
   "publications": {
     "title": "Publikacje",
@@ -101,6 +105,36 @@
   },
   "talks": {
     "title": "Wystąpienia",
+    "keMunich19":"Understanding Kotlin Coroutines",
+    "keMunich19_des":"Prezentacja na Kotlin/Everywhere Munich",
+    "keMunich19_date":"Monachium, 04.07.2019",
+    "droidconBerlin19":"Kotlin Not-to-Do List - what we should avoid doing in Kotlin",
+    "droidconBerlin19_des":"Prezentacja na Droidcon Berlin",
+    "droidconBerlin19_date":"Berlin, 1-3.07.2019",
+    "krakowUserGroup19":"Your first multiplatform Kotlin application",
+    "krakowUserGroup19_des":"Prezentacja na Kotlin meetup",
+    "krakowUserGroup19_date":"Kraków, 29.05.2019",
+    "geecon19":"Superpowers of Kotlin Delegation",
+    "geecon19_des":"Prezentacja na GeeCON #11",
+    "geecon19_date":"Kraków, 15-17.05.2019",
+    "click19":"Your first multiplatform Kotlin application: Kotlin, Android, Web, Backend, iOS",
+    "click19_des":"Prezentacja na Click 19",
+    "click19_date":"Lublin, 11.05.2019",
+    "4dev19":"Your first multiplatform Kotlin application",
+    "4dev19_des":"Prezentacja na 4DEVELOPERS 2019",
+    "4dev19_date":"Warszawa, 08.04.2019",
+    "wdi19":"Abstraction Design",
+    "wdi19_des":"Prezentacja na WDI ",
+    "wdi19_date":"Warszawa, 27.03.2019",
+    "jetbrainsNightWarsaw":"Your first multiplatform Kotlin application",
+    "jetbrainsNightWarsaw_des":"Prezentacja na JetBrains Road Trip Poland 2019",
+    "jetbrainsNightWarsaw_date":"Warszawa, 26.03.2019",
+    "segfault19":"Kotlin for Java developers",
+    "segfault19_des":"Warsztat na Segfault University",
+    "segfault19_date":"Gdańsk, 14-15.03.2019",
+    "kotlinNightWarsaw19":"Understanding Kotlin Coroutines",
+    "kotlinNightWarsaw19_des":"Prezentacja na Kotlin Night Warsaw 2019",
+    "kotlinNightWarsaw19_date":"Warszawa, 28.02.2019",
     "devfestsyberia18":"Kotlin Coroutines in Action",
     "devfestsyberia18_des":"Warsztat na DevFest Syberia 2018",
     "devfestsyberia18_date":"Nowosybirsk, 23-25.11.2018",

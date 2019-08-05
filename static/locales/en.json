@@ -14,19 +14,19 @@
   },
   "about_me": {
     "about_me": "About Me",
-    "des": "Marcin Moskala is an experienced developer, speaker and technology evangelist, founder of Kt. Academy, an official JetBrains partner, author of the book \"Android Development with Kotlin\", active programming community member."
+    "des": "Marcin Moskala is an experienced developer and Kotlin trainer. He is the founder of the Kt. Academy, an official JetBrains partner for Kotlin trainings, author of the book \"Android Development with Kotlin\" and soon to be published \"Effective Kotlin\". He is also the main author on the biggest medium publication about Kotlin (blog.kotlin-academy.com) and a speaker invited to many programming conferences."
   },
   "services": {
     "services": "Services",
     "workshops":"Workshops",
     "consultations":"Business consultations",
-    "other":"Code review or private consultations",
-    "workshops_btn":"Contact form",
+    "other":"Code review and private consultation",
+    "workshops_btn":"See workshops",
     "consultations_btn":"Contact me",
-    "other_btn":"Codementor",
-    "workshops_des":"I conduct programming workshops all over the world. I teach mainly Kotlin, Android development and good practices.",
+    "other_btn":"Contact me",
+    "workshops_des":"I conduct programming workshops all over the world. I teach mainly Kotlin with focused on good practices - I teach both Android and backend developers.",
     "consultations_des":"I mainly help in: Android technology stack design, good practices in development, learning culture introduction.",
-    "other_des":"I do code review, teach and give online consultations. Contact me by email or using Codementor."
+    "other_des":"I do code review, teach and give online consultations."
   },
   "projects": {
     "my_projects": "Projects",
@@ -49,8 +49,8 @@
   },
   "career": {
     "my_career": "My Career",
-    "workshops": "Workshops",
-    "workshops_des": "I do Kotlin workshops in companies all around the world.",
+    "workshops": "Kt. Academy",
+    "workshops_des": "I do Kotlin workshops in companies all around the world",
     "workshops_date": "From 5.2018 till now",
     "workshops_job": "Trainer",
     "gamekit": "Gamekit",
@@ -74,6 +74,9 @@
     "college_date": "",
     "college_job": "Student"
   },
+  "books": {
+    "my_books": "Books"
+  },
   "publications": {
     "title": "Key publications",
     "explanation": "This are only some of my publications, but each of them got popular and reached bigger audience. To see nearly all my articles, check out my medium profile",
@@ -90,9 +93,21 @@
   },
   "talks": {
     "title": "Talks",
+    "keMunich19":"Understanding Kotlin Coroutines",
+    "keMunich19_des":"Presentation on Kotlin/Everywhere Munich",
+    "keMunich19_date":"Munich, 04.07.2019",
+    "droidconBerlin19":"Kotlin Not-to-Do List - what we should avoid doing in Kotlin",
+    "droidconBerlin19_des":"Presentation on Droidcon Berlin",
+    "droidconBerlin19_date":"Berlin, 1-3.07.2019",
+    "krakowUserGroup19":"Your first multiplatform Kotlin application",
+    "krakowUserGroup19_des":"Presentation on Kotlin meetup",
+    "krakowUserGroup19_date":"Krakow, 29.05.2019",
     "geecon19":"Superpowers of Kotlin Delegation",
     "geecon19_des":"Presentation on GeeCON #11",
-    "geecon19_date":"Kracow, 15-17.05.2019",
+    "geecon19_date":"Krakow, 15-17.05.2019",
+    "click19":"Your first multiplatform Kotlin application: Kotlin, Android, Web, Backend, iOS",
+    "click19_des":"Presentation on Click 19",
+    "click19_date":"Lublin, 11.05.2019",
     "4dev19":"Your first multiplatform Kotlin application",
     "4dev19_des":"Presentation on 4DEVELOPERS 2019",
     "4dev19_date":"Warsaw, 08.04.2019",

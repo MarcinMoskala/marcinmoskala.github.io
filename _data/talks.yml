@@ -1,4 +1,31 @@
 - name:
+    i18n: keMunich19
+  desc:
+    i18n: keMunich19_des
+  date:
+    i18n: keMunich19_date
+  icon: far fa-file-powerpoint
+  link: https://www.meetup.com/Kotlin-User-Group-Munich/events/262058390/
+
+- name:
+    i18n: droidconBerlin19
+  desc:
+    i18n: droidconBerlin19_des
+  date:
+    i18n: droidconBerlin19_date
+  icon: far fa-file-powerpoint
+  link: https://www.droidcon.de/speaker/Marcin-Moska%C5%82a
+
+- name:
+    i18n: krakowUserGroup19
+  desc:
+    i18n: krakowUserGroup19_des
+  date:
+    i18n: krakowUserGroup19_date
+  icon: far fa-file-powerpoint
+  link: https://www.meetup.com/krakow-kotlin/events/261264201/
+
+- name:
     i18n: geecon19
   desc:
     i18n: geecon19_des
@@ -6,6 +33,15 @@
     i18n: geecon19_date
   icon: far fa-file-powerpoint
   link: https://2019.geecon.org/speakers/info.html?id=533
+
+- name:
+    i18n: click19
+  desc:
+    i18n: click19_des
+  date:
+    i18n: click19_date
+  icon: far fa-file-powerpoint
+  link: https://click.org.pl/#prelegenci
 
 - name:
     i18n: 4dev19
