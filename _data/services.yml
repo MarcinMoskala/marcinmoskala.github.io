@@ -1,6 +1,6 @@
 - i18n: workshops
   img: fa fa-chalkboard-teacher
-  url: "https://marcinmoskala.typeform.com/to/iwKnN9"
+  url: "https://kt.academy"
 
 - i18n: consultations
   img: fa fa-comments
@@ -8,4 +8,4 @@
 
 - i18n: other
   img: fa fa-code
-  url: "https://www.codementor.io/marcinmoskala"
+  url: "mailto:marcinmoskala@gmail.com"
