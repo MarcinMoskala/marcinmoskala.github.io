@@ -36,6 +36,13 @@ sections:
     css: 'timeline'
     in_menu: true
 
+  - id: 'jetbrains'
+    i18n: 'nav.jetbrains'
+    name: 'Jetbrains'
+    tpl: 'jetbrains.html'
+    css: ''
+    in_menu: false
+
   - id: 'talks'
     i18n: 'nav.talks'
     name: 'Talks'
@@ -48,7 +55,7 @@ sections:
     name: 'Books'
     tpl: 'books.html'
     css: ''
-    in_menu: false
+    in_menu: true
 
   - id: 'publications'
     i18n: 'nav.publications'
