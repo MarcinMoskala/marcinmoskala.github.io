@@ -7,6 +7,7 @@
     "about_me": "About",
     "services": "Services",
     "talks": "Talks",
+    "books": "Books",
     "projects": "Projects",
     "publications": "Articles",
     "career": "Career",
@@ -27,6 +28,11 @@
     "workshops_des":"I conduct programming workshops all over the world. I teach mainly Kotlin with focused on good practices - I teach both Android and backend developers.",
     "consultations_des":"I mainly help in: Android technology stack design, good practices in development, learning culture introduction.",
     "other_des":"I do code review, teach and give online consultations."
+  },
+  "jetbrains": {
+    "title": "Certification by JetBrains",
+    "subTitle": "One of the first certified Kotlin training worldwide",
+    "des": "Marcin Moskała is an official JetBrains' Kotlin training partner. The quality of his workshops was checked and certified by the creators of the Kotlin language itself."
   },
   "projects": {
     "my_projects": "Projects",
@@ -75,7 +81,9 @@
     "college_job": "Student"
   },
   "books": {
-    "my_books": "Books"
+    "my_books": "Books",
+    "ad_date": "August 2017",
+    "ek_date": "Autumn 2019"
   },
   "publications": {
     "title": "Key publications",

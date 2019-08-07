@@ -7,6 +7,7 @@
     "about_me": "O mnie",
     "services": "Usługi",
     "talks": "Wystąpienia",
+    "books": "Książki",
     "skills": "Umiejętności",
     "projects": "Projekty",
     "career": "Kariera",
@@ -85,8 +86,15 @@
     "consultations_des":"Udzielam konsultacji w firmach, główine dotyczących Androida, wdrażania Kotlina oraz wdrażania dobrych praktyk.",
     "other_des":"Udzielam też konsultacji prywatnych i robię code review."
   },
+  "jetbrains": {
+    "title": "Parterstwo z Jetbrains",
+    "subTitle": "Jeden z pierwszych certyfikowanych treningów z Kotlina",
+    "des": "Marcin Moskała jest oficjalnym partnerem JetBrains w zakresie szkoleń z języka Kotlin. Jakość jego warsztatów została sprawdzona i certyfikowana przez twórców języka Kotlin."
+  },
   "books": {
-    "my_books": "Książki"
+    "my_books": "Książki",
+    "ad_date": "Sierpień 2017",
+    "ek_date": "Jesień 2019"
   },
   "publications": {
     "title": "Publikacje",
