@@ -15,7 +15,7 @@
   },
   "about_me": {
     "about_me": "About Me",
-    "des": "Marcin Moskala is an experienced developer and Kotlin trainer. He is the founder of the Kt. Academy, an official JetBrains partner for Kotlin trainings, author of the book \"Android Development with Kotlin\" and soon to be published \"Effective Kotlin\". He is also the main author on the biggest medium publication about Kotlin (blog.kotlin-academy.com) and a speaker invited to many programming conferences."
+    "des": "Marcin Moskala is an experienced developer and Kotlin trainer. He is the founder of the Kt. Academy, an official JetBrains partner for Kotlin trainings, author of the book \"Android Development with Kotlin\" and \"Effective Kotlin\". He is also the main author on the biggest medium publication about Kotlin (blog.kotlin-academy.com) and a speaker invited to many programming conferences."
   },
   "services": {
     "services": "Services",
@@ -30,8 +30,7 @@
     "other_des":"I do code review, teach and give online consultations."
   },
   "jetbrains": {
-    "title": "Certification by JetBrains",
-    "subTitle": "One of the first certified Kotlin training worldwide",
+    "title": "Kotlin trainer certified by JetBrains",
     "des": "Marcin Moskała is an official JetBrains' Kotlin training partner. The quality of his workshops was checked and certified by the creators of the Kotlin language itself."
   },
   "projects": {
