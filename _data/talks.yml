@@ -1,4 +1,67 @@
 - name:
+    i18n: mobilizationW19
+  desc:
+    i18n: mobilizationW19_des
+  date:
+    i18n: mobilizationW19_date
+  icon: far fa-file-powerpoint
+  link: https://2019.mobilization.pl/
+
+- name:
+    i18n: mobilization19
+  desc:
+    i18n: mobilization19_des
+  date:
+    i18n: mobilization19_date
+  icon: far fa-file-powerpoint
+  link: https://2019.mobilization.pl/
+
+- name:
+    i18n: droidconLondonW19
+  desc:
+    i18n: droidconLondonW19_des
+  date:
+    i18n: droidconLondonW19_date
+  icon: far fa-file-powerpoint
+  link: https://uk.droidcon.com/
+
+- name:
+    i18n: droidconLondon19
+  desc:
+    i18n: droidconLondon19_des
+  date:
+    i18n: droidconLondon19_date
+  icon: far fa-file-powerpoint
+  link: https://uk.droidcon.com/
+
+- name:
+    i18n: Sphere19
+  desc:
+    i18n: Sphere19_des
+  date:
+    i18n: Sphere19_date
+  icon: far fa-file-powerpoint
+  link: https://sphere.it/kotlin-microsphere-it/
+
+- name:
+    i18n: droidConVienna19
+  desc:
+    i18n: droidConVienna19_des
+  date:
+    i18n: droidConVienna19_date
+  icon: far fa-file-powerpoint
+  link: https://droidcon.at/schedule/#session-200
+
+- name:
+    i18n: keMinsk19
+  desc:
+    i18n: keMinsk19_des
+  date:
+    i18n: keMinsk19_date
+  icon: far fa-file-powerpoint
+  link: https://www.meetup.com/GDG-Minsk/events/262266789/
+
+- name:
     i18n: keMunich19
   desc:
     i18n: keMunich19_des
