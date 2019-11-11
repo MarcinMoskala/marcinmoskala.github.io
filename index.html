@@ -33,12 +33,11 @@ permalink: /
                             <span data-i18n="nav.blog">Blog</span>
                         </a>
                     </li>
-
                     {% for language in site.languages %}
                     <li>
                         <a id="set_lang_{{ language.locale }}" class="btn btn-sm set_{{ language.locale }}"
                            data-locale="{{ language.locale }}">
-                            <img src="{{ language.flag | prepend: site.baseurl }}" height="16px" width="16px">
+                            <img src="{{ language.flag | prepend: site.baseurl }}" height="16px" width="16px" align="left">
                         </a>
                     </li>
                     {% endfor %}

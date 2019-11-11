@@ -7,6 +7,7 @@
     "about_me": "About",
     "services": "Services",
     "talks": "Talks",
+    "books": "Books",
     "projects": "Projects",
     "publications": "Articles",
     "career": "Career",
@@ -14,7 +15,7 @@
   },
   "about_me": {
     "about_me": "About Me",
-    "des": "Marcin Moskala is an experienced developer and Kotlin trainer. He is the founder of the Kt. Academy, an official JetBrains partner for Kotlin trainings, author of the book \"Android Development with Kotlin\" and soon to be published \"Effective Kotlin\". He is also the main author on the biggest medium publication about Kotlin (blog.kotlin-academy.com) and a speaker invited to many programming conferences."
+    "des": "Marcin Moskala is an experienced developer and Kotlin trainer. He is the founder of the Kt. Academy, an official JetBrains partner for Kotlin trainings, author of the book \"Android Development with Kotlin\" and \"Effective Kotlin\". He is also the main author on the biggest medium publication about Kotlin (blog.kotlin-academy.com) and a speaker invited to many programming conferences."
   },
   "services": {
     "services": "Services",
@@ -27,6 +28,10 @@
     "workshops_des":"I conduct programming workshops all over the world. I teach mainly Kotlin with focused on good practices - I teach both Android and backend developers.",
     "consultations_des":"I mainly help in: Android technology stack design, good practices in development, learning culture introduction.",
     "other_des":"I do code review, teach and give online consultations."
+  },
+  "jetbrains": {
+    "title": "Kotlin trainer certified by JetBrains",
+    "des": "Marcin Moskała is an official JetBrains' Kotlin training partner. The quality of his workshops was checked and certified by the creators of the Kotlin language itself."
   },
   "projects": {
     "my_projects": "Projects",
@@ -75,7 +80,9 @@
     "college_job": "Student"
   },
   "books": {
-    "my_books": "Books"
+    "my_books": "Books",
+    "ad_date": "August 2017",
+    "ek_date": "Autumn 2019"
   },
   "publications": {
     "title": "Key publications",

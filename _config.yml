@@ -28,7 +28,7 @@ sections:
     tpl: 'about.html'
     css: ''
     in_menu: true
-    
+
   - id: 'services'
     i18n: 'nav.services'
     name: 'Services'
@@ -48,7 +48,7 @@ sections:
     name: 'Books'
     tpl: 'books.html'
     css: ''
-    in_menu: false
+    in_menu: true
 
   - id: 'publications'
     i18n: 'nav.publications'
