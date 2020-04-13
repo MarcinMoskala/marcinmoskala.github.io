@@ -1,4 +1,211 @@
 - name:
+    i18n: mobilizationW19
+  desc:
+    i18n: mobilizationW19_des
+  date:
+    i18n: mobilizationW19_date
+  icon: far fa-file-powerpoint
+  link: https://2019.mobilization.pl/
+
+- name:
+    i18n: mobilization19
+  desc:
+    i18n: mobilization19_des
+  date:
+    i18n: mobilization19_date
+  icon: far fa-file-powerpoint
+  link: https://2019.mobilization.pl/
+
+- name:
+    i18n: droidconLondonW19
+  desc:
+    i18n: droidconLondonW19_des
+  date:
+    i18n: droidconLondonW19_date
+  icon: far fa-file-powerpoint
+  link: https://uk.droidcon.com/
+
+- name:
+    i18n: droidconLondon19
+  desc:
+    i18n: droidconLondon19_des
+  date:
+    i18n: droidconLondon19_date
+  icon: far fa-file-powerpoint
+  link: https://uk.droidcon.com/
+
+- name:
+    i18n: Sphere19
+  desc:
+    i18n: Sphere19_des
+  date:
+    i18n: Sphere19_date
+  icon: far fa-file-powerpoint
+  link: https://sphere.it/kotlin-microsphere-it/
+
+- name:
+    i18n: droidConVienna19
+  desc:
+    i18n: droidConVienna19_des
+  date:
+    i18n: droidConVienna19_date
+  icon: far fa-file-powerpoint
+  link: https://droidcon.at/schedule/#session-200
+
+- name:
+    i18n: keMinsk19
+  desc:
+    i18n: keMinsk19_des
+  date:
+    i18n: keMinsk19_date
+  icon: far fa-file-powerpoint
+  link: https://www.meetup.com/GDG-Minsk/events/262266789/
+
+- name:
+    i18n: keMunich19
+  desc:
+    i18n: keMunich19_des
+  date:
+    i18n: keMunich19_date
+  icon: far fa-file-powerpoint
+  link: https://www.meetup.com/Kotlin-User-Group-Munich/events/262058390/
+
+- name:
+    i18n: droidconBerlin19
+  desc:
+    i18n: droidconBerlin19_des
+  date:
+    i18n: droidconBerlin19_date
+  icon: far fa-file-powerpoint
+  link: https://www.droidcon.de/speaker/Marcin-Moska%C5%82a
+
+- name:
+    i18n: krakowUserGroup19
+  desc:
+    i18n: krakowUserGroup19_des
+  date:
+    i18n: krakowUserGroup19_date
+  icon: far fa-file-powerpoint
+  link: https://www.meetup.com/krakow-kotlin/events/261264201/
+
+- name:
+    i18n: geecon19
+  desc:
+    i18n: geecon19_des
+  date:
+    i18n: geecon19_date
+  icon: far fa-file-powerpoint
+  link: https://2019.geecon.org/speakers/info.html?id=533
+
+- name:
+    i18n: click19
+  desc:
+    i18n: click19_des
+  date:
+    i18n: click19_date
+  icon: far fa-file-powerpoint
+  link: https://click.org.pl/#prelegenci
+
+- name:
+    i18n: 4dev19
+  desc:
+    i18n: 4dev19_des
+  date:
+    i18n: 4dev19_date
+  icon: far fa-file-powerpoint
+  link: https://4developers.org.pl/o_prelegencie/#id=37615
+
+- name:
+    i18n: wdi19
+  desc:
+    i18n: wdi19_des
+  date:
+    i18n: wdi19_date
+  icon: far fa-file-powerpoint
+  link: https://warszawskiedniinformatyki.pl/
+
+- name:
+    i18n: jetbrainsNightWarsaw
+  desc:
+    i18n: jetbrainsNightWarsaw_des
+  date:
+    i18n: jetbrainsNightWarsaw_date
+  icon: far fa-file-powerpoint
+  link: https://info.jetbrains.com/jetbrains-trip-poland-2019.html
+
+- name:
+    i18n: segfault19
+  desc:
+    i18n: segfault19_des
+  date:
+    i18n: segfault19_date
+  icon: far fa-file-powerpoint
+  link: https://segfault.events/sites/gdansk2019/speakers/marcin-moskala/
+
+- name:
+    i18n: kotlinNightWarsaw19
+  desc:
+    i18n: kotlinNightWarsaw19_des
+  date:
+    i18n: kotlinNightWarsaw19_date
+  icon: far fa-file-powerpoint
+  link: https://www.meetup.com/Kotlin-Warsaw-by-Kt-Academy/events/258459508/
+
+- name:
+    i18n: devfestsyberia18
+  desc:
+    i18n: devfestsyberia18_des
+  date:
+    i18n: devfestsyberia18_date
+  icon: far fa-file-powerpoint
+  link: https://gdg-siberia.com/speakers?show=mobile
+
+- name:
+    i18n: devfestbaltic
+  desc:
+    i18n: devfestbaltic_des
+  date:
+    i18n: devfestbaltic_date
+  icon: far fa-file-powerpoint
+  link: https://devfest2018.gdg.lv/
+
+- name:
+    i18n: gdgwroclaw
+  desc:
+    i18n: gdgwroclaw_des
+  date:
+    i18n: gdgwroclaw_date
+  icon: far fa-file-powerpoint
+  link: https://wroclaw.devfest.pl/speakers/
+
+- name:
+    i18n: mobilization18w
+  desc:
+    i18n: mobilization18w_des
+  date:
+    i18n: mobilization18w_date
+  icon: far fa-file-powerpoint
+  link: http://2018.mobilization.pl/index.html#ts-talks
+
+- name:
+    i18n: mobilization18
+  desc:
+    i18n: mobilization18_des
+  date:
+    i18n: mobilization18_date
+  icon: far fa-file-powerpoint
+  link: http://2018.mobilization.pl/index.html#ts-talks
+
+- name:
+    i18n: mobileOptimized
+  desc:
+    i18n: mobileOptimized_des
+  date:
+    i18n: mobileOptimized_date
+  icon: far fa-file-powerpoint
+  link: https://moconf.by/#MarcinMoskala
+
+- name:
     i18n: kotlinconf18
   desc:
     i18n: kotlinconf18_des
