@@ -9,6 +9,8 @@ keywords: "Android, Kotlin"
 categories: [Android, Kotlin]
 tags: [Kotlin, Android, KotlinAndroidViewBindings]
 icon: fa-mobile
+visible: false
+lang: en
 ---
 
 #### Still MVP or already MVVM?

@@ -7,6 +7,8 @@ keywords: "Kotlin"
 categories: [Kotlin]
 tags: [Kotlin]
 icon: fa-ban
+visible: false
+lang: en
 ---
 
 I love Kotlin. It is the best language I ever learned, and I really enjoy writing applications in it since over 2 years.

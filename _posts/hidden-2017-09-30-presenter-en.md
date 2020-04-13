@@ -9,6 +9,8 @@ keywords: "Kotlin, Android, Lazy, Property delegation, MVP, Design Patterns, Pre
 categories: [Android, Kotlin]
 tags: [Kotlin, MVP]
 icon: fa-code
+visible: false
+lang: en
 ---
 
 I am using MVP pattern in nearly all my Android projects. One of most discussive element of MVP is how we are implementing

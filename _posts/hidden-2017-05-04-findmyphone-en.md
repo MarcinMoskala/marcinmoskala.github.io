@@ -7,6 +7,8 @@ keywords: "Android, Kotlin, Firebase"
 categories: [Android, Kotlin]
 tags: [Firebase, Kotlin, Android]
 icon: fa-mobile
+visible: false
+lang: en
 ---
 
 #### FindMyPhone in 2 days?
