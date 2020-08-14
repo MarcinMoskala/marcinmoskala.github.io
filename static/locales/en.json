@@ -35,6 +35,7 @@
   },
   "projects": {
     "my_projects": "Projects",
+    "LearningDriven": "Learning Driven" ,
     "Dogry": "App that gives you points for using apps." ,
     "KAWeb": "Kt. Academy website.",
     "KAAndroid": "Kt. Academy Android app.",

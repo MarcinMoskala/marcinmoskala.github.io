@@ -1,3 +1,8 @@
+- name: 'Learning Driven'
+  i18n: 'LearningDriven'
+  url: 'https://learningdriven.fun/'
+  img: 'static/img/landing/LD_logo.png'
+
 - name: 'Dogry'
   i18n: 'Dogry'
   url: 'https://play.google.com/store/apps/details?id=com.gamekit.dogryapp'
