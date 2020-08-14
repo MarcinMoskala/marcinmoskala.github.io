@@ -10,7 +10,7 @@
 
 - name: 'Kt. Academy'
   i18n: 'KA'
-  url: 'https://blog.kotlin-academy.com/'
+  url: 'https://www.kt.academy/'
   img: 'static/img/landing/ka_icon.png'
 
 - name: 'Kt. Academy Android application'
