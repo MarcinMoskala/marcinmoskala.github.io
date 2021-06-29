@@ -1,11 +1,11 @@
-- name:
-    i18n: mobilizationW19
-  desc:
-    i18n: mobilizationW19_des
-  date:
-    i18n: mobilizationW19_date
-  icon: far fa-file-powerpoint
-  link: https://2019.mobilization.pl/
+#- name:
+#    i18n: mobilizationW19
+#  desc:
+#    i18n: mobilizationW19_des
+#  date:
+#    i18n: mobilizationW19_date
+#  icon: far fa-file-powerpoint
+#  link: https://2019.mobilization.pl/
 
 - name:
     i18n: mobilization19
@@ -16,14 +16,14 @@
   icon: far fa-file-powerpoint
   link: https://2019.mobilization.pl/
 
-- name:
-    i18n: droidconLondonW19
-  desc:
-    i18n: droidconLondonW19_des
-  date:
-    i18n: droidconLondonW19_date
-  icon: far fa-file-powerpoint
-  link: https://uk.droidcon.com/
+#- name:
+#    i18n: droidconLondonW19
+#  desc:
+#    i18n: droidconLondonW19_des
+#  date:
+#    i18n: droidconLondonW19_date
+#  icon: far fa-file-powerpoint
+#  link: https://uk.droidcon.com/
 
 - name:
     i18n: droidconLondon19
@@ -34,14 +34,14 @@
   icon: far fa-file-powerpoint
   link: https://uk.droidcon.com/
 
-- name:
-    i18n: Sphere19
-  desc:
-    i18n: Sphere19_des
-  date:
-    i18n: Sphere19_date
-  icon: far fa-file-powerpoint
-  link: https://sphere.it/kotlin-microsphere-it/
+#- name:
+#    i18n: Sphere19
+#  desc:
+#    i18n: Sphere19_des
+#  date:
+#    i18n: Sphere19_date
+#  icon: far fa-file-powerpoint
+#  link: https://sphere.it/kotlin-microsphere-it/
 
 - name:
     i18n: droidConVienna19
@@ -79,14 +79,14 @@
   icon: far fa-file-powerpoint
   link: https://www.droidcon.de/speaker/Marcin-Moska%C5%82a
 
-- name:
-    i18n: krakowUserGroup19
-  desc:
-    i18n: krakowUserGroup19_des
-  date:
-    i18n: krakowUserGroup19_date
-  icon: far fa-file-powerpoint
-  link: https://www.meetup.com/krakow-kotlin/events/261264201/
+#- name:
+#    i18n: krakowUserGroup19
+#  desc:
+#    i18n: krakowUserGroup19_des
+#  date:
+#    i18n: krakowUserGroup19_date
+#  icon: far fa-file-powerpoint
+#  link: https://www.meetup.com/krakow-kotlin/events/261264201/
 
 - name:
     i18n: geecon19
@@ -124,14 +124,14 @@
   icon: far fa-file-powerpoint
   link: https://warszawskiedniinformatyki.pl/
 
-- name:
-    i18n: jetbrainsNightWarsaw
-  desc:
-    i18n: jetbrainsNightWarsaw_des
-  date:
-    i18n: jetbrainsNightWarsaw_date
-  icon: far fa-file-powerpoint
-  link: https://info.jetbrains.com/jetbrains-trip-poland-2019.html
+#- name:
+#    i18n: jetbrainsNightWarsaw
+#  desc:
+#    i18n: jetbrainsNightWarsaw_des
+#  date:
+#    i18n: jetbrainsNightWarsaw_date
+#  icon: far fa-file-powerpoint
+#  link: https://info.jetbrains.com/jetbrains-trip-poland-2019.html
 
 - name:
     i18n: segfault19
@@ -142,14 +142,14 @@
   icon: far fa-file-powerpoint
   link: https://segfault.events/sites/gdansk2019/speakers/marcin-moskala/
 
-- name:
-    i18n: kotlinNightWarsaw19
-  desc:
-    i18n: kotlinNightWarsaw19_des
-  date:
-    i18n: kotlinNightWarsaw19_date
-  icon: far fa-file-powerpoint
-  link: https://www.meetup.com/Kotlin-Warsaw-by-Kt-Academy/events/258459508/
+#- name:
+#    i18n: kotlinNightWarsaw19
+#  desc:
+#    i18n: kotlinNightWarsaw19_des
+#  date:
+#    i18n: kotlinNightWarsaw19_date
+#  icon: far fa-file-powerpoint
+#  link: https://www.meetup.com/Kotlin-Warsaw-by-Kt-Academy/events/258459508/
 
 - name:
     i18n: devfestsyberia18
@@ -178,14 +178,14 @@
   icon: far fa-file-powerpoint
   link: https://wroclaw.devfest.pl/speakers/
 
-- name:
-    i18n: mobilization18w
-  desc:
-    i18n: mobilization18w_des
-  date:
-    i18n: mobilization18w_date
-  icon: far fa-file-powerpoint
-  link: http://2018.mobilization.pl/index.html#ts-talks
+#- name:
+#    i18n: mobilization18w
+#  desc:
+#    i18n: mobilization18w_des
+#  date:
+#    i18n: mobilization18w_date
+#  icon: far fa-file-powerpoint
+#  link: http://2018.mobilization.pl/index.html#ts-talks
 
 - name:
     i18n: mobilization18
@@ -250,14 +250,14 @@
   icon: far fa-file-powerpoint
   link: https://voxxeddays.com/romania/2018/01/11/kotlin-next-level-of-android-development/
 
-- name:
-    i18n: mw2
-  desc:
-    i18n: mw2_des
-  date:
-    i18n: mw2_date
-  icon: far fa-file-powerpoint
-  link: https://www.meetup.com/Mobile-Warsaw/events/248229614/
+#- name:
+#    i18n: mw2
+#  desc:
+#    i18n: mw2_des
+#  date:
+#    i18n: mw2_date
+#  icon: far fa-file-powerpoint
+#  link: https://www.meetup.com/Mobile-Warsaw/events/248229614/
 
 - name:
     i18n: appdevcon
@@ -295,14 +295,14 @@
   icon: far fa-file-powerpoint
   link: https://gdg-siberia.com/speakers/
 
-- name:
-    i18n: mobilewarsaw
-  desc:
-    i18n: mobilewarsaw_des
-  date:
-    i18n: mobilewarsaw_date
-  icon: far fa-file-powerpoint
-  link: https://docs.google.com/presentation/d/1qUtZNB1C7KUYeet75UqHymyRAh7oV_K4qiyKveBTT1g/edit?usp=sharing
+#- name:
+#    i18n: mobilewarsaw
+#  desc:
+#    i18n: mobilewarsaw_des
+#  date:
+#    i18n: mobilewarsaw_date
+#  icon: far fa-file-powerpoint
+#  link: https://docs.google.com/presentation/d/1qUtZNB1C7KUYeet75UqHymyRAh7oV_K4qiyKveBTT1g/edit?usp=sharing
 
 - name:
     i18n: devjs

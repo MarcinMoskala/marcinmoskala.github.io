@@ -1,4 +1,14 @@
 - name:
+    i18n: allegro
+  desc:
+    i18n: allegro_des
+  date:
+    i18n: allegro_date
+  job:
+    i18n: allegro_job
+  icon: fa-building
+
+- name:
     i18n: workshops
   desc:
     i18n: workshops_des

@@ -50,6 +50,10 @@
   },
   "career":{
     "my_career": "Moja kariera",
+    "allegro": "Allegro",
+    "allegro_des": "Pracuję nad programem Smart",
+    "allegro_date": "Od 1.2020 do teraz",
+    "allegro_job": "Software Engineer",
     "workshops": "Kt. Academy",
     "workshops_des": "Prowadzę szkolenia z Kotlina w firmach na całym świecie. ",
     "workshops_date": "Od 5.2018 do teraz",
@@ -93,6 +97,7 @@
   },
   "books": {
     "my_books": "Książki",
+    "js_date": "Czerwiec 2021",
     "ad_date": "Sierpień 2017",
     "ek_date": "Jesień 2019"
   },
@@ -112,7 +117,7 @@
     "kotlinarticle_des": "Artykuł dla magazynu Programista - największego programistycznego magazynu w Polsce"
   },
   "talks": {
-    "title": "Wystąpienia",
+    "title": "Niektóre z moich wystąpień na konferencjach",
     "mobilizationW19":"Kotlin Coroutines",
     "mobilizationW19_des":"Warsztat na Mobilization",
     "mobilizationW19_date":"Łódź, 28.10.2019",
