@@ -86,7 +86,7 @@ languages:
     flag: 'static/img/flags/Poland.png'
 
 # blog img path
-img_path: 'http://marcinmoskala.com/static/img/blog'
+img_path: '/static/img/blog'
 
 # donate
 donate:
