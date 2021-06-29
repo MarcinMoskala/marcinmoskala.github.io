@@ -15,8 +15,7 @@
   },
   "about_me":{
     "about_me": "O mnie",
-    "des": "Doświadczony Android Developer i trener Kotlina. Założyciel Kt. Academy i oficjalny parter JetBrains w zakresie szkoleń z języka Kotlin, autor książek \"Android Development with Kotlin\" oraz \"Effective Kotlin\". Jest także głównym autorem na największej publikacji medium o Kotlinie (blog.kotlin-academy.com) i mówcą zapraszanym na wiele programistycznych konferencji."
-
+    "des": "Marcin Moskała - doświadczony programista, autor książek \"Effective Kotlin\" oraz współautor \"Android Development with Kotlin\", założyciel Kt. Academy. Programuje od dziecka, występuje na międzynarodowych konferencjach programistycznych, posiada w dorobku liczne publikacje m.in. w magazynie Programista. Pasjonat czytania i pisania książek, uczenia się i filozofii."
   },
   "skills":{
     "my_skills": "Umiejętności"
