@@ -107,3 +107,6 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 talkyard_server_url: https://comments-demo.talkyard.io
+
+plugins:
+  - jekyll-redirect-from
