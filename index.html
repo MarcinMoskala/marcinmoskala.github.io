@@ -3,82 +3,95 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
   <title>Marcin Moskała</title>
-  <meta name="description" content="Marcin Moskała — developer, trainer and author of books on Kotlin, including Effective Kotlin and Kotlin Coroutines: Deep Dive.">
+  <meta name="description" content="Marcin Moskała teaches Kotlin and writes books about it: Effective Kotlin, Kotlin Coroutines: Deep Dive and more. Founder of kt.academy.">
+  <link rel="canonical" href="https://marcinmoskala.com/">
+  <link rel="alternate" hreflang="en" href="https://marcinmoskala.com/">
+  <link rel="alternate" hreflang="pl" href="https://marcinmoskala.pl/">
+  <link rel="alternate" hreflang="x-default" href="https://marcinmoskala.com/">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Marcin Moskała">
+  <meta property="og:description" content="Marcin Moskała teaches Kotlin and writes books about it: Effective Kotlin, Kotlin Coroutines: Deep Dive and more. Founder of kt.academy.">
+  <meta property="og:url" content="https://marcinmoskala.com/">
+  <meta property="og:image" content="https://marcinmoskala.com/static/img/portrait.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@marcinmoskala">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,300..700;1,7..72,300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400..600;1,7..72,400&family=JetBrains+Mono:wght@400;500&display=swap&subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css?v=mwkvufi8">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://marcinmoskala.com/#person","name":"Marcin Moskała","url":"https://marcinmoskala.com/","image":"https://marcinmoskala.com/static/img/portrait.jpg","jobTitle":"Kotlin trainer and author","email":"mailto:marcinmoskala@gmail.com","worksFor":{"@type":"Organization","name":"kt.academy","url":"https://kt.academy"},"sameAs":["https://kt.academy","https://github.com/MarcinMoskala","https://www.linkedin.com/in/marcin-moskala/","https://x.com/marcinmoskala"]},{"@type":"Book","name":"Effective Kotlin","url":"https://kt.academy/book/effectivekotlin","image":"https://marcinmoskala.com/static/img/books/ek.jpg","author":{"@id":"https://marcinmoskala.com/#person"}},{"@type":"Book","name":"Kotlin Coroutines: Deep Dive","url":"https://kt.academy/book/coroutines","image":"https://marcinmoskala.com/static/img/books/kc.jpg","author":{"@id":"https://marcinmoskala.com/#person"}},{"@type":"Book","name":"Kotlin Essentials","url":"https://kt.academy/book/kotlin_essentials","image":"https://marcinmoskala.com/static/img/books/ke.jpg","author":{"@id":"https://marcinmoskala.com/#person"}},{"@type":"Book","name":"Functional Kotlin","url":"https://kt.academy/book/functional_kotlin","image":"https://marcinmoskala.com/static/img/books/fk.jpg","author":{"@id":"https://marcinmoskala.com/#person"}},{"@type":"Book","name":"Advanced Kotlin","url":"https://kt.academy/book/advanced_kotlin","image":"https://marcinmoskala.com/static/img/books/ak.jpg","author":{"@id":"https://marcinmoskala.com/#person"}}]}</script>
 </head>
 <body>
-  <header class="top">
-    <a class="name" href="#about">Marcin Moskała</a>
-    <nav>
-      <a href="#about" data-tab="about">about</a>
-      <a href="#projects" data-tab="projects">projects</a>
-      <a href="#talks" data-tab="talks">talks</a>
-    </nav>
-  </header>
+  <div class="wrap">
+    <header class="top">
+      <a class="name" href="/">Marcin Moskała</a>
+      <nav aria-label="Main"><a href="/" aria-current="page">about</a><a href="/projects/">projects</a><a href="/talks/">talks</a><a class="lang" href="https://marcinmoskala.pl/" hreflang="pl" lang="pl">Polski</a></nav>
+    </header>
+    <main id="main">
 
-  <main>
-    <!-- ABOUT -->
-    <section id="tab-about" class="tab">
-      <div class="intro">
-        <img class="portrait" src="https://kt.academy/images/marcin-moskala.jpg" alt="Marcin Moskała" width="112" height="112">
+      <section class="intro">
+        <img class="portrait" src="/static/img/portrait.jpg" alt="Marcin Moskała" width="112" height="112" fetchpriority="high">
         <div>
           <h1>Marcin Moskała</h1>
-          <p class="subtitle">Developer, trainer, and author of books on Kotlin.</p>
+          <p class="subtitle">I teach Kotlin and write books about it.</p>
         </div>
-      </div>
-
+      </section>
       <div class="prose">
-        <p>
-          Since 2017 I have been running <a href="https://kt.academy">kt.academy</a>, teaching Kotlin to
-          developer teams around the world. My books grew out of those workshops; the best known are
-          <a href="https://kt.academy/book/effectivekotlin"><cite>Effective Kotlin</cite></a> and
-          <a href="https://kt.academy/book/coroutines"><cite>Kotlin Coroutines: Deep Dive</cite></a>.
-        </p>
-        <p>
-          I speak at conferences such as KotlinConf and droidcon, make small games for practising
-          code reading, and through <a href="#projects">Podaj Dalej Programowanie</a> I give away books
-          to people who want to start programming.
-        </p>
-        <p class="elsewhere" id="social"></p>
+        <p>I founded <a href="https://kt.academy">kt.academy</a>, an official JetBrains training partner, and since 2017 I have been teaching Kotlin to developer teams at companies around the world. My books grew out of those workshops; the best known are <a href="https://kt.academy/book/effectivekotlin"><cite>Effective Kotlin</cite></a> and <a href="https://kt.academy/book/coroutines"><cite>Kotlin Coroutines: Deep Dive</cite></a>.</p>
+        <p>I have given over 70 talks, at conferences such as KotlinConf, droidcon, JavaZone and GeeCON. I also build small games that train you to read Kotlin code, and through <a href="/projects/#podaj-dalej">Podaj Dalej Programowanie</a> I have given away over 3,000 books to people who want to start programming.</p>
+        <p class="contact">Want me to speak at your event, run a workshop for your team, or join your podcast? Write to <a href="mailto:marcinmoskala@gmail.com">marcinmoskala@gmail.com</a>.</p>
+        <p class="elsewhere"><a href="https://kt.academy">kt.academy</a> · <a href="https://github.com/MarcinMoskala">GitHub</a> · <a href="https://www.linkedin.com/in/marcin-moskala/">LinkedIn</a> · <a href="https://x.com/marcinmoskala">X</a></p>
+        <p class="ctas"><a href="https://kt.academy/courses">Workshops at kt.academy →</a> <a href="/conf/">For conference organizers →</a></p>
       </div>
 
       <h2>Books</h2>
-      <div class="shelf" id="shelf"></div>
+      <div class="shelf">
+        <a class="book" href="https://kt.academy/book/effectivekotlin"><img src="/static/img/books/ek.jpg" alt="" width="300" height="450"><span>Effective Kotlin</span></a>
+        <a class="book" href="https://kt.academy/book/coroutines"><img src="/static/img/books/kc.jpg" alt="" width="300" height="450"><span>Kotlin Coroutines: Deep Dive</span></a>
+        <a class="book" href="https://kt.academy/book/kotlin_essentials"><img src="/static/img/books/ke.jpg" alt="" width="300" height="450"><span>Kotlin Essentials</span></a>
+        <a class="book" href="https://kt.academy/book/functional_kotlin"><img src="/static/img/books/fk.jpg" alt="" width="300" height="450"><span>Functional Kotlin</span></a>
+        <a class="book" href="https://kt.academy/book/advanced_kotlin"><img src="/static/img/books/ak.jpg" alt="" width="300" height="450"><span>Advanced Kotlin</span></a>
+      </div>
 
       <h2>Recent talks</h2>
-      <ol class="talks" id="recent-talks"></ol>
-      <p><a href="#talks">All talks →</a></p>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="tab-projects" class="tab" hidden>
-      <h1>Projects</h1>
-      <p class="subtitle">Things I have built, written, or helped make.</p>
-      <div id="project-groups"></div>
-    </section>
-
-    <!-- TALKS -->
-    <section id="tab-talks" class="tab" hidden>
-      <h1>Talks</h1>
-      <p class="subtitle">Conferences, meetups, podcasts and articles, newest first.</p>
-      <h2>Worth watching</h2>
-      <div class="gallery" id="featured-talks"></div>
-      <h2>All talks</h2>
-      <p class="filters" id="filters"></p>
-      <div id="talk-list"></div>
-    </section>
-  </main>
-
-  <footer>
-    <span>© <span id="year"></span> Marcin Moskała</span>
-    <a href="/conf">For conference organizers</a>
-  </footer>
-
-  <script src="/data.js"></script>
-  <script src="/app.js"></script>
+      <ol class="talks">
+        <li data-type="conference">
+      <time datetime="2025-10-30">Oct 2025</time>
+      <div><a href="https://www.youtube.com/watch?v=Sj0ooKlwmDo" class="title">Structured Concurrency: The Paradigm Shift<span class="marker" aria-hidden="true">▶</span></a>
+        <div class="where">droidcon London <span class="kind">conference</span></div></div>
+    </li>
+        <li data-type="podcast">
+      <time datetime="2025-10-23">Oct 2025</time>
+      <div><a href="https://talkingkotlin.com/discussing-kotlin-coroutines-with-marcin-moskala/" class="title">Discussing Kotlin Coroutines (Talking Kotlin #141)<span class="marker" aria-hidden="true">↗</span></a>
+        <div class="where">Talking Kotlin · JetBrains <span class="kind">podcast</span></div></div>
+    </li>
+        <li data-type="conference">
+      <time datetime="2025-09-24">Sep 2025</time>
+      <div><a href="https://www.youtube.com/watch?v=Je7GxLH5BjM" class="title">Taming Asynchronous Beasts: Debugging and Performance Tuning in a Coroutine World<span class="marker" aria-hidden="true">▶</span></a>
+        <div class="where">droidcon Berlin <span class="kind">conference</span></div></div>
+    </li>
+        <li data-type="conference">
+      <time datetime="2025-09-03">Sep 2025</time>
+      <div><a href="https://vimeo.com/1115480340" class="title">Kotlin Variance Modifiers<span class="marker" aria-hidden="true">▶</span></a>
+        <div class="where">JavaZone, Oslo <span class="kind">conference</span></div></div>
+    </li>
+        <li data-type="podcast">
+      <time datetime="2025-06">Jun 2025</time>
+      <div><a href="https://www.youtube.com/watch?v=z6hsEb5gkF0" class="title">Kotlin for Developers (with Nicola Corti)<span class="marker" aria-hidden="true">▶</span></a>
+        <div class="where">GOTO Book Club <span class="kind">podcast</span></div></div>
+    </li>
+      </ol>
+      <p><a href="/talks/">All talks →</a></p>
+    </main>
+    <footer>
+      <span>© 2026 Marcin Moskała · <a href="mailto:marcinmoskala@gmail.com">marcinmoskala@gmail.com</a></span>
+      <a href="/conf/">For conference organizers</a>
+    </footer>
+  </div>
+  
 </body>
 </html>

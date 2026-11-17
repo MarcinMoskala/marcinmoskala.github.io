@@ -3,3 +3,5 @@
 .jekyll-metadata
 /.idea/
 /.jekyll-cache/.DS_Store
+.claude/
+_pl/
