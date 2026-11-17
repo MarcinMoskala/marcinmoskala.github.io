@@ -3,8 +3,8 @@ const esc = (s = "") => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<"
 const link = (url, text) => url ? `<a href="${esc(url)}">${text}</a>` : `<b>${text}</b>`;
 
 const TYPE_LABELS = {
-  conference: "konferencja", workshop: "warsztat", meetup: "meetup", podcast: "podcast",
-  tv: "tv", article: "artykuł", webinar: "webinar", interview: "wywiad",
+  conference: "conference", workshop: "workshop", meetup: "meetup", podcast: "podcast",
+  tv: "tv", article: "article", webinar: "webinar", interview: "interview",
 };
 
 function item(p) {
@@ -19,37 +19,37 @@ function talkRow(t) {
   const where = [t.event, t.place].filter(Boolean).join(", ");
   return `<li>
     <span class="date">${esc(t.date)}</span>
-    <div>${title}<div class="where">${esc(where)}<span class="kind">${esc(TYPE_LABELS[t.type] || t.type)}${t.lang === "PL" ? " · pl" : ""}</span></div></div>
+    <div>${title}<div class="where">${esc(where)}<span class="kind">${esc(TYPE_LABELS[t.type] || t.type)}${t.lang === "PL" ? " · in Polish" : ""}</span></div></div>
   </li>`;
 }
 
 const talksSorted = [...DATA.talks].sort((a, b) => b.date.localeCompare(a.date));
 const allItems = DATA.projectGroups.flatMap((g) => g.items);
 
-// O mnie
+// About
 $("#social").innerHTML = DATA.social.map((s) => `<a href="${esc(s.url)}">${esc(s.name)}</a>`).join(" · ");
 $("#shelf").innerHTML = allItems.filter((i) => i.cover).map((b) =>
   `<a class="book" href="${esc(b.url)}"><img src="${esc(b.cover)}" alt="${esc(b.name)}" loading="lazy" title="${esc(b.name)}"></a>`).join("");
 $("#recent-talks").innerHTML = talksSorted.slice(0, 5).map(talkRow).join("");
 
-// Projekty
+// Projects
 $("#project-groups").innerHTML = DATA.projectGroups.map((g) => `
   <h2>${esc(g.name)}</h2>
   ${g.desc ? `<p class="group-desc">${esc(g.desc)}</p>` : ""}
   <ul class="items">${g.items.map(item).join("")}</ul>`).join("");
 
-// Wystąpienia
+// Talks
 let filter = "all";
 function renderTalks() {
   const list = talksSorted.filter((t) => filter === "all" || t.type === filter);
   const byYear = {};
   list.forEach((t) => (byYear[t.date.slice(0, 4)] ??= []).push(t));
-  $("#talks").innerHTML = Object.keys(byYear).sort().reverse()
+  $("#talk-list").innerHTML = Object.keys(byYear).sort().reverse()
     .map((y) => `<h2 class="year">${y}</h2><ol class="talks">${byYear[y].map(talkRow).join("")}</ol>`).join("");
   document.querySelectorAll("#filters button").forEach((b) => b.classList.toggle("active", b.dataset.f === filter));
 }
 const types = [...new Set(DATA.talks.map((t) => t.type))];
-$("#filters").innerHTML = [["all", "wszystkie"], ...types.map((t) => [t, TYPE_LABELS[t] || t])]
+$("#filters").innerHTML = [["all", "all"], ...types.map((t) => [t, TYPE_LABELS[t] || t])]
   .map(([f, l]) => `<button data-f="${f}">${l} (${f === "all" ? DATA.talks.length : DATA.talks.filter((t) => t.type === f).length})</button>`).join("");
 $("#filters").addEventListener("click", (e) => {
   const b = e.target.closest("button");
@@ -57,10 +57,10 @@ $("#filters").addEventListener("click", (e) => {
 });
 renderTalks();
 
-// zakładki
+// tabs
 function route() {
-  const id = location.hash.slice(1) || "o-mnie";
-  const valid = document.getElementById("tab-" + id) ? id : "o-mnie";
+  const id = location.hash.slice(1) || "about";
+  const valid = document.getElementById("tab-" + id) ? id : "about";
   document.querySelectorAll(".tab").forEach((s) => (s.hidden = s.id !== "tab-" + valid));
   document.querySelectorAll("nav a").forEach((a) => a.classList.toggle("active", a.dataset.tab === valid));
   window.scrollTo(0, 0);

@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="pl">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Marcin Moskała</title>
-  <meta name="description" content="Marcin Moskała — programista, trener i autor książek o Kotlinie, m.in. Effective Kotlin i Kotlin Coroutines: Deep Dive.">
+  <meta name="description" content="Marcin Moskała — developer, trainer and author of books on Kotlin, including Effective Kotlin and Kotlin Coroutines: Deep Dive.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,300..700;1,7..72,300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -12,67 +12,67 @@
 </head>
 <body>
   <header class="top">
-    <a class="name" href="#o-mnie">Marcin Moskała</a>
+    <a class="name" href="#about">Marcin Moskała</a>
     <nav>
-      <a href="#o-mnie" data-tab="o-mnie">o mnie</a>
-      <a href="#projekty" data-tab="projekty">projekty</a>
-      <a href="#wystapienia" data-tab="wystapienia">wystąpienia</a>
+      <a href="#about" data-tab="about">about</a>
+      <a href="#projects" data-tab="projects">projects</a>
+      <a href="#talks" data-tab="talks">talks</a>
     </nav>
   </header>
 
   <main>
-    <!-- O MNIE -->
-    <section id="tab-o-mnie" class="tab">
+    <!-- ABOUT -->
+    <section id="tab-about" class="tab">
       <div class="intro">
         <img class="portrait" src="https://kt.academy/images/marcin-moskala.jpg" alt="Marcin Moskała" width="112" height="112">
         <div>
           <h1>Marcin Moskała</h1>
-          <p class="subtitle">Programista, trener i autor książek o Kotlinie.</p>
+          <p class="subtitle">Developer, trainer, and author of books on Kotlin.</p>
         </div>
       </div>
 
       <div class="prose">
         <p>
-          Od 2017 roku prowadzę <a href="https://kt.academy">kt.academy</a> — uczę Kotlina zespoły
-          programistów na całym świecie, a z tych warsztatów wyrastają moje książki. Najbardziej znane to
-          <a href="https://kt.academy/book/effectivekotlin"><cite>Effective Kotlin</cite></a> i
+          Since 2017 I have been running <a href="https://kt.academy">kt.academy</a>, teaching Kotlin to
+          developer teams around the world. My books grew out of those workshops; the best known are
+          <a href="https://kt.academy/book/effectivekotlin"><cite>Effective Kotlin</cite></a> and
           <a href="https://kt.academy/book/coroutines"><cite>Kotlin Coroutines: Deep Dive</cite></a>.
         </p>
         <p>
-          Często występuję na konferencjach takich jak KotlinConf czy droidcon. Robię małe gry, w których
-          ćwiczy się czytanie kodu, a w akcji <a href="#projekty">Podaj Dalej Programowanie</a> rozdaję
-          książki osobom, które chcą zacząć programować.
+          I speak at conferences such as KotlinConf and droidcon, make small games for practising
+          code reading, and through <a href="#projects">Podaj Dalej Programowanie</a> I give away books
+          to people who want to start programming.
         </p>
         <p class="elsewhere" id="social"></p>
       </div>
 
-      <h2>Książki</h2>
+      <h2>Books</h2>
       <div class="shelf" id="shelf"></div>
 
-      <h2>Ostatnio na scenie</h2>
+      <h2>Recent talks</h2>
       <ol class="talks" id="recent-talks"></ol>
-      <p><a href="#wystapienia">Wszystkie wystąpienia →</a></p>
+      <p><a href="#talks">All talks →</a></p>
     </section>
 
-    <!-- PROJEKTY -->
-    <section id="tab-projekty" class="tab" hidden>
-      <h1>Projekty</h1>
-      <p class="subtitle">Rzeczy, które zbudowałem, napisałem albo współtworzyłem.</p>
+    <!-- PROJECTS -->
+    <section id="tab-projects" class="tab" hidden>
+      <h1>Projects</h1>
+      <p class="subtitle">Things I have built, written, or helped make.</p>
       <div id="project-groups"></div>
     </section>
 
-    <!-- WYSTĄPIENIA -->
-    <section id="tab-wystapienia" class="tab" hidden>
-      <h1>Wystąpienia</h1>
-      <p class="subtitle">Konferencje, meetupy, podcasty i artykuły, od najnowszych.</p>
+    <!-- TALKS -->
+    <section id="tab-talks" class="tab" hidden>
+      <h1>Talks</h1>
+      <p class="subtitle">Conferences, meetups, podcasts and articles, newest first.</p>
       <p class="filters" id="filters"></p>
-      <div id="talks"></div>
+      <div id="talk-list"></div>
     </section>
   </main>
 
   <footer>
     <span>© <span id="year"></span> Marcin Moskała</span>
-    <a href="/conf">Dla organizatorów konferencji</a>
+    <a href="/conf">For conference organizers</a>
   </footer>
 
   <script src="/data.js"></script>
