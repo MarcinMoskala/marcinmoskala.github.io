@@ -14,6 +14,15 @@ function item(p) {
   </li>`;
 }
 
+function tile(p) {
+  const tag = p.url ? "a" : "div";
+  return `<${tag} class="tile"${p.url ? ` href="${esc(p.url)}"` : ""}>
+    ${p.image ? `<span class="thumb"><img src="${esc(p.image)}" alt="" loading="lazy"></span>` : ""}
+    <b>${esc(p.name)}</b>
+    <span class="desc">${esc(p.desc)}</span>
+  </${tag}>`;
+}
+
 function talkRow(t) {
   const title = t.url ? `<a class="title" href="${esc(t.url)}">${esc(t.title)}</a>` : `<span class="title">${esc(t.title)}</span>`;
   const where = [t.event, t.place].filter(Boolean).join(", ");
@@ -36,7 +45,18 @@ $("#recent-talks").innerHTML = talksSorted.slice(0, 5).map(talkRow).join("");
 $("#project-groups").innerHTML = DATA.projectGroups.map((g) => `
   <h2>${esc(g.name)}</h2>
   ${g.desc ? `<p class="group-desc">${esc(g.desc)}</p>` : ""}
-  <ul class="items">${g.items.map(item).join("")}</ul>`).join("");
+  ${g.layout === "gallery"
+    ? `<div class="gallery">${g.items.map(tile).join("")}</div>`
+    : `<ul class="items">${g.items.map(item).join("")}</ul>`}`).join("");
+
+// Talks: featured recordings with YouTube thumbnails
+const ytId = (url = "") => (url.match(/(?:youtu\.be\/|[?&]v=)([\w-]{11})/) || [])[1];
+$("#featured-talks").innerHTML = talksSorted.filter((t) => t.featured && ytId(t.url)).map((t) => `
+  <a class="tile" href="${esc(t.url)}">
+    <span class="thumb video"><img src="https://i.ytimg.com/vi/${ytId(t.url)}/hqdefault.jpg" alt="" loading="lazy"></span>
+    <b>${esc(t.title)}</b>
+    <span class="meta">${esc(t.event)} · ${esc(t.date.slice(0, 4))}</span>
+  </a>`).join("");
 
 // Talks
 let filter = "all";
