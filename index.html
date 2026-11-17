@@ -1,77 +1,77 @@
----
-layout: page
-title: index
-permalink: /
-redirect_to: https://kt.academy/user/marcinmoskala
----
-
-<div class="navbar-wrapper">
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                        aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top" id="i18_title"><span
-                        data-i18n="website.title">{{ site.title }}</span></a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right" id="i18_navbar">
-                    {% assign menu_items = site.sections | where: "in_menu", true %}
-                    {% for section in menu_items %}
-                    <li>
-                        <a class="page-scroll" href="#{{ section.id }}">
-                            <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
-                        </a>
-                    </li>
-                    {% endfor %}
-                    <li>
-                        <a class="page-scroll" href="https://medium.com/@marcinmoskala">
-                            <span data-i18n="nav.blog">Blog</span>
-                        </a>
-                    </li>
-                    {% for language in site.languages %}
-                    <li>
-                        <a id="set_lang_{{ language.locale }}" class="btn btn-sm set_{{ language.locale }}"
-                           data-locale="{{ language.locale }}">
-                            <img src="{{ language.flag | prepend: site.baseurl }}" height="16px" width="16px" align="left">
-                        </a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marcin Moskała</title>
+  <meta name="description" content="Marcin Moskała — trener Kotlina, autor książek, założyciel kt.academy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400&family=Inter:wght@400..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="logo" href="#o-mnie">Marcin<span>Moskała</span></a>
+    <nav>
+      <a href="#o-mnie" data-tab="o-mnie">O mnie</a>
+      <a href="#projekty" data-tab="projekty">Projekty</a>
+      <a href="#wystapienia" data-tab="wystapienia">Wystąpienia</a>
     </nav>
-</div>
+  </header>
 
-<div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <!-- Set background for slide in css -->
-            <div class="header-back one"></div>
+  <main>
+    <!-- O MNIE -->
+    <section id="tab-o-mnie" class="tab">
+      <div class="hero">
+        <div class="hero-text">
+          <p class="kicker">Cześć! 👋</p>
+          <h1>Jestem Marcin.<br>Uczę <em>Kotlina</em><br>i piszę o nim książki.</h1>
+          <p class="lead">
+            Prowadzę <a href="https://kt.academy">kt.academy</a>, gdzie robię warsztaty dla zespołów z całego świata.
+            Napisałem m.in. <mark>Effective Kotlin</mark> i <mark>Kotlin Coroutines: Deep Dive</mark>,
+            jeżdżę po konferencjach, robię małe gry o Kotlinie, a w akcji <a href="#projekty">Podaj Dalej Programowanie</a>
+            rozdaję książki osobom, które chcą zacząć programować.
+          </p>
+          <div class="links" id="social"></div>
         </div>
-    </div>
-</div>
+        <figure class="hero-photo">
+          <img src="https://kt.academy/images/marcin-moskala.jpg" alt="Marcin Moskała">
+        </figure>
+      </div>
 
-{% for section in site.sections %}
-{% assign loopindex = forloop.index | modulo: 2 %}
-<section id="{{ section.id }}"
-         class="features {% if loopindex != 0 and forloop.index != 1 %} gray-section {% endif %} {{ section.css }}"
-         style="margin-top: 0px;">
-    {% include sections/{{section.tpl}} %}
-</section>
-{% endfor %}
+      <div class="stats" id="stats"></div>
 
-<section class="features contact" style="margin-top: 0px;">
-    <div class="container" id="i18_link">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
-                <strong>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}</strong></p>
-            </div>
-        </div>
-    </div>
-</section>
+      <h2>Czym się zajmuję</h2>
+      <div class="grid" id="featured"></div>
+
+      <h2>Ostatnio na scenie</h2>
+      <ol class="timeline compact" id="recent-talks"></ol>
+      <p><a class="more" href="#wystapienia">Wszystkie wystąpienia →</a></p>
+    </section>
+
+    <!-- PROJEKTY -->
+    <section id="tab-projekty" class="tab" hidden>
+      <h1>Projekty</h1>
+      <p class="lead">Rzeczy, które zbudowałem, napisałem albo w których maczałem palce.</p>
+      <div id="project-groups"></div>
+    </section>
+
+    <!-- WYSTĄPIENIA -->
+    <section id="tab-wystapienia" class="tab" hidden>
+      <h1>Wystąpienia</h1>
+      <p class="lead">Konferencje, meetupy, podcasty i artykuły — od najnowszych.</p>
+      <div class="filters" id="filters"></div>
+      <div id="talks"></div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> Marcin Moskała</span>
+    <a href="https://kt.academy">kt.academy</a>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
