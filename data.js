@@ -5,7 +5,7 @@ const DATA = {
     { name: "GitHub", url: "https://github.com/MarcinMoskala" },
     { name: "LinkedIn", url: "https://www.linkedin.com/in/marcin-moskala/" },
     { name: "X / Twitter", url: "https://x.com/marcinmoskala" },
-    { name: "Książki", url: "https://kt.academy/books" },
+    { name: "Książki", url: "https://kt.academy/book" },
   ],
 
   stats: [
@@ -34,15 +34,15 @@ const DATA = {
       name: "Książki o Kotlinie",
       desc: "Seria Kotlin for Developers i nie tylko — wydania na Leanpub, w druku i w tłumaczeniach.",
       items: [
-        { featured: true, meta: "best practices", name: "Effective Kotlin", url: "https://kt.academy/book/effectivekotlin",
+        { featured: true, meta: "best practices", name: "Effective Kotlin", url: "https://kt.academy/book/effectivekotlin", cover: "https://kt.academy/images/ek_book_cover.webp",
           desc: "Najlepsze praktyki w Kotlinie w formie reguł z uzasadnieniem. Po polsku: „Efektywny Kotlin” (Helion).", tags: ["EN", "PL"] },
-        { featured: true, meta: "coroutines", name: "Kotlin Coroutines: Deep Dive", url: "https://kt.academy/book/coroutines",
+        { featured: true, meta: "coroutines", name: "Kotlin Coroutines: Deep Dive", url: "https://kt.academy/book/coroutines", cover: "https://kt.academy/images/kotlin_coroutines_cover.png",
           desc: "Dogłębny przewodnik po działaniu i stosowaniu coroutines i Flow.", tags: ["EN", "TR"] },
-        { meta: "podstawy", name: "Kotlin Essentials", url: "https://kt.academy/book/kotlin_essentials",
+        { meta: "podstawy", name: "Kotlin Essentials", url: "https://kt.academy/book/kotlin_essentials", cover: "https://kt.academy/images/kotlin_essentials_cover.webp",
           desc: "Wszystko, co programista musi wiedzieć o języku Kotlin." },
-        { meta: "FP", name: "Functional Kotlin", url: "https://leanpub.com/kotlin_functional",
+        { meta: "FP", name: "Functional Kotlin", url: "https://kt.academy/book/functional_kotlin", cover: "https://kt.academy/images/functional_kotlin_cover.png",
           desc: "Lambdy, przetwarzanie kolekcji, typy funkcyjne i Arrow." },
-        { meta: "zaawansowane", name: "Advanced Kotlin", url: "https://leanpub.com/advanced_kotlin",
+        { meta: "zaawansowane", name: "Advanced Kotlin", url: "https://kt.academy/book/advanced_kotlin", cover: "https://kt.academy/images/advanced_kotlin_cover.png",
           desc: "Generyki i wariancja, delegacja, DSL-e, refleksja, KSP i plugin kompilatora." },
         { meta: "ćwiczenia", name: "Kotlin Exercises", url: "https://leanpub.com/kotlin_exercises",
           desc: "Ćwiczenia i rozwiązania z książek oraz warsztatów." },
@@ -53,9 +53,9 @@ const DATA = {
     {
       name: "Inne książki",
       items: [
-        { meta: "PL", name: "JavaScript od podstaw", url: "https://kt.academy/pl/book/js",
+        { meta: "PL", name: "JavaScript od podstaw", url: "https://kt.academy/pl/book/js", cover: "https://kt.academy/images/js.png",
           desc: "Wprowadzenie do programowania dla zupełnie początkujących." },
-        { meta: "PL · UA", name: "Python od podstaw / Python з нуля", url: "https://kt.academy/pl/book/py",
+        { meta: "PL · UA", name: "Python od podstaw / Python з нуля", url: "https://kt.academy/pl/book/py", cover: "https://kt.academy/images/python_od_podstaw.png",
           desc: "Nauka programowania w Pythonie od zera; wydanie ukraińskie w ramach pomocy dla Ukrainy." },
         { meta: "PL", name: "Myślenie krytyczne w praktyce", url: "https://leanpub.com/mylenie_krytyczne",
           desc: "Książka o krytycznym myśleniu i ocenianiu argumentów." },
