@@ -103,9 +103,8 @@ export const projects = {
       desc: t("My first book, written with Igor Wojda when Kotlin was just arriving on Android.",
               "Moja pierwsza książka, napisana z Igorem Wojdą, gdy Kotlin dopiero wchodził na Androida.") },
     { id: "open-source", name: "Open source", url: "https://github.com/MarcinMoskala", image: "/static/img/projects/github.jpg", meta: "GitHub",
-      desc: t("Libraries from the days when Kotlin was arriving on Android, such as ArcSeekBar, ActivityStarter and PreferenceHolder; KtAcademyPortal, one of the first Kotlin Multiplatform showcase apps; Kotlin Coroutines Recipes; and contributions to the JetBrains KotlinConf app.",
-              "Biblioteki z czasów, gdy Kotlin wchodził na Androida, m.in. ArcSeekBar, ActivityStarter i PreferenceHolder; KtAcademyPortal, jedna z pierwszych pokazowych aplikacji Kotlin Multiplatform; Kotlin Coroutines Recipes oraz kontrybucje do aplikacji KotlinConf od JetBrains."),
-      links: [{ name: "github.com/MarcinMoskala", url: "https://github.com/MarcinMoskala" }] },
+      desc: t("Libraries from the days when Kotlin was arriving on Android, such as [ArcSeekBar](https://github.com/MarcinMoskala/ArcSeekBar), [ActivityStarter](https://github.com/MarcinMoskala/ActivityStarter) and [PreferenceHolder](https://github.com/MarcinMoskala/PreferenceHolder); [KtAcademyPortal](https://github.com/MarcinMoskala/KtAcademyPortal), one of the first Kotlin Multiplatform showcase apps; [Kotlin Coroutines Recipes](https://github.com/MarcinMoskala/kotlin-coroutines-recipes); and contributions to the JetBrains [KotlinConf app](https://github.com/JetBrains/kotlinconf-app).",
+              "Biblioteki z czasów, gdy Kotlin wchodził na Androida, m.in. [ArcSeekBar](https://github.com/MarcinMoskala/ArcSeekBar), [ActivityStarter](https://github.com/MarcinMoskala/ActivityStarter) i [PreferenceHolder](https://github.com/MarcinMoskala/PreferenceHolder); [KtAcademyPortal](https://github.com/MarcinMoskala/KtAcademyPortal), jedna z pierwszych pokazowych aplikacji Kotlin Multiplatform; [Kotlin Coroutines Recipes](https://github.com/MarcinMoskala/kotlin-coroutines-recipes) oraz kontrybucje do [aplikacji KotlinConf](https://github.com/JetBrains/kotlinconf-app) od JetBrains.") },
   ],
 };
 

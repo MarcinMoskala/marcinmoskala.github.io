@@ -93,7 +93,7 @@ function card(p, lang) {
         ${media}
         <h3>${p.url ? `<a href="${esc(p.url)}"${langOf(name, lang)}>${name}</a>` : `<span${langOf(name, lang)}>${name}</span>`}</h3>
         ${p.meta ? `<p class="meta">${esc(L(p.meta, lang))}</p>` : ""}
-        <p class="desc">${esc(L(p.desc, lang))}</p>
+        <p class="desc">${esc(L(p.desc, lang)).replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')}</p>
         ${links.length ? `<p class="card-links">${links.map((x) => `<a href="${esc(x.url)}"${langOf(x.name, lang, x.lang)}>${esc(x.name)}</a>`).join("")}</p>` : ""}
       </article>`;
 }
@@ -232,12 +232,10 @@ function talksPage(lang) {
       <h1>${esc(s.titles.talks)}</h1>
 
       <div class="filters" role="group" aria-label="${esc(s.filterLabel)}">${filters}</div>
-      <p class="count" aria-live="polite"></p>
       <div id="talk-list">${years}
       </div>`;
-  const countJs = `const countLabel = ${s.countLabel.toString()};`;
   return layout({ lang, path: "/talks/", title: s.titles.talks, body, active: "talks",
-    scripts: `<script>${countJs}</script>\n  <script src="/talks.js?v=${VERSION}"></script>` });
+    scripts: `<script src="/talks.js?v=${VERSION}"></script>` });
 }
 
 function confPage(lang) {

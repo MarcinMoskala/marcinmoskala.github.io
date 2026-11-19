@@ -12,7 +12,6 @@ export const strings = {
     forOrganizers: "For conference organizers →",
     projectsSubtitle: "Things I've built, written, or helped build.",
     filterLabel: "Filter talks by type",
-    countLabel: (n) => `${n} ${n === 1 ? "entry" : "entries"}`,
     inPolish: "in Polish",
     types: { conference: "conference", workshop: "workshop", meetup: "meetup", podcast: "podcast", webinar: "webinar", interview: "interview", press: "press", tv: "TV" },
     places: {},
@@ -31,7 +30,6 @@ export const strings = {
     forOrganizers: "Dla organizatorów konferencji →",
     projectsSubtitle: "Rzeczy, które zbudowałem, napisałem albo współtworzyłem.",
     filterLabel: "Filtruj wystąpienia według typu",
-    countLabel: (n) => `${n} ${n === 1 ? "pozycja" : (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20)) ? "pozycje" : "pozycji"}`,
     inPolish: "po polsku",
     types: { conference: "konferencja", workshop: "warsztat", meetup: "meetup", podcast: "podcast", webinar: "webinar", interview: "wywiad", press: "prasa", tv: "telewizja" },
     places: {
