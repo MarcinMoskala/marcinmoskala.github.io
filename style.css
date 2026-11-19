@@ -17,7 +17,7 @@
 }
 @media (prefers-color-scheme: dark) {
   :root { --bg: #171615; --text: #ece8e1; --muted: #a8a197; --rule: #2e2b28; --accent: #b39dff; }
-  .book img, .thumb, .mini-cover { outline: 1px solid rgb(255 255 255 / .07); }
+  .book img, .mini-cover, .card .shot, .fan img { outline: 1px solid rgb(255 255 255 / .07); }
 }
 
 * { box-sizing: border-box; }
@@ -94,24 +94,36 @@ a.meta { color: var(--accent); text-decoration: none; }
 .group-desc { color: var(--muted); font-style: italic; margin: -8px 0 20px; font-size: var(--fs-meta); }
 section[id] { scroll-margin-top: 24px; }
 
-/* galleries: games and featured recordings */
-.gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px 20px; }
-.tile { display: flex; flex-direction: column; gap: 4px; color: var(--text); text-decoration: none; }
-.tile .thumb { display: block; position: relative; aspect-ratio: 16 / 10; overflow: hidden; border-radius: 6px; margin-bottom: 8px; background: var(--rule); box-shadow: 0 1px 2px rgb(0 0 0 / .1), 0 10px 22px -12px rgb(0 0 0 / .4); }
-.tile .thumb.video { aspect-ratio: 16 / 9; }
-.tile .thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform .25s, filter .25s; }
-.tile .thumb.video img { filter: saturate(.75); }
-.tile .thumb.video::after {
-  content: ""; position: absolute; left: 10px; bottom: 10px; width: 34px; height: 34px; border-radius: 50%;
-  background: rgb(0 0 0 / .6) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 7v10l8-5z' fill='white'/%3E%3C/svg%3E") center / 20px no-repeat;
+/* projects: cards */
+.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 48px 24px; margin-top: 48px; }
+.card { display: flex; flex-direction: column; scroll-margin-top: 24px; }
+.card .shot, .card .fan {
+  display: block; aspect-ratio: 16 / 10; border-radius: 6px; overflow: hidden; margin-bottom: 14px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / .1), 0 10px 22px -12px rgb(0 0 0 / .4);
 }
-a.tile:hover .thumb img, a.tile:focus-visible .thumb img { transform: scale(1.03); filter: none; }
-a.tile:hover b { color: var(--accent); }
-.tile b { font-weight: 600; line-height: 1.35; }
-.tile .desc { color: var(--muted); font-size: var(--fs-meta); line-height: 1.5; }
+.card .shot img { width: 100%; height: 100%; object-fit: cover; transition: transform .25s; }
+.card a.shot:hover img { transform: scale(1.03); }
+.card h3 { font-size: var(--fs-body); font-weight: 600; line-height: 1.35; margin: 0; }
+.card h3 a { color: var(--text); text-decoration-color: var(--rule); }
+.card h3 a:hover { color: var(--accent); text-decoration-color: currentColor; }
+.card .meta { margin: 2px 0 0; }
+.card .desc { color: var(--muted); font-size: var(--fs-meta); line-height: 1.6; margin: 6px 0 0; }
+.card-links { display: flex; flex-wrap: wrap; gap: 2px 14px; margin: 8px 0 0; font-family: var(--mono); font-size: var(--fs-small); }
+.card-links a { text-decoration: none; }
+.card-links a:hover { text-decoration: underline; }
+
+/* a fan of book covers */
+.fan { position: relative; background: color-mix(in srgb, var(--accent) 7%, var(--bg)); box-shadow: none !important; outline: 1px solid var(--rule); }
+.fan a {
+  position: absolute; bottom: 9%; left: 50%; width: calc(min(30%, 130% / var(--n)));
+  transform: translateX(calc(-50% + var(--i) * 58%)) rotate(calc(var(--i) * 5deg));
+  transform-origin: 50% 100%; transition: transform .2s;
+}
+.fan a:hover, .fan a:focus-visible { transform: translateX(calc(-50% + var(--i) * 58%)) rotate(calc(var(--i) * 5deg)) translateY(-6%); z-index: 9 !important; }
+.fan img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 2px 4px 4px 2px; box-shadow: 0 2px 4px rgb(0 0 0 / .15), 0 10px 20px -8px rgb(0 0 0 / .45); }
 
 /* talks */
-.filters { display: flex; flex-wrap: wrap; gap: 4px 18px; font-family: var(--mono); font-size: var(--fs-small); }
+.filters { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-top: 40px; font-family: var(--mono); font-size: var(--fs-small); }
 .filters button { font: inherit; background: none; border: 0; padding: 2px 0; color: var(--muted); cursor: pointer; }
 .filters button .n { opacity: .65; }
 .filters button:hover { color: var(--text); }
@@ -146,10 +158,13 @@ footer a { color: var(--muted); }
   .portrait { width: 88px; height: 88px; }
   .shelf { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 14px; padding-bottom: 8px; }
   .book { flex: 0 0 108px; scroll-snap-align: start; }
-  .gallery { grid-template-columns: 1fr; }
+  .cards { grid-template-columns: 1fr; }
   .talks li, main > .talks li { grid-template-columns: 1fr; }
   .items .head { flex-direction: column; gap: 0; }
   nav { gap: 14px; }
   nav .lang { padding-left: 14px; }
   h1 { margin-top: 40px; }
 }
+
+/* the hidden attribute must win over display rules such as .talks li { display: grid } */
+[hidden] { display: none !important; }

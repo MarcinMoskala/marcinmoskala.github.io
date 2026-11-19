@@ -4,7 +4,7 @@ export const t = (en, pl) => ({ en, pl });
 
 export const site = {
   name: "Marcin Moskała",
-  email: "marcinmoskala@gmail.com",
+  linkedin: "https://www.linkedin.com/in/marcin-moskala/",
   domains: { en: "https://marcinmoskala.com", pl: "https://marcinmoskala.pl" },
   portrait: "/static/img/portrait.jpg",
   social: [
@@ -21,161 +21,93 @@ export const books = {
   ke: { name: "Kotlin Essentials", url: "https://kt.academy/book/kotlin_essentials", cover: "/static/img/books/ke.jpg" },
   fk: { name: "Functional Kotlin", url: "https://kt.academy/book/functional_kotlin", cover: "/static/img/books/fk.jpg" },
   ak: { name: "Advanced Kotlin", url: "https://kt.academy/book/advanced_kotlin", cover: "/static/img/books/ak.jpg" },
-  js: { name: "JavaScript od podstaw", url: "https://kt.academy/pl/book/js", cover: "/static/img/books/js.jpg" },
-  py: { name: "Python od podstaw", url: "https://kt.academy/pl/book/py", cover: "/static/img/books/py.jpg" },
+  js: { name: "JavaScript od podstaw", url: "https://kt.academy/pl/book/js", cover: "/static/img/books/js.jpg", lang: "pl" },
+  py: { name: "Python od podstaw", url: "https://kt.academy/pl/book/py", cover: "/static/img/books/py.jpg", lang: "pl" },
+  pyua: { name: "Python з нуля", url: "https://kt.academy/ua/book/py", cover: "/static/img/books/pyua.jpg", lang: "uk" },
+  awdk: { name: "Android Development with Kotlin", url: "https://www.oreilly.com/library/view/-/9781787123687/", cover: "/static/img/books/awdk.jpg" },
 };
 
 // Books shown on the home page shelf, per language.
 export const shelf = { en: ["ek", "kc", "ke", "fk", "ak"], pl: ["py", "js", "ek", "kc", "ke"] };
 
 export const about = {
-  subtitle: t("I teach Kotlin and write books about it.", "Uczę Kotlina i piszę o nim książki."),
+  subtitle: t("Software architect, teacher and author of popular books.",
+              "Architekt oprogramowania, nauczyciel i autor popularnych książek."),
   bio: t(
     [
-      `I founded <a href="https://kt.academy">kt.academy</a>, an official JetBrains training partner, and since 2017 I have been teaching Kotlin to developer teams at companies around the world. My books grew out of those workshops; the best known are <a href="https://kt.academy/book/effectivekotlin"><cite>Effective Kotlin</cite></a> and <a href="https://kt.academy/book/coroutines"><cite>Kotlin Coroutines: Deep Dive</cite></a>.`,
-      `I have given over 70 talks, at conferences such as KotlinConf, droidcon, JavaZone and GeeCON. I also build small games that train you to read Kotlin code, and through <a href="/projects/#podaj-dalej">Podaj Dalej Programowanie</a> I have given away over 3,000 books to people who want to start programming.`,
+      `I am a practising programmer, currently a software architect at Bank Pekao. Building real systems is what everything else I do grows out of.`,
+      `I write books. Developers around the world learn from <a href="https://kt.academy/book/effectivekotlin"><cite>Effective Kotlin</cite></a> and <a href="https://kt.academy/book/coroutines"><cite>Kotlin Coroutines: Deep Dive</cite></a>, my books on Kotlin, the main language for building Android apps. For complete beginners, I wrote <a href="https://kt.academy/pl/book/js" lang="pl"><cite>JavaScript od podstaw</cite></a> and <a href="https://kt.academy/pl/book/py" lang="pl"><cite>Python od podstaw</cite></a> in Polish. I also write beyond programming, about critical thinking and stoicism.`,
+      `I teach. I run workshops for developer teams at companies around the world and have spoken over 100 times, at conferences such as KotlinConf and droidcon. That work grew into <a href="https://kt.academy">kt.academy</a>, the training company I founded, today an official training partner of JetBrains, the creators of Kotlin.`,
+      `I believe knowledge should be passed on. Through <a href="/projects/#podaj-dalej" lang="pl">Podaj Dalej Programowanie</a> I have given away over 3,000 books to people who want to start programming, and I make free games and cheat sheets for developers.`,
     ],
     [
-      `Założyłem <a href="https://kt.academy">kt.academy</a>, oficjalnego partnera szkoleniowego JetBrains, i od 2017 roku uczę Kotlina zespoły programistów w firmach na całym świecie. Z tych warsztatów wyrosły moje książki, z których najbardziej znane to <a href="https://kt.academy/book/effectivekotlin"><cite>Effective Kotlin</cite></a> i <a href="https://kt.academy/book/coroutines"><cite>Kotlin Coroutines: Deep Dive</cite></a>.`,
-      `Wystąpiłem ponad 70 razy, m.in. na KotlinConf, droidconach, JavaZone i GeeCON. Robię też małe gry, które uczą czytania kodu w Kotlinie, a w akcji <a href="/projects/#podaj-dalej">Podaj Dalej Programowanie</a> rozdałem ponad 3000 książek osobom, które chcą zacząć programować. Napisałem też po polsku <cite>JavaScript od podstaw</cite> i <cite>Python od podstaw</cite>.`,
+      `Jestem aktywnym programistą, obecnie architektem oprogramowania w Banku Pekao. Z budowania prawdziwych systemów wyrasta wszystko inne, czym się zajmuję.`,
+      `Piszę książki. Z <a href="https://kt.academy/book/effectivekotlin"><cite>Effective Kotlin</cite></a> i <a href="https://kt.academy/book/coroutines"><cite>Kotlin Coroutines: Deep Dive</cite></a> uczą się programiści na całym świecie. To moje książki o Kotlinie, głównym języku do tworzenia aplikacji na Androida. Dla osób, które zaczynają od zera, napisałem <a href="https://kt.academy/pl/book/js"><cite>JavaScript od podstaw</cite></a> i <a href="https://kt.academy/pl/book/py"><cite>Python od podstaw</cite></a>. Piszę też nie tylko o programowaniu, ale także o krytycznym myśleniu i stoicyzmie.`,
+      `Uczę. Prowadzę warsztaty dla zespołów programistów w firmach na całym świecie i wystąpiłem ponad 100 razy, m.in. na KotlinConf i droidconach. Z tej pracy wyrosła <a href="https://kt.academy">kt.academy</a>, firma szkoleniowa, którą założyłem, dziś oficjalny partner szkoleniowy JetBrains, twórców Kotlina.`,
+      `Wierzę, że wiedzę trzeba podawać dalej. W akcji <a href="/projects/#podaj-dalej">Podaj Dalej Programowanie</a> rozdałem ponad 3000 książek osobom, które chcą zacząć programować, a za darmo udostępniam gry i ściągawki dla programistów.`,
     ],
   ),
   contact: t(
-    `Want me to speak at your event, run a workshop for your team, or join your podcast? Write to <a href="mailto:{email}">{email}</a>.`,
-    `Chcesz zaprosić mnie na konferencję, zamówić warsztaty dla zespołu albo porozmawiać w podcaście? Napisz na <a href="mailto:{email}">{email}</a>.`,
+    `Looking for a workshop for your team? See <a href="https://kt.academy">kt.academy</a>. Want to invite me to a conference or a podcast? Message me on <a href="{linkedin}">LinkedIn</a>.`,
+    `Szukasz warsztatów dla zespołu? Zajrzyj na <a href="https://kt.academy">kt.academy</a>. Chcesz zaprosić mnie na konferencję albo do podcastu? Napisz do mnie na <a href="{linkedin}">LinkedInie</a>.`,
   ),
 };
 
-export const projectGroups = [
-  {
-    id: "teaching",
-    name: t("Teaching", "Edukacja"),
-    items: [
-      { name: "kt.academy", url: "https://kt.academy", meta: t("since 2017", "od 2017"),
-        desc: t("Kotlin training company and official JetBrains training partner: corporate workshops, cohort courses, books, articles and a newsletter.",
-                "Firma szkoleniowa z Kotlina, oficjalny partner szkoleniowy JetBrains: warsztaty dla firm, kursy kohortowe, książki, artykuły i newsletter.") },
-      { name: t("Workshops for teams", "Warsztaty dla zespołów"), url: "https://kt.academy/courses", meta: t("on-site or remote", "stacjonarnie lub zdalnie"),
-        desc: t("Kotlin for Developers, Kotlin Coroutines, Coroutines Intensive, Advanced Compose, Kotlin Mastery and more.",
-                "Kotlin for Developers, Kotlin Coroutines, Coroutines Intensive, Advanced Compose, Kotlin Mastery i inne.") },
-      { name: "Kotlin Cheat Sheets", url: "https://cheat-sheet.kt.academy", meta: t("free", "za darmo"),
-        desc: t("Cheat sheets for Kotlin, Coroutines, Flow and Compose.", "Ściągawki z Kotlina, Coroutines, Flow i Compose.") },
-      { name: t("Articles and newsletter", "Artykuły i newsletter"), url: "https://kt.academy/article", meta: "blog",
-        desc: t("Hundreds of articles about Kotlin, continuing what used to be the largest Kotlin publication on Medium.",
-                "Setki artykułów o Kotlinie — kontynuacja największej niegdyś publikacji o Kotlinie na Medium.") },
-    ],
-  },
-  {
-    id: "books",
-    name: t("Books on Kotlin", "Książki o Kotlinie"),
-    desc: t("The Kotlin for Developers series and more, on Leanpub, in print and in translation.",
-            "Seria Kotlin for Developers i nie tylko — na Leanpub, w druku i w tłumaczeniach."),
-    items: [
-      { book: "ek", meta: t("best practices", "dobre praktyki"),
-        desc: t("Best practices for Kotlin, as rules with the reasoning behind them. Also in Polish as “Efektywny Kotlin” (Helion).",
-                "Dobre praktyki w Kotlinie w formie reguł z uzasadnieniem. Po polsku jako „Efektywny Kotlin” (Helion).") },
-      { book: "kc", meta: "coroutines",
-        desc: t("How coroutines and Flow work, and how to use them well. Also translated into Turkish.",
-                "Jak działają coroutines i Flow i jak dobrze ich używać. Przetłumaczona także na turecki.") },
-      { book: "ke", meta: t("fundamentals", "podstawy"),
-        desc: t("The Kotlin language from the ground up, for developers who already code.",
-                "Język Kotlin od podstaw, dla osób, które już programują.") },
-      { book: "fk", meta: "FP",
-        desc: t("Lambdas, collection processing, function types and Arrow.", "Lambdy, przetwarzanie kolekcji, typy funkcyjne i Arrow.") },
-      { book: "ak", meta: t("advanced", "zaawansowane"),
-        desc: t("Generics and variance, delegation, DSLs, reflection, KSP and compiler plugins.",
-                "Generyki i wariancja, delegacja, DSL-e, refleksja, KSP i pluginy kompilatora.") },
-      { name: "Kotlin Exercises", url: "https://leanpub.com/kotlin_exercises", meta: t("exercises", "ćwiczenia"),
-        desc: t("Exercises and solutions from the books and workshops.", "Ćwiczenia i rozwiązania z książek i warsztatów.") },
-      { name: "Android Development with Kotlin", url: "https://www.oreilly.com/library/view/-/9781787123687/", meta: "2017 · Packt",
-        desc: t("My first book, co-written with Igor Wojda: an introduction to Kotlin on Android.",
-                "Moja pierwsza książka, napisana z Igorem Wojdą: wprowadzenie do Kotlina na Androidzie.") },
-    ],
-  },
-  {
-    id: "other-books",
-    name: t("Books in Polish", "Inne książki"),
-    items: [
-      { book: "py", name: "Python od podstaw / Python з нуля", meta: t("Polish · Ukrainian", "PL · UA"),
-        desc: t("Learning to program in Python from zero. The Ukrainian edition was made to support Ukraine.",
-                "Nauka programowania w Pythonie od zera. Wydanie ukraińskie powstało w ramach pomocy dla Ukrainy.") },
-      { book: "js", meta: t("Polish", "PL"),
-        desc: t("Programming from scratch, for complete beginners.", "Programowanie od zera, dla zupełnie początkujących.") },
-      { name: "Myślenie krytyczne w praktyce", url: "https://leanpub.com/mylenie_krytyczne", meta: t("Polish", "PL"),
-        desc: t("A book about critical thinking and judging arguments, with a companion game, Gra krytyczna.",
-                "Książka o krytycznym myśleniu i ocenianiu argumentów, z towarzyszącą jej grą „Gra krytyczna”.") },
-    ],
-  },
-  {
-    id: "podaj-dalej",
-    name: "Podaj Dalej Programowanie",
-    desc: t("“Pass on programming”: we give away books for learning to program, and every reader passes their copy on to the next person.",
-            "Rozdajemy książki do nauki programowania, a każdy czytelnik po lekturze przekazuje swój egzemplarz kolejnej osobie."),
-    items: [
-      { name: "Podaj Dalej: JavaScript od podstaw", url: "https://kt.academy/podajdalej", meta: t("2021 · 1st edition", "2021 · edycja 1"),
-        desc: t("About 2,500 copies (1,500 of them funded by Allegro) for people who want to start programming.",
-                "Ok. 2500 egzemplarzy (1500 z nich ufundowało Allegro) dla osób, które chcą zacząć programować.") },
-      { name: "Podaj Dalej: Python od podstaw", url: "https://kt.academy/podajdalej2", meta: t("2023 · 2nd edition", "2023 · edycja 2"),
-        desc: t("Books for children's hospitals, libraries, schools, job centres, social care centres and a prison.",
-                "Książki dla szpitali dziecięcych, bibliotek, szkół, urzędów pracy, ośrodków pomocy społecznej i zakładu karnego.") },
-      { name: "Podaj Dalej: Python з нуля", meta: t("2024 · Ukraine", "2024 · Ukraina"),
-        desc: t("500 copies in Ukrainian, including for students of Kharkiv University.",
-                "500 egzemplarzy po ukraińsku, m.in. dla studentów Uniwersytetu Charkowskiego.") },
-      { name: "Czwartki z programowaniem", meta: "2022",
-        desc: t("“Programming Thursdays”, a lecture series run with the student councils of SGH and the University of Warsaw.",
-                "Cykl wykładów prowadzony z samorządami studentów SGH i Uniwersytetu Warszawskiego.") },
-    ],
-  },
-  {
-    id: "games",
-    name: t("Kotlin games", "Gry Kotlinowe"),
-    layout: "gallery",
-    desc: t("Short browser games: guess what the code will do.", "Krótkie gry w przeglądarce: zgadnij, co zrobi kod."),
-    items: [
-      { name: "Coroutines Race Guesser", url: "https://game.kt.academy/?game=coroutines", image: "/static/img/games/coroutines.jpg",
-        desc: t("In what order will the coroutines finish?", "W jakiej kolejności zakończą się coroutines?") },
-      { name: "Collection Processing Guesser", url: "https://game.kt.academy/?game=collection-processing", image: "/static/img/games/collections.jpg",
-        desc: t("What will this collection processing return?", "Jaki będzie wynik operacji na kolekcjach?") },
-      { name: "Modifier Order Guesser", url: "https://game.kt.academy/?game=modifiers", image: "/static/img/games/modifiers.jpg",
-        desc: t("How does modifier order change what Compose draws?", "Jak kolejność modyfikatorów zmienia to, co rysuje Compose?") },
-      { name: "Flow Guesser", url: "https://game.kt.academy/?game=flow", image: "/static/img/games/flow.jpg",
-        desc: t("What will this Flow emit?", "Co wyemituje ten Flow?") },
-    ],
-  },
-  {
-    id: "open-source",
-    name: "Open source",
-    desc: t("Mostly from the days when Kotlin was just arriving on Android.", "Głównie z czasów, gdy Kotlin dopiero wchodził na Androida."),
-    items: [
-      { name: "ArcSeekBar", url: "https://github.com/MarcinMoskala/ArcSeekBar", meta: "Android",
-        desc: t("A curved SeekBar for Android, my most-starred library.", "Zakrzywiony SeekBar dla Androida, moja najpopularniejsza biblioteka.") },
-      { name: "Kt. Academy Portal", url: "https://github.com/MarcinMoskala/KtAcademyPortal", meta: "Kotlin Multiplatform",
-        desc: t("One of the first Kotlin Multiplatform showcase apps: Android, web and backend sharing code.",
-                "Jedna z pierwszych pokazowych aplikacji Kotlin Multiplatform: Android, web i backend ze wspólnym kodem.") },
-      { name: "Kotlin Coroutines Recipes", url: "https://github.com/MarcinMoskala/kotlin-coroutines-recipes", meta: "coroutines",
-        desc: t("Ready-made recipes for common coroutine problems.", "Gotowe przepisy na typowe problemy z coroutines.") },
-      { name: "KotlinDiscreteMathToolkit", url: "https://github.com/MarcinMoskala/KotlinDiscreteMathToolkit", meta: "math",
-        desc: t("Permutations, combinations, subsets and other discrete math tools.", "Permutacje, kombinacje, podzbiory i inne narzędzia matematyki dyskretnej.") },
-      { name: t("Older Android libraries", "Starsze biblioteki na Androida"), url: "https://github.com/MarcinMoskala?tab=repositories", meta: "2017–2018",
-        desc: t("ActivityStarter, PreferenceHolder, KotlinAndroidViewBindings, VideoPlayView and more.",
-                "ActivityStarter, PreferenceHolder, KotlinAndroidViewBindings, VideoPlayView i inne.") },
-    ],
-  },
-  {
-    id: "contributions",
-    name: t("Contributions", "Kontrybucje"),
-    items: [
-      { name: "KotlinConf App (JetBrains)", url: "https://github.com/JetBrains/kotlinconf-app/pulls?q=is%3Apr+author%3AMarcinMoskala", meta: "2018",
-        desc: t("Shared presenters in Kotlin Multiplatform, structured concurrency, and a backend syncing with Sessionize.",
-                "Współdzielone prezentery w Kotlin Multiplatform, structured concurrency i backend synchronizujący się z Sessionize.") },
-      { name: "Kotlin Coding Conventions", url: "https://kotlinlang.org/docs/coding-conventions.html", meta: "2017",
-        desc: t("Contributed the class header formatting rules to the official Kotlin coding conventions.",
-                "Dodałem do oficjalnych konwencji kodowania Kotlina zasady formatowania nagłówków klas.") },
-    ],
-  },
-];
-
-// Recordings shown as thumbnails at the top of the talks page.
-export const featuredTalks = ["Sj0ooKlwmDo", "QTX5_JV4TVU", "fsvfv_CNY2w", "UyTBXEZ983g"];
+// Projects page: big cards first, then smaller books and code.
+// A card has either an image or a fan of book covers; links are optional extra links under the text.
+export const projects = {
+  featured: [
+    { id: "kt-academy", name: "kt.academy", url: "https://kt.academy", image: "/static/img/projects/ktacademy.jpg", meta: t("since 2017", "od 2017"),
+      desc: t("My Kotlin training company and an official JetBrains training partner: workshops for teams, books, articles and a newsletter.",
+              "Moja firma szkoleniowa z Kotlina, oficjalny partner szkoleniowy JetBrains: warsztaty dla zespołów, książki, artykuły i newsletter."),
+      links: [
+        { name: t("Workshops", "Warsztaty"), url: "https://kt.academy/workshop/coroutines" },
+        { name: t("Articles", "Artykuły"), url: "https://kt.academy/article" },
+      ] },
+    { id: "kotlin-books", name: t("Kotlin for Developers books", "Książki z serii Kotlin for Developers"), url: "https://kt.academy/book", fan: ["ek", "kc", "ke", "fk", "ak"],
+      meta: t("5 books", "5 książek"),
+      desc: t("A series that takes you from the basics to advanced Kotlin. Effective Kotlin is also published in Polish by Helion, and Kotlin Coroutines in Turkish.",
+              "Seria od podstaw do zaawansowanego Kotlina. Effective Kotlin wydał też po polsku Helion, a Kotlin Coroutines ukazało się po turecku."),
+      bookLinks: true },
+    { id: "od-podstaw", name: t("Programming from scratch", "Programowanie od podstaw"), fan: ["js", "py", "pyua"],
+      meta: t("in Polish and Ukrainian", "po polsku i ukraińsku"),
+      desc: t("Books for people who have never programmed: JavaScript and Python from zero. The Ukrainian edition was made to support Ukraine.",
+              "Książki dla osób, które nigdy nie programowały: JavaScript i Python od zera. Wydanie ukraińskie powstało, by wesprzeć Ukrainę."),
+      bookLinks: true },
+    { id: "podaj-dalej", name: "Podaj Dalej Programowanie", image: "/static/img/projects/podajdalej.jpg", meta: "2021–2024",
+      desc: t("“Pass on programming”: we gave away over 3,000 books for learning to program, to people starting out and to hospitals, libraries, schools and job centres. Every reader passes their copy on. Alongside it ran “Czwartki z programowaniem”, a lecture series with the student councils of SGH and the University of Warsaw.",
+              "Rozdaliśmy ponad 3000 książek do nauki programowania osobom, które zaczynają, oraz szpitalom, bibliotekom, szkołom i urzędom pracy. Każdy czytelnik przekazuje swój egzemplarz dalej. Równolegle prowadziliśmy „Czwartki z programowaniem”, cykl wykładów z samorządami studentów SGH i Uniwersytetu Warszawskiego."),
+      links: [
+        { name: t("1st edition: JavaScript (2021)", "Edycja 1: JavaScript (2021)"), url: "https://kt.academy/podajdalej" },
+        { name: t("2nd edition: Python (2023)", "Edycja 2: Python (2023)"), url: "https://kt.academy/podajdalej2" },
+      ] },
+    { id: "games", name: t("Kotlin games", "Gry Kotlinowe"), url: "https://game.kt.academy/?game=coroutines", image: "/static/img/games/coroutines.jpg", meta: t("free, in the browser", "za darmo, w przeglądarce"),
+      desc: t("Short games that train you to read Kotlin: guess what the code will do before it runs.",
+              "Krótkie gry, które uczą czytać kod w Kotlinie: zgadnij, co zrobi kod, zanim się wykona."),
+      links: [
+        { name: "Coroutines", url: "https://game.kt.academy/?game=coroutines" },
+        { name: "Collections", url: "https://game.kt.academy/?game=collection-processing" },
+        { name: "Modifiers", url: "https://game.kt.academy/?game=modifiers" },
+        { name: "Flow", url: "https://game.kt.academy/?game=flow" },
+      ] },
+    { id: "cheat-sheets", name: "Kotlin Cheat Sheets", url: "https://cheat-sheet.kt.academy", image: "/static/img/projects/cheatsheets.jpg", meta: t("free PDFs", "darmowe PDF-y"),
+      desc: t("One-page references for Kotlin Coroutines, Flow and Jetpack Compose.", "Jednostronicowe ściągawki z Kotlin Coroutines, Flow i Jetpack Compose."),
+      links: [
+        { name: "Coroutines", url: "https://cheat-sheet.kt.academy/coroutines" },
+        { name: "Flow", url: "https://cheat-sheet.kt.academy/flow" },
+        { name: t("Adopting Coroutines", "Wdrażanie Coroutines"), url: "https://cheat-sheet.kt.academy/adopting-kotlin-coroutines-a-practical-guide-for-managers" },
+        { name: "Compose Essential", url: "https://cheat-sheet.kt.academy/compose8" },
+        { name: "Compose Advanced", url: "https://cheat-sheet.kt.academy/advanced-compose09" },
+      ] },
+    { id: "android-development-with-kotlin", name: "Android Development with Kotlin", url: "https://www.oreilly.com/library/view/-/9781787123687/", fan: ["awdk"], meta: "2017 · Packt",
+      desc: t("My first book, written with Igor Wojda when Kotlin was just arriving on Android.",
+              "Moja pierwsza książka, napisana z Igorem Wojdą, gdy Kotlin dopiero wchodził na Androida.") },
+    { id: "open-source", name: "Open source", url: "https://github.com/MarcinMoskala", image: "/static/img/projects/github.jpg", meta: "GitHub",
+      desc: t("Libraries from the days when Kotlin was arriving on Android, such as ArcSeekBar, ActivityStarter and PreferenceHolder; KtAcademyPortal, one of the first Kotlin Multiplatform showcase apps; Kotlin Coroutines Recipes; and contributions to the JetBrains KotlinConf app.",
+              "Biblioteki z czasów, gdy Kotlin wchodził na Androida, m.in. ArcSeekBar, ActivityStarter i PreferenceHolder; KtAcademyPortal, jedna z pierwszych pokazowych aplikacji Kotlin Multiplatform; Kotlin Coroutines Recipes oraz kontrybucje do aplikacji KotlinConf od JetBrains."),
+      links: [{ name: "github.com/MarcinMoskala", url: "https://github.com/MarcinMoskala" }] },
+  ],
+};
 
 // Talks offered to conference organizers (conf page).
 export const offeredTalks = [

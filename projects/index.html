@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <title>Projects — Marcin Moskała</title>
-  <meta name="description" content="Marcin Moskała teaches Kotlin and writes books about it: Effective Kotlin, Kotlin Coroutines: Deep Dive and more. Founder of kt.academy.">
+  <meta name="description" content="Marcin Moskała is a software architect, teacher and author of popular books, including Effective Kotlin and Kotlin Coroutines: Deep Dive.">
   <link rel="canonical" href="https://marcinmoskala.com/projects/">
   <link rel="alternate" hreflang="en" href="https://marcinmoskala.com/projects/">
   <link rel="alternate" hreflang="pl" href="https://marcinmoskala.pl/projects/">
   <link rel="alternate" hreflang="x-default" href="https://marcinmoskala.com/projects/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Projects — Marcin Moskała">
-  <meta property="og:description" content="Marcin Moskała teaches Kotlin and writes books about it: Effective Kotlin, Kotlin Coroutines: Deep Dive and more. Founder of kt.academy.">
+  <meta property="og:description" content="Marcin Moskała is a software architect, teacher and author of popular books, including Effective Kotlin and Kotlin Coroutines: Deep Dive.">
   <meta property="og:url" content="https://marcinmoskala.com/projects/">
   <meta property="og:image" content="https://marcinmoskala.com/static/img/portrait.jpg">
   <meta property="og:locale" content="en_US">
@@ -22,7 +22,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400..600;1,7..72,400&family=JetBrains+Mono:wght@400;500&display=swap&subset=latin-ext" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css?v=mwkvygr1">
+  <link rel="stylesheet" href="/style.css?v=mwng23he">
   
 </head>
 <body>
@@ -35,211 +35,67 @@
 
       <h1>Projects</h1>
       <p class="subtitle">Things I've built, written, or helped build.</p>
-
-      <section id="teaching" aria-labelledby="teaching-h">
-        <h2 id="teaching-h">Teaching</h2>
+      <div class="cards">
+      <article class="card" id="kt-academy">
+        <a class="shot" href="https://kt.academy" tabindex="-1" aria-hidden="true"><img src="/static/img/projects/ktacademy.jpg" alt="" width="800" height="500" loading="lazy"></a>
+        <h3><a href="https://kt.academy">kt.academy</a></h3>
+        <p class="meta">since 2017</p>
+        <p class="desc">My Kotlin training company and an official JetBrains training partner: workshops for teams, books, articles and a newsletter.</p>
+        <p class="card-links"><a href="https://kt.academy/workshop/coroutines">Workshops</a><a href="https://kt.academy/article">Articles</a></p>
+      </article>
+      <article class="card" id="kotlin-books">
+        <div class="fan" style="--n:5"><a href="https://kt.academy/book/effectivekotlin" style="--i:-2;z-index:3" title="Effective Kotlin"><img src="/static/img/books/ek.jpg" alt="Effective Kotlin" width="300" height="450" loading="lazy"></a><a href="https://kt.academy/book/coroutines" style="--i:-1;z-index:4" title="Kotlin Coroutines: Deep Dive"><img src="/static/img/books/kc.jpg" alt="Kotlin Coroutines: Deep Dive" width="300" height="450" loading="lazy"></a><a href="https://kt.academy/book/kotlin_essentials" style="--i:0;z-index:5" title="Kotlin Essentials"><img src="/static/img/books/ke.jpg" alt="Kotlin Essentials" width="300" height="450" loading="lazy"></a><a href="https://kt.academy/book/functional_kotlin" style="--i:1;z-index:4" title="Functional Kotlin"><img src="/static/img/books/fk.jpg" alt="Functional Kotlin" width="300" height="450" loading="lazy"></a><a href="https://kt.academy/book/advanced_kotlin" style="--i:2;z-index:3" title="Advanced Kotlin"><img src="/static/img/books/ak.jpg" alt="Advanced Kotlin" width="300" height="450" loading="lazy"></a></div>
+        <h3><a href="https://kt.academy/book">Kotlin for Developers books</a></h3>
+        <p class="meta">5 books</p>
+        <p class="desc">A series that takes you from the basics to advanced Kotlin. Effective Kotlin is also published in Polish by Helion, and Kotlin Coroutines in Turkish.</p>
+        <p class="card-links"><a href="https://kt.academy/book/effectivekotlin">Effective Kotlin</a><a href="https://kt.academy/book/coroutines">Kotlin Coroutines: Deep Dive</a><a href="https://kt.academy/book/kotlin_essentials">Kotlin Essentials</a><a href="https://kt.academy/book/functional_kotlin">Functional Kotlin</a><a href="https://kt.academy/book/advanced_kotlin">Advanced Kotlin</a></p>
+      </article>
+      <article class="card" id="od-podstaw">
+        <div class="fan" style="--n:3"><a href="https://kt.academy/pl/book/js" style="--i:-1;z-index:2" title="JavaScript od podstaw"><img src="/static/img/books/js.jpg" alt="JavaScript od podstaw" width="300" height="450" loading="lazy"></a><a href="https://kt.academy/pl/book/py" style="--i:0;z-index:3" title="Python od podstaw"><img src="/static/img/books/py.jpg" alt="Python od podstaw" width="300" height="450" loading="lazy"></a><a href="https://kt.academy/ua/book/py" style="--i:1;z-index:2" title="Python з нуля"><img src="/static/img/books/pyua.jpg" alt="Python з нуля" width="300" height="450" loading="lazy"></a></div>
+        <h3><span>Programming from scratch</span></h3>
+        <p class="meta">in Polish and Ukrainian</p>
+        <p class="desc">Books for people who have never programmed: JavaScript and Python from zero. The Ukrainian edition was made to support Ukraine.</p>
+        <p class="card-links"><a href="https://kt.academy/pl/book/js" lang="pl">JavaScript od podstaw</a><a href="https://kt.academy/pl/book/py" lang="pl">Python od podstaw</a><a href="https://kt.academy/ua/book/py" lang="uk">Python з нуля</a></p>
+      </article>
+      <article class="card" id="podaj-dalej">
+        <div class="shot"><img src="/static/img/projects/podajdalej.jpg" alt="" width="800" height="500" loading="lazy"></div>
+        <h3><span lang="pl">Podaj Dalej Programowanie</span></h3>
+        <p class="meta">2021–2024</p>
+        <p class="desc">“Pass on programming”: we gave away over 3,000 books for learning to program, to people starting out and to hospitals, libraries, schools and job centres. Every reader passes their copy on. Alongside it ran “Czwartki z programowaniem”, a lecture series with the student councils of SGH and the University of Warsaw.</p>
+        <p class="card-links"><a href="https://kt.academy/podajdalej">1st edition: JavaScript (2021)</a><a href="https://kt.academy/podajdalej2">2nd edition: Python (2023)</a></p>
+      </article>
+      <article class="card" id="games">
+        <a class="shot" href="https://game.kt.academy/?game=coroutines" tabindex="-1" aria-hidden="true"><img src="/static/img/games/coroutines.jpg" alt="" width="800" height="500" loading="lazy"></a>
+        <h3><a href="https://game.kt.academy/?game=coroutines">Kotlin games</a></h3>
+        <p class="meta">free, in the browser</p>
+        <p class="desc">Short games that train you to read Kotlin: guess what the code will do before it runs.</p>
+        <p class="card-links"><a href="https://game.kt.academy/?game=coroutines">Coroutines</a><a href="https://game.kt.academy/?game=collection-processing">Collections</a><a href="https://game.kt.academy/?game=modifiers">Modifiers</a><a href="https://game.kt.academy/?game=flow">Flow</a></p>
+      </article>
+      <article class="card" id="cheat-sheets">
+        <a class="shot" href="https://cheat-sheet.kt.academy" tabindex="-1" aria-hidden="true"><img src="/static/img/projects/cheatsheets.jpg" alt="" width="800" height="500" loading="lazy"></a>
+        <h3><a href="https://cheat-sheet.kt.academy">Kotlin Cheat Sheets</a></h3>
+        <p class="meta">free PDFs</p>
+        <p class="desc">One-page references for Kotlin Coroutines, Flow and Jetpack Compose.</p>
+        <p class="card-links"><a href="https://cheat-sheet.kt.academy/coroutines">Coroutines</a><a href="https://cheat-sheet.kt.academy/flow">Flow</a><a href="https://cheat-sheet.kt.academy/adopting-kotlin-coroutines-a-practical-guide-for-managers">Adopting Coroutines</a><a href="https://cheat-sheet.kt.academy/compose8">Compose Essential</a><a href="https://cheat-sheet.kt.academy/advanced-compose09">Compose Advanced</a></p>
+      </article>
+      <article class="card" id="android-development-with-kotlin">
+        <div class="fan" style="--n:1"><a href="https://www.oreilly.com/library/view/-/9781787123687/" style="--i:0;z-index:1" title="Android Development with Kotlin"><img src="/static/img/books/awdk.jpg" alt="Android Development with Kotlin" width="300" height="450" loading="lazy"></a></div>
+        <h3><a href="https://www.oreilly.com/library/view/-/9781787123687/">Android Development with Kotlin</a></h3>
+        <p class="meta">2017 · Packt</p>
+        <p class="desc">My first book, written with Igor Wojda when Kotlin was just arriving on Android.</p>
         
-        <ul class="items"><li>
-      
-      <div>
-        <div class="head"><a href="https://kt.academy">kt.academy</a><span class="meta">since 2017</span></div>
-        <p>Kotlin training company and official JetBrains training partner: corporate workshops, cohort courses, books, articles and a newsletter.</p>
+      </article>
+      <article class="card" id="open-source">
+        <a class="shot" href="https://github.com/MarcinMoskala" tabindex="-1" aria-hidden="true"><img src="/static/img/projects/github.jpg" alt="" width="800" height="500" loading="lazy"></a>
+        <h3><a href="https://github.com/MarcinMoskala">Open source</a></h3>
+        <p class="meta">GitHub</p>
+        <p class="desc">Libraries from the days when Kotlin was arriving on Android, such as ArcSeekBar, ActivityStarter and PreferenceHolder; KtAcademyPortal, one of the first Kotlin Multiplatform showcase apps; Kotlin Coroutines Recipes; and contributions to the JetBrains KotlinConf app.</p>
+        <p class="card-links"><a href="https://github.com/MarcinMoskala">github.com/MarcinMoskala</a></p>
+      </article>
       </div>
-    </li><li>
-      
-      <div>
-        <div class="head"><a href="https://kt.academy/courses">Workshops for teams</a><span class="meta">on-site or remote</span></div>
-        <p>Kotlin for Developers, Kotlin Coroutines, Coroutines Intensive, Advanced Compose, Kotlin Mastery and more.</p>
-      </div>
-    </li><li>
-      
-      <div>
-        <div class="head"><a href="https://cheat-sheet.kt.academy">Kotlin Cheat Sheets</a><span class="meta">free</span></div>
-        <p>Cheat sheets for Kotlin, Coroutines, Flow and Compose.</p>
-      </div>
-    </li><li>
-      
-      <div>
-        <div class="head"><a href="https://kt.academy/article">Articles and newsletter</a><span class="meta">blog</span></div>
-        <p>Hundreds of articles about Kotlin, continuing what used to be the largest Kotlin publication on Medium.</p>
-      </div>
-    </li></ul>
-      </section>
-      <section id="books" aria-labelledby="books-h">
-        <h2 id="books-h">Books on Kotlin</h2>
-        <p class="group-desc">The Kotlin for Developers series and more, on Leanpub, in print and in translation.</p>
-        <ul class="items"><li class="with-cover">
-      <img class="mini-cover" src="/static/img/books/ek.jpg" alt="" width="48" height="72" loading="lazy">
-      <div>
-        <div class="head"><a href="https://kt.academy/book/effectivekotlin">Effective Kotlin</a><span class="meta">best practices</span></div>
-        <p>Best practices for Kotlin, as rules with the reasoning behind them. Also in Polish as “Efektywny Kotlin” (Helion).</p>
-      </div>
-    </li><li class="with-cover">
-      <img class="mini-cover" src="/static/img/books/kc.jpg" alt="" width="48" height="72" loading="lazy">
-      <div>
-        <div class="head"><a href="https://kt.academy/book/coroutines">Kotlin Coroutines: Deep Dive</a><span class="meta">coroutines</span></div>
-        <p>How coroutines and Flow work, and how to use them well. Also translated into Turkish.</p>
-      </div>
-    </li><li class="with-cover">
-      <img class="mini-cover" src="/static/img/books/ke.jpg" alt="" width="48" height="72" loading="lazy">
-      <div>
-        <div class="head"><a href="https://kt.academy/book/kotlin_essentials">Kotlin Essentials</a><span class="meta">fundamentals</span></div>
-        <p>The Kotlin language from the ground up, for developers who already code.</p>
-      </div>
-    </li><li class="with-cover">
-      <img class="mini-cover" src="/static/img/books/fk.jpg" alt="" width="48" height="72" loading="lazy">
-      <div>
-        <div class="head"><a href="https://kt.academy/book/functional_kotlin">Functional Kotlin</a><span class="meta">FP</span></div>
-        <p>Lambdas, collection processing, function types and Arrow.</p>
-      </div>
-    </li><li class="with-cover">
-      <img class="mini-cover" src="/static/img/books/ak.jpg" alt="" width="48" height="72" loading="lazy">
-      <div>
-        <div class="head"><a href="https://kt.academy/book/advanced_kotlin">Advanced Kotlin</a><span class="meta">advanced</span></div>
-        <p>Generics and variance, delegation, DSLs, reflection, KSP and compiler plugins.</p>
-      </div>
-    </li><li>
-      
-      <div>
-        <div class="head"><a href="https://leanpub.com/kotlin_exercises">Kotlin Exercises</a><span class="meta">exercises</span></div>
-        <p>Exercises and solutions from the books and workshops.</p>
-      </div>
-    </li><li>
-      
-      <div>
-        <div class="head"><a href="https://www.oreilly.com/library/view/-/9781787123687/">Android Development with Kotlin</a><span class="meta">2017 · Packt</span></div>
-        <p>My first book, co-written with Igor Wojda: an introduction to Kotlin on Android.</p>
-      </div>
-    </li></ul>
-      </section>
-      <section id="other-books" aria-labelledby="other-books-h">
-        <h2 id="other-books-h">Books in Polish</h2>
-        
-        <ul class="items"><li class="with-cover">
-      <img class="mini-cover" src="/static/img/books/py.jpg" alt="" width="48" height="72" loading="lazy">
-      <div>
-        <div class="head"><a href="https://kt.academy/pl/book/py" lang="pl">Python od podstaw / Python з нуля</a><span class="meta">Polish · Ukrainian</span></div>
-        <p>Learning to program in Python from zero. The Ukrainian edition was made to support Ukraine.</p>
-      </div>
-    </li><li class="with-cover">
-      <img class="mini-cover" src="/static/img/books/js.jpg" alt="" width="48" height="72" loading="lazy">
-      <div>
-        <div class="head"><a href="https://kt.academy/pl/book/js" lang="pl">JavaScript od podstaw</a><span class="meta">Polish</span></div>
-        <p>Programming from scratch, for complete beginners.</p>
-      </div>
-    </li><li>
-      
-      <div>
-        <div class="head"><a href="https://leanpub.com/mylenie_krytyczne" lang="pl">Myślenie krytyczne w praktyce</a><span class="meta">Polish</span></div>
-        <p>A book about critical thinking and judging arguments, with a companion game, Gra krytyczna.</p>
-      </div>
-    </li></ul>
-      </section>
-      <section id="podaj-dalej" aria-labelledby="podaj-dalej-h">
-        <h2 id="podaj-dalej-h">Podaj Dalej Programowanie</h2>
-        <p class="group-desc">“Pass on programming”: we give away books for learning to program, and every reader passes their copy on to the next person.</p>
-        <ul class="items"><li>
-      
-      <div>
-        <div class="head"><a href="https://kt.academy/podajdalej" lang="pl">Podaj Dalej: JavaScript od podstaw</a><span class="meta">2021 · 1st edition</span></div>
-        <p>About 2,500 copies (1,500 of them funded by Allegro) for people who want to start programming.</p>
-      </div>
-    </li><li>
-      
-      <div>
-        <div class="head"><a href="https://kt.academy/podajdalej2" lang="pl">Podaj Dalej: Python od podstaw</a><span class="meta">2023 · 2nd edition</span></div>
-        <p>Books for children's hospitals, libraries, schools, job centres, social care centres and a prison.</p>
-      </div>
-    </li><li>
-      
-      <div>
-        <div class="head"><b lang="pl">Podaj Dalej: Python з нуля</b><span class="meta">2024 · Ukraine</span></div>
-        <p>500 copies in Ukrainian, including for students of Kharkiv University.</p>
-      </div>
-    </li><li>
-      
-      <div>
-        <div class="head"><b lang="pl">Czwartki z programowaniem</b><span class="meta">2022</span></div>
-        <p>“Programming Thursdays”, a lecture series run with the student councils of SGH and the University of Warsaw.</p>
-      </div>
-    </li></ul>
-      </section>
-      <section id="games" aria-labelledby="games-h">
-        <h2 id="games-h">Kotlin games</h2>
-        <p class="group-desc">Short browser games: guess what the code will do.</p>
-        <div class="gallery"><a class="tile" href="https://game.kt.academy/?game=coroutines">
-      <span class="thumb"><img src="/static/img/games/coroutines.jpg" alt="" width="640" height="400" loading="lazy"></span>
-      <b>Coroutines Race Guesser</b>
-      <span class="desc">In what order will the coroutines finish?</span>
-    </a><a class="tile" href="https://game.kt.academy/?game=collection-processing">
-      <span class="thumb"><img src="/static/img/games/collections.jpg" alt="" width="640" height="400" loading="lazy"></span>
-      <b>Collection Processing Guesser</b>
-      <span class="desc">What will this collection processing return?</span>
-    </a><a class="tile" href="https://game.kt.academy/?game=modifiers">
-      <span class="thumb"><img src="/static/img/games/modifiers.jpg" alt="" width="640" height="400" loading="lazy"></span>
-      <b>Modifier Order Guesser</b>
-      <span class="desc">How does modifier order change what Compose draws?</span>
-    </a><a class="tile" href="https://game.kt.academy/?game=flow">
-      <span class="thumb"><img src="/static/img/games/flow.jpg" alt="" width="640" height="400" loading="lazy"></span>
-      <b>Flow Guesser</b>
-      <span class="desc">What will this Flow emit?</span>
-    </a></div>
-      </section>
-      <section id="open-source" aria-labelledby="open-source-h">
-        <h2 id="open-source-h">Open source</h2>
-        <p class="group-desc">Mostly from the days when Kotlin was just arriving on Android.</p>
-        <ul class="items"><li>
-      
-      <div>
-        <div class="head"><a href="https://github.com/MarcinMoskala/ArcSeekBar">ArcSeekBar</a><span class="meta">Android</span></div>
-        <p>A curved SeekBar for Android, my most-starred library.</p>
-      </div>
-    </li><li>
-      
-      <div>
-        <div class="head"><a href="https://github.com/MarcinMoskala/KtAcademyPortal">Kt. Academy Portal</a><span class="meta">Kotlin Multiplatform</span></div>
-        <p>One of the first Kotlin Multiplatform showcase apps: Android, web and backend sharing code.</p>
-      </div>
-    </li><li>
-      
-      <div>
-        <div class="head"><a href="https://github.com/MarcinMoskala/kotlin-coroutines-recipes">Kotlin Coroutines Recipes</a><span class="meta">coroutines</span></div>
-        <p>Ready-made recipes for common coroutine problems.</p>
-      </div>
-    </li><li>
-      
-      <div>
-        <div class="head"><a href="https://github.com/MarcinMoskala/KotlinDiscreteMathToolkit">KotlinDiscreteMathToolkit</a><span class="meta">math</span></div>
-        <p>Permutations, combinations, subsets and other discrete math tools.</p>
-      </div>
-    </li><li>
-      
-      <div>
-        <div class="head"><a href="https://github.com/MarcinMoskala?tab=repositories">Older Android libraries</a><span class="meta">2017–2018</span></div>
-        <p>ActivityStarter, PreferenceHolder, KotlinAndroidViewBindings, VideoPlayView and more.</p>
-      </div>
-    </li></ul>
-      </section>
-      <section id="contributions" aria-labelledby="contributions-h">
-        <h2 id="contributions-h">Contributions</h2>
-        
-        <ul class="items"><li>
-      
-      <div>
-        <div class="head"><a href="https://github.com/JetBrains/kotlinconf-app/pulls?q=is%3Apr+author%3AMarcinMoskala">KotlinConf App (JetBrains)</a><span class="meta">2018</span></div>
-        <p>Shared presenters in Kotlin Multiplatform, structured concurrency, and a backend syncing with Sessionize.</p>
-      </div>
-    </li><li>
-      
-      <div>
-        <div class="head"><a href="https://kotlinlang.org/docs/coding-conventions.html">Kotlin Coding Conventions</a><span class="meta">2017</span></div>
-        <p>Contributed the class header formatting rules to the official Kotlin coding conventions.</p>
-      </div>
-    </li></ul>
-      </section>
     </main>
     <footer>
-      <span>© 2026 Marcin Moskała · <a href="mailto:marcinmoskala@gmail.com">marcinmoskala@gmail.com</a></span>
+      <span>© 2026 Marcin Moskała</span>
       <a href="/conf/">For conference organizers</a>
     </footer>
   </div>

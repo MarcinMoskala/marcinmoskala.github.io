@@ -3,7 +3,7 @@
 // Polish  -> _pl/ (published to the marcinmoskala.pl repository by scripts/publish-pl.sh).
 import { readFileSync, writeFileSync, mkdirSync, cpSync, rmSync, existsSync } from "node:fs";
 import { dirname, join } from "node:path";
-import { site, books, shelf, about, projectGroups, featuredTalks, offeredTalks } from "./src/content.mjs";
+import { site, books, shelf, about, projects, offeredTalks } from "./src/content.mjs";
 import { strings, confText } from "./src/strings.mjs";
 
 const talks = JSON.parse(readFileSync("src/talks.json", "utf8"));
@@ -13,8 +13,7 @@ const PAGES = ["/", "/projects/", "/talks/", "/conf/"];
 // ---------- helpers ----------
 const esc = (s = "") => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const L = (v, lang) => (v && typeof v === "object" && !Array.isArray(v) && "en" in v ? v[lang] : v);
-const fill = (s) => s.replaceAll("{email}", site.email);
-const ytId = (url = "") => (url.match(/(?:youtu\.be\/|[?&]v=)([\w-]{11})/) || [])[1];
+const fill = (s) => s.replaceAll("{linkedin}", site.linkedin);
 const isVideo = (url = "") => /youtube\.com|youtu\.be|vimeo\.com/.test(url);
 const validate = () => {
   const types = new Set(Object.keys(strings.en.types));
@@ -22,12 +21,11 @@ const validate = () => {
   for (const x of talks) {
     if (!/^\d{4}(-\d{2}(-\d{2})?)?$/.test(x.date)) throw new Error(`Bad date: ${JSON.stringify(x)}`);
     if (!types.has(x.type)) throw new Error(`Unknown type: ${JSON.stringify(x)}`);
-    if (!x.title || !x.event) throw new Error(`Missing title/event: ${JSON.stringify(x)}`);
+    if (!x.event) throw new Error(`Missing event: ${JSON.stringify(x)}`);
     const key = `${x.date}|${x.title}|${x.event}`;
     if (seen.has(key)) throw new Error(`Duplicate talk: ${key}`);
     seen.add(key);
   }
-  for (const id of featuredTalks) if (!talks.some((x) => ytId(x.url) === id)) throw new Error(`Featured talk not found: ${id}`);
 };
 
 function shortDate(date, locale) {
@@ -50,9 +48,10 @@ function talkTitle(x, s) {
 }
 
 function talkRow(x, s, { withYear = false } = {}) {
-  const title = esc(talkTitle(x, s));
+  // A talk whose title we don't know is listed under the event name.
+  const title = esc(x.title ? talkTitle(x, s) : x.event);
   const place = x.place && !x.event.includes(x.place) ? s.places[x.place] || x.place : null;
-  const where = [x.event, place].filter(Boolean).map(esc).join(", ");
+  const where = [x.title ? x.event : null, place].filter(Boolean).map(esc).join(", ");
   const kind = [s.types[x.type], x.lang === "PL" && s.lang !== "pl" ? s.inPolish : null].filter(Boolean).join(" · ");
   const marker = x.url ? `<span class="marker" aria-hidden="true">${isVideo(x.url) ? "▶" : "↗"}</span>` : "";
   const label = withYear ? monthYear(x.date, s.locale) : shortDate(x.date, s.locale);
@@ -64,26 +63,39 @@ function talkRow(x, s, { withYear = false } = {}) {
     </li>`;
 }
 
-function projectItem(p, lang) {
-  const b = p.book ? books[p.book] : null;
-  const name = esc(L(p.name, lang) || b?.name);
-  const url = p.url || b?.url;
-  const polish = lang === "en" && /od podstaw|krytyczne|Czwartki|Podaj Dalej/.test(name) ? ` lang="pl"` : "";
-  return `<li${b ? ` class="with-cover"` : ""}>
-      ${b ? `<img class="mini-cover" src="${b.cover}" alt="" width="48" height="72" loading="lazy">` : ""}
-      <div>
-        <div class="head">${url ? `<a href="${esc(url)}"${polish}>${name}</a>` : `<b${polish}>${name}</b>`}${p.meta ? `<span class="meta">${esc(L(p.meta, lang))}</span>` : ""}</div>
-        <p>${esc(L(p.desc, lang))}</p>
-      </div>
-    </li>`;
+// lang attribute for names that are not in the page language
+const langOf = (text, lang, explicit) => {
+  const l = explicit || (/od podstaw|Podaj Dalej/.test(text) ? "pl" : null);
+  return l && l !== lang ? ` lang="${l}"` : "";
+};
+
+function fan(keys) {
+  const n = keys.length;
+  return `<div class="fan" style="--n:${n}">${keys.map((k, i) => {
+    const b = books[k];
+    return `<a href="${esc(b.url)}" style="--i:${i - (n - 1) / 2};z-index:${n - Math.abs(Math.round(i - (n - 1) / 2))}" title="${esc(b.name)}"><img src="${b.cover}" alt="${esc(b.name)}" width="300" height="450" loading="lazy"></a>`;
+  }).join("")}</div>`;
 }
 
-function tile(p, lang) {
-  return `<a class="tile" href="${esc(p.url)}">
-      <span class="thumb"><img src="${p.image}" alt="" width="640" height="400" loading="lazy"></span>
-      <b>${esc(L(p.name, lang))}</b>
-      <span class="desc">${esc(L(p.desc, lang))}</span>
-    </a>`;
+function card(p, lang) {
+  const name = esc(L(p.name, lang));
+  const media = p.fan
+    ? fan(p.fan)
+    : p.url
+      ? `<a class="shot" href="${esc(p.url)}" tabindex="-1" aria-hidden="true"><img src="${p.image}" alt="" width="800" height="500" loading="lazy"></a>`
+      : `<div class="shot"><img src="${p.image}" alt="" width="800" height="500" loading="lazy"></div>`;
+  const links = [
+    ...(p.bookLinks ? p.fan.map((k) => ({ name: books[k].name, url: books[k].url, lang: books[k].lang })) : []),
+    ...(p.links || []).map((x) => ({ name: L(x.name, lang), url: x.url })),
+  ];
+  return `
+      <article class="card" id="${p.id}">
+        ${media}
+        <h3>${p.url ? `<a href="${esc(p.url)}"${langOf(name, lang)}>${name}</a>` : `<span${langOf(name, lang)}>${name}</span>`}</h3>
+        ${p.meta ? `<p class="meta">${esc(L(p.meta, lang))}</p>` : ""}
+        <p class="desc">${esc(L(p.desc, lang))}</p>
+        ${links.length ? `<p class="card-links">${links.map((x) => `<a href="${esc(x.url)}"${langOf(x.name, lang, x.lang)}>${esc(x.name)}</a>`).join("")}</p>` : ""}
+      </article>`;
 }
 
 // ---------- layout ----------
@@ -133,7 +145,7 @@ function layout({ lang, path, title, description, body, active, jsonLd, scripts 
 ${body}
     </main>
     <footer>
-      <span>© ${new Date().getFullYear()} ${site.name} · <a href="mailto:${site.email}">${site.email}</a></span>
+      <span>© ${new Date().getFullYear()} ${site.name}</span>
       <a href="/conf/">${esc(s.titles.conf)}</a>
     </footer>
   </div>
@@ -159,7 +171,7 @@ function homePage(lang) {
         ${L(about.bio, lang).map((p) => `<p>${p}</p>`).join("\n        ")}
         <p class="contact">${fill(L(about.contact, lang))}</p>
         <p class="elsewhere">${site.social.map((x) => `<a href="${x.url}">${x.name}</a>`).join(" · ")}</p>
-        <p class="ctas"><a href="https://kt.academy/courses">${esc(s.workshops)}</a> <a href="/conf/">${esc(s.forOrganizers)}</a></p>
+        <p class="ctas"><a href="/conf/">${esc(s.forOrganizers)}</a></p>
       </div>
 
       <h2>${esc(s.books)}</h2>
@@ -179,8 +191,9 @@ function homePage(lang) {
     "@context": "https://schema.org",
     "@graph": [
       { "@type": "Person", "@id": `${site.domains.en}/#person`, name: site.name, url: site.domains[lang] + "/",
-        image: site.domains[lang] + site.portrait, jobTitle: s.jobTitle, email: `mailto:${site.email}`,
-        worksFor: { "@type": "Organization", name: "kt.academy", url: "https://kt.academy" },
+        image: site.domains[lang] + site.portrait, jobTitle: s.jobTitle,
+        worksFor: [{ "@type": "Organization", name: "Bank Pekao", url: "https://www.pekao.com.pl" }],
+        founder: { "@type": "Organization", name: "kt.academy", url: "https://kt.academy" },
         sameAs: site.social.map((x) => x.url) },
       ...["ek", "kc", "ke", "fk", "ak"].map((k) => ({ "@type": "Book", name: books[k].name, url: books[k].url,
         image: site.domains[lang] + books[k].cover, author: { "@id": `${site.domains.en}/#person` } })),
@@ -191,29 +204,16 @@ function homePage(lang) {
 
 function projectsPage(lang) {
   const s = strings[lang];
-  const groups = projectGroups.map((g) => `
-      <section id="${g.id}" aria-labelledby="${g.id}-h">
-        <h2 id="${g.id}-h">${esc(L(g.name, lang))}</h2>
-        ${g.desc ? `<p class="group-desc">${esc(L(g.desc, lang))}</p>` : ""}
-        ${g.layout === "gallery"
-          ? `<div class="gallery">${g.items.map((p) => tile(p, lang)).join("")}</div>`
-          : `<ul class="items">${g.items.map((p) => projectItem(p, lang)).join("")}</ul>`}
-      </section>`).join("");
   const body = `
       <h1>${esc(s.titles.projects)}</h1>
       <p class="subtitle">${esc(s.projectsSubtitle)}</p>
-${groups}`;
+      <div class="cards">${projects.featured.map((p) => card(p, lang)).join("")}
+      </div>`;
   return layout({ lang, path: "/projects/", title: s.titles.projects, body, active: "projects" });
 }
 
 function talksPage(lang) {
   const s = strings[lang];
-  const featured = featuredTalks.map((id) => talks.find((x) => ytId(x.url) === id)).map((x) => `
-        <a class="tile" href="${esc(x.url)}">
-          <span class="thumb video"><img src="/static/img/talks/${ytId(x.url)}.jpg" alt="" width="720" height="405" loading="lazy"></span>
-          <b>${esc(talkTitle(x, s))}</b>
-          <span class="meta">${esc(x.event)} · ${x.date.slice(0, 4)}</span>
-        </a>`).join("");
   const counts = {};
   talks.forEach((x) => (counts[x.type] = (counts[x.type] || 0) + 1));
   const types = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
@@ -230,13 +230,7 @@ function talksPage(lang) {
         </section>`).join("");
   const body = `
       <h1>${esc(s.titles.talks)}</h1>
-      <p class="subtitle">${esc(s.talksSubtitle)} <a href="/conf/">${esc(s.forOrganizers)}</a></p>
 
-      <h2>${esc(s.worthWatching)}</h2>
-      <div class="gallery">${featured}
-      </div>
-
-      <h2>${esc(s.allTalksHeading)}</h2>
       <div class="filters" role="group" aria-label="${esc(s.filterLabel)}">${filters}</div>
       <p class="count" aria-live="polite"></p>
       <div id="talk-list">${years}
@@ -300,7 +294,7 @@ ${PAGES.map((p) => `  <url><loc>${site.domains[lang]}${p}</loc></url>`).join("\n
   write(join(out, "robots.txt"), `User-agent: *\nAllow: /\n\nSitemap: ${site.domains[lang]}/sitemap.xml\n`);
   if (lang === "pl") {
     for (const f of ["style.css", "talks.js", "favicon.svg", ".nojekyll"]) cpSync(f, join(out, f));
-    for (const d of ["static/img/books", "static/img/games", "static/img/talks"]) cpSync(d, join(out, d), { recursive: true });
+    for (const d of ["static/img/books", "static/img/games", "static/img/projects"]) cpSync(d, join(out, d), { recursive: true });
     cpSync("static/img/portrait.jpg", join(out, "static/img/portrait.jpg"));
     write(join(out, "CNAME"), "marcinmoskala.pl\n");
   }
@@ -313,4 +307,4 @@ write("delegates/index.html", redirectPage("https://kt.academy/article/ak-proper
 write("blog/index.html", redirectPage("https://kt.academy/article"));
 write("blog-pl/index.html", redirectPage("https://kt.academy/article"));
 
-console.log(`Built ${talks.length} talks, ${projectGroups.length} project groups → ./ (en) and ${OUT.pl}/ (pl)`);
+console.log(`Built ${talks.length} talks, ${projects.featured.length} project cards → ./ (en) and ${OUT.pl}/ (pl)`);
