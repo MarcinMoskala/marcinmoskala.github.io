@@ -94,6 +94,12 @@ export const projects = {
         { name: "Coroutines Bug Hunter", url: "https://game.kt.academy/?game=coroutines-bug-hunter" },
         { name: "Compose Bug Hunter", url: "https://game.kt.academy/?game=compose-bug-hunter" },
       ] },
+    { id: "polytopia-trainer", name: "Polytopia Trainer", url: "https://polytopia-trainer.marcinmoskala.com", image: "/static/img/projects/polytopia-trainer.jpg", meta: t("free, in the browser", "za darmo, w przeglądarce"),
+      desc: t("Levels that train the tactics of the strategy game The Battle of Polytopia. An unofficial fan project, published with the permission of Midjiwan AB.",
+              "Poziomy, które ćwiczą taktykę gry strategicznej The Battle of Polytopia. Nieoficjalny projekt fanowski, opublikowany za zgodą Midjiwan AB.") },
+    { id: "gwiezdna-dolina", name: t("Star Valley", "Gwiezdna Dolina"), url: "https://gwiezdna-dolina.marcinmoskala.com", image: "/static/img/projects/gwiezdna-dolina.jpg", meta: t("free, in the browser", "za darmo, w przeglądarce"),
+      desc: t("A simple strategy game for kids, played on a map of hexes, in Polish and English.",
+              "Prosta gra strategiczna dla dzieci, rozgrywana na mapie z sześciokątów, po polsku i po angielsku.") },
     { id: "cheat-sheets", name: "Kotlin Cheat Sheets", url: "https://cheat-sheet.kt.academy", image: "/static/img/projects/cheatsheets.jpg", meta: t("free PDFs", "darmowe PDF-y"),
       desc: t("One-page references for Kotlin Coroutines, Flow and Jetpack Compose.", "Jednostronicowe ściągawki z Kotlin Coroutines, Flow i Jetpack Compose."),
       links: [
