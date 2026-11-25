@@ -97,9 +97,14 @@ export const projects = {
     { id: "polytopia-trainer", name: "Polytopia Trainer", url: "https://polytopia-trainer.marcinmoskala.com", image: "/static/img/projects/polytopia-trainer.jpg", meta: t("free, in the browser", "za darmo, w przeglądarce"),
       desc: t("Levels that train the tactics of the strategy game The Battle of Polytopia. An unofficial fan project, published with the permission of Midjiwan AB.",
               "Poziomy, które ćwiczą taktykę gry strategicznej The Battle of Polytopia. Nieoficjalny projekt fanowski, opublikowany za zgodą Midjiwan AB.") },
-    { id: "gwiezdna-dolina", name: t("Star Valley", "Gwiezdna Dolina"), url: "https://gwiezdna-dolina.marcinmoskala.com", image: "/static/img/projects/gwiezdna-dolina.jpg", meta: t("free, in the browser", "za darmo, w przeglądarce"),
-      desc: t("A simple strategy game for kids, played on a map of hexes, in Polish and English.",
-              "Prosta gra strategiczna dla dzieci, rozgrywana na mapie z sześciokątów, po polsku i po angielsku.") },
+    { id: "cohort-courses", name: t("Cohort courses", "Kursy kohortowe"), image: "/static/img/projects/coroutines-mastery.jpg", meta: t("kt.academy", "kt.academy"),
+      desc: t("Structured, live cohort courses that go deep on a single topic over several weeks, with weekly Q&A sessions.",
+              "Zorganizowane, prowadzone na żywo kursy kohortowe, które przez kilka tygodni dogłębnie uczą jednego tematu, z cotygodniowymi sesjami Q&A."),
+      links: [
+        { name: "Coroutines Mastery", url: "https://coroutinesmastery.com/?utm_source=ktwebsite&utm_medium=main_button" },
+        { name: "Advanced Compose", url: "https://advancedcompose.com/?utm_source=ktwebsite&utm_medium=main_button" },
+        { name: "Polished Compose", url: "https://www.polishedcompose.com/?utm_source=ktwebsite&utm_medium=main_button" },
+      ] },
     { id: "cheat-sheets", name: "Kotlin Cheat Sheets", url: "https://cheat-sheet.kt.academy", image: "/static/img/projects/cheatsheets.jpg", meta: t("free PDFs", "darmowe PDF-y"),
       desc: t("One-page references for Kotlin Coroutines, Flow and Jetpack Compose.", "Jednostronicowe ściągawki z Kotlin Coroutines, Flow i Jetpack Compose."),
       links: [
